@@ -1,7 +1,7 @@
 # Content Structure
 The Hubs documentation site has several different types of content that covers both Hubs and Spoke. Please keep the following structure in mind when creating new documentation files for the site. 
 
-* Getting Started Guides
+* 처음 시작하기
   - Guide #1 - Getting Started With Hubs 
   - Guide #2 - Building a Scene with Spoke
 * Hubs Reference
