@@ -3,38 +3,39 @@ id: creators-reskin-base-avatars
 title: Reskin Avatars
 ---
 
-Depending on how involved you'd like to get in the avatar creation process, you might choose to simply 're-skin' the existing robot avatar by painting your own texture maps, or create your own fully custom 3D model.
+아바타 제작 과정에 얼마나 관여하고 싶은지에 따라 자신만의 텍스처 맵을 그려 기존 로봇 아바타를 단순히 '재스킨'하거나 자신만의 완전한 맞춤형 3D 모델을 만들 수도 있습니다.
 
-## Making your own custom avatar skin
+## 나만의 아바타 스킨 만들기
 
-A quick and easy way to create a custom avatar in Hubs is to create a custom skin using an image editor or texturing tool. We have a [Getting Started Tutorial](https://docs.google.com/document/d/1K1Eos1sjqN4N9lPlYQfvU53v8f1HxmdTZRjH4RLrGq8/edit) to help you create your first avatar skin.
+Hubs에서 사용자 지정 아바타를 빠르고 쉽게 만드는 방법은 이미지 편집기 또는 텍스처 도구를 사용하여 사용자 지정 스킨을 만드는 것입니다. 첫 번째 아바타 스킨을 만드는 데 도움이 되는 [시작 튜토리얼](https://docs.google.com/document/d/1K1Eos1sjqN4N9lPlYQfvU53v8f1HxmdTZRjH4RLrGq8/edit) 이 있습니다.
 
-You can use the following resources:
+다음 리소스를 사용할 수 있습니다.:
 
-* [Quilt](https://tryquilt.io/) - A simple tool put together by the Hubs team for quickly re-skinning the default Hubs robot avatar. 
+* [Quilt](https://tryquilt.io/) - 허브 팀이 기본 허브 로봇 아바타의 스킨을 빠르게 다시 만들기 위해 함께 만든 간단한 도구입니다. 
 
-* [Photoshop PSD Templates](Photoshop) - Photoshop templates for a custom Hubs base color skin. You can also use Photoshop's 3D painting tools, using the [Robot OBJ/MAT file](https://github.com/j-conrad/hubs-avatar-pipelines/tree/master/Other%20model%20formats).
+* [포토샵 PSD 템플릿](Photoshop) - 맞춤형 허브 기본 컬러 스킨용 포토샵 템플릿. 포토샵의 3D 페인팅 툴은 [로봇 OBJ/MAT 파일](https://github.com/j-conrad/hubs-avatar-pipelines/tree/master/Other%20model%20formats))을 사용하여 사용할 수도 있습니다..
 
-* [Substaince Painter Project](Substance) - Full [Substance Painter](https://www.allegorithmic.com/products/substance-painter) projects for advanced custom skinning. You can also download and modify any of our [example texture sets](Exported%20Texture%20Sets).
+* [Substance Painter 프로젝트](Substance) - 전체 [Substance Painter](https://www.allegorithmic.com/products/substance-painter) 프로젝트를 통해 고급 맞춤형 스킨링을 할 수 있습니다. 또한 [예: 텍스처 세트](Exported%20Texture%20Sets) 를 다운로드 및 수정할 수 있습니다.
 
-![UV Layout example](docs/UVLayout.jpg)
+![UV 레이아웃 예제](docs/UVLayout.jpg)
 
 The UV layout for the base robot avatar is purposefully symmetrical along the X (horizontal) axis. This makes it relatively easy to paint one half of the texture(s) and flip it to the other side. Some image editing applications such as Photoshop have built-in mirroring tools that allow you to paint both halves in real time.
 
-![Panda Bot example](docs/PandaBot.jpg)
+![Panda Bot 예제](docs/PandaBot.jpg)
 
-The simplest version of re-skinning the robot avatar would be to simply paint a 'baseColor' map. However, because Hubs uses glTF standards it supports many of the map types associated with [physically-based materials](https://www.allegorithmic.com/pbr-guide). 
-The default avatar is currently using:
-- Base Color
-- Emissive
-- Normal
-- Ambient Occlusion
-- Roughness (black = glossy, white = rough)
-- Metallic  (black = non-metal, white = fully metallic)
+로봇 아바타의 가죽을 다시 벗기는 가장 간단한 방법은 단순히 '베이스 컬러' 지도를 그리는 것이다. 그러나 허브는 glTF 표준을 사용하기 때문에 [물리 기반 재료](https://www.allegorithmic.com/pbr-guide))와 관련된 많은 지도 유형을 지원합니다.
+기본 아바타는 현재 다음을 사용하고 있습니다.
+- 기본 색상
+- 방출
+- 일반
+- 주변 폐색
+- 거칠기(검은색 = 광택, 흰색 = 거친색)
+- 금속성(검은색 = 비금속성, 흰색 = 완전 금속성)
 
-**NOTE: Ambient Occlusion, Roughness, and Metallic must be combined in one singular image with each texture occupying the Red, Green, and Blue channels respectively.** This is sometimes referred to as an _'ORM'_ texture.
+**참고: Ambient Occlusion, Roughess 및 Metalic은 각각 빨간색, 녹색 및 파란색 채널을 차지하는 단일 이미지로 결합되어야 합니다.**
 
-**It is _highly_ recommended that texture resolution be kept at 1024x1024 or below.** This is mostly due to Hubs being a web-based application where large download times for bigger files can hurt performance, especially on mobile devices. _All textures MUST be powers of 2 (64, 128, 256, 512, etc.)_
+** 텍스처 해상도를 1024x1024 이하로 유지하는 것이 좋습니다.** 이는 대부분 허브가 대용량 파일을 다운로드하는 시간이 길면 성능을 저하시킬 수 있는 웹 기반 애플리케이션(특히 모바일 기기)이기 때문입니다. _모든 텍스처는 2의 거듭제곱(64, 128, 256, 512 등)이어야 합니다._
+
 
 
 
