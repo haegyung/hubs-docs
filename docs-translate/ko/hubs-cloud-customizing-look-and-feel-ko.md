@@ -3,38 +3,39 @@ id: hubs-cloud-customizing-look-and-feel
 title: Customizing Look and Feel
 sidebar_label: Customizing Look & Feel
 ---
-# An announcement about the Hubs user interface
-On January 25, 2021, we released a significant update to the user interface for Hubs on hubs.mozilla.com. This change will not go live on new Hubs Cloud deployments until on or after March 25, 2021. Before the update is released to Hubs Cloud, we encourage administrators of Hubs Cloud deployments to consider their own releases and determine a plan of action for updating to the new UI. 
 
-* If you have not made any changes to your Hubs Cloud client look and feel, your Hubs Cloud instance will be updated on or after March 25th to have the new UI. 
+# 허브 사용자 인터페이스에 대한 공지사항
+2021년 1월 25일, 우리는 hubs.mozilla.com에서 허브의 사용자 인터페이스에 대한 중요한 업데이트를 발표했습니다. 이 변경 사항은 2021년 3월 25일 이후가 되어야 새로운 허브 클라우드 배포에서 적용됩니다. 허브 클라우드에 업데이트가 릴리스되기 전에 허브 클라우드 배포 관리자가 자체 릴리스를 고려하고 새 UI로 업데이트하기 위한 작업 계획을 결정할 것을 권장합니다.
 
-* If you added your own logos or chosen new colors within the Hubs Cloud admin console, these will be applied to the new UI. You may need to review and confirm your color choices when the update is live. 
+* 허브 클라우드 클라이언트의 모양과 느낌을 변경하지 않은 경우 3월 25일 이후에 허브 클라우드 인스턴스가 업데이트되어 새로운 UI가 제공됩니다.
 
-* If you are using a custom CSS sheet for styles, you may need to modify this CSS file to account for the new user interface styles. Check this page in the coming weeks for additional information. 
+* Hubs Cloud 관리 콘솔 내에서 사용자 고유의 로고나 새로운 색상을 추가한 경우, 새로운 UI에 적용됩니다. 업데이트가 실행 중일 때 색상 선택 사항을 검토하고 확인해야 할 수도 있습니다.
 
-* If you are running a custom Hubs Cloud client, you will not automatically receive the new update. You will need to pull in the client changes to your own fork of the client codebase or undeploy your Hubs Cloud custom client to get the new UI automatically. 
+* 스타일에 사용자 정의 CSS 시트를 사용하는 경우, 새로운 사용자 인터페이스 스타일을 고려하여 이 CSS 파일을 수정해야 할 수도 있습니다. 추가 정보는 다음 주에 이 페이지를 확인하십시오.
 
-* If you do not want to be updated to the new UI, you can deploy a custom client to your Hubs Cloud instance. This will remove your Hubs Cloud instance from the automatic update path, and you will stop receiving updates to the client when we release new Hubs Cloud updates. 
+* 사용자 지정 허브 클라우드 클라이언트를 실행하는 경우 새 업데이트가 자동으로 수신되지 않습니다. 새 UI를 자동으로 가져오려면 클라이언트 변경 사항을 클라이언트 코드베이스의 고유한 포크로 가져오거나 허브 클라우드 사용자 지정 클라이언트의 배포를 취소해야 합니다.
 
-Please note that we are working on tools and documentation to help streamline the transition to the new UI from older versions of the Hubs client. Check this page for updates and additional information, or check out the Hubs Cloud channels in Discord. 
+* 새 UI로 업데이트하지 않으려면 허브 클라우드 인스턴스에 사용자 지정 클라이언트를 배포할 수 있습니다. 이렇게 하면 허브 클라우드 인스턴스가 자동 업데이트 경로에서 제거되고 새로운 허브 클라우드 업데이트를 릴리스할 때 클라이언트에 대한 업데이트 수신이 중지됩니다.
+
+Hubs 클라이언트의 이전 버전에서 새 UI로 쉽게 전환할 수 있도록 도구 및 설명서를 제작 중입니다. 이 페이지에서 업데이트 및 추가 정보를 확인하거나 불일치 허브 클라우드 채널을 확인하십시오.
 
 # Deprecated: Updating the look and feel for the original Hubs Client UI
 
-You can completely completely customize the look and feel of your hub by adding custom colors and branding.
+사용자 지정 색상과 브랜드를 추가하여 허브의 모양과 느낌을 완전히 사용자 정의할 수 있습니다.
 
-First, open the [Admin Console](hubs-cloud-getting-started-ko.md) then choose **App Settings**:
+먼저 [관리 콘솔](hubs-cloud-getting-started-ko.md)을 열고 **앱 설정**:
 
-![Hubs Cloud App Settings](img/hubs-cloud-app-settings.jpeg)
+![허브 클라우드 앱 설정](img/hubs-cloud-app-settings.jpeg)
 
-From there, you can replace all of the various images your hub by choosing **Images**:
+여기서 **Images**:를 선택하여 허브의 모든 다양한 이미지를 교체할 수 있습니다.
 
-![Hubs Cloud Image Settings](img/hubs-cloud-image-settings.jpeg)
+![허브 클라우드 이미지 설정](img/hubs-cloud-image-settings.jpeg)
 
-The result? Branding on the landing page and loading page:
+결과는? 랜딩 페이지 및 로딩 페이지의 브랜딩:
 
 ![Hubs Cloud Custom Branding](img/hubs-cloud-custom-branding.png)
 
-Additionally you can add completely customized color schemes. Navigate to **Themes** and paste a JSON array describing your desired themes like the example below:
+또한 완전히 사용자 정의된 색상표를 추가할 수 있습니다. **테마**로 이동하여 아래 예제와 같이 원하는 테마를 설명하는 JSON 배열을 붙여넣으십시오.
 
 ```json
 [

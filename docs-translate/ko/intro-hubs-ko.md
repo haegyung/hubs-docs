@@ -5,9 +5,9 @@ sidebar_label: Getting Started With Hubs
 ---
 
 
-In the following guide we'll show you the basics of Hubs! (Prefer a video? [Click here](https://www.youtube.com/watch?v=5QnOsyyebEQ).)
+이번 가이드에서는 허브의 기본 사항을 보여 드리겠습니다! (Prefer a video? [Click here](https://www.youtube.com/watch?v=5QnOsyyebEQ).)
 
-To get started, head to [hubs.mozilla.com](https://hubs.mozilla.com/). Make your own room by clicking “Create a Room.” 
+시작하려면 [hubs.mozilla.com](https://hubs.mozilla.com/) 로 이동하십시오. "룸 작성"을 눌러 자신만의 룸을 만드십시오.
 
 <video autoplay loop muted controls >
   <source src="img/create-a-room.mp4" type="video/mp4">
@@ -17,26 +17,25 @@ To get started, head to [hubs.mozilla.com](https://hubs.mozilla.com/). Make your
 
  <p style="text-align: center; font-style:italic;">🎉 Congratulations - you now have your very own virtual space! 🎉<p>
 
-## Enter the Room
+## 방에 들어갑니다.
 
-Before entering, you are in the room's lobby. From here, you can see and hear what's going on inside the room, and you can only interact with others using text chat. Entering the room can be a bit different depending on the type of device you are using.
+입장하기 전에 객실 로비에 있습니다. 여기서 당신은 방 안에서 일어나는 일들을 보고 들을 수 있고, 문자 채팅을 통해서만 다른 사람들과 교류할 수 있습니다. 객실 출입은 사용하는 기기 종류에 따라 조금 다를 수 있습니다.
 
-**On a desktop computer?** 
+**데스크탑 컴퓨터에서?**
 
-* Click "Enter Room" and follow the prompts to select a name/avatar and enable the mic.
+* "룸에 입장"을 누르고 프롬프트에 따라 이름/아바타를 선택하고 마이크를 사용 가능으로 설정합니다.
 
-**On a VR headset or mobile device?** 
+**VR 헤드셋 또는 모바일 장치에서?**
 
-* Take a look at the [instructions](./hubs-create-join-rooms.html#enter-the-room) in the Hubs documentation.
+* 허브 설명서의 [지침](.hubs-create-join-rooms.html#entry-the-room)을 참조하십시오.
 
 ## Explore Hubs
 
 ### Look around
 
-Try exploring your new space. On desktop use your **WASD**  or arrow keys to move around. You can also press your right mouse button to teleport to a different location. Rotate your view using the **Q** and **E** keys, or hold down your left mouse button and drag. 
+새로운 공간을 탐색해 보십시오. 데스크톱에서 **WASD** 또는 화살표 키를 사용하여 이동할 수 있습니다. 마우스 오른쪽 버튼을 눌러 다른 위치로 순간이동할 수도 있습니다. **Q** 및 **E** 키를 사용하여 보기를 회전하거나 마우스 왼쪽 버튼을 누른 상태에서 끕니다.
 
-For VR and mobile controls see our list of [Hubs controls](hubs-controls.html).
-
+VR 및 모바일 컨트롤은 [허브 컨트롤](hubs-controls.html) 목록을 참조하십시오.
 ### User Interface
 
 Take a moment to take a look around the user interface. You can mute your mic, take photos, share your screen, create objects, and more. We'll introduce the basics of some of these controls in this guide. For more detailed information check out the [Hubs Features](hubs-features.html) section of the documentation.
@@ -45,11 +44,11 @@ Take a moment to take a look around the user interface. You can mute your mic, t
 
 ### Import Media
 
-In Hubs you can import 3D models, images, videos and PDFs from all over the web including SketchFab, Google Poly, SoundCloud, Vimeo, Twitch, Crunchyroll, and more. 
+허브에서는 SketchFab, Google Poly, SoundCloud, Vimeo, Twitch, Crunchyroll 등 웹에서 3D 모델, 이미지, 비디오 및 PDF를 가져올 수 있습니다.
 
-Try searching for content in the Media Browser (the magic wand button at the top of the screen). 
+Media Browser(미디어 브라우저)(화면 상단에 있는 매직 막대 버튼)에서 콘텐츠를 검색해 보십시오.
 
-You can also add media by dragging and dropping a file into the room, or by copying (ctrl+c or command+c) a URL and then pasting it in the room (ctrl+v or command+v).
+파일을 룸으로 끌어서 놓거나 URL을 복사(ctrl+c 또는 명령+c)한 다음 룸에 붙여넣기(ctrl+v 또는 명령+v)하여 미디어를 추가할 수도 있습니다.
 
 <video autoplay loop muted controls >
   <source src="img/object-creation.mp4" type="video/mp4">
@@ -58,25 +57,25 @@ You can also add media by dragging and dropping a file into the room, or by copy
 
 ### Object Menus
 
-Additional controls for objects, videos, and drawings can be found in their object menus.
+객체, 비디오 및 도면에 대한 추가 컨트롤은 객체 메뉴에서 찾을 수 있습니다.
 
-To reveal these controls, hover your cursor over the object and press the space bar or tab key on desktop. 
+이러한 컨트롤을 표시하려면 커서를 개체 위에 놓고 바탕 화면의 스페이스바 또는 탭 키를 누르십시오.
 
-For VR and mobile controls see our complete list of [Hubs Controls](hubs-controls.html). 
+VR 및 모바일 컨트롤은 [HubsControls](hubs-controls.html) 의 전체 목록을 참조하십시오.
 
 ![Screenshot of the Object Menu](img/intro-hubs-object-menu-min.jpeg)
 
-### Avatar Menus
-You can open up a menu on users just like on objects. This lets you control their volume or hide them from your view.
-If you are a room owner or moderator you will have extra permissions, like being able to mute the user's mic or temporarily kick them from the room. 
+### 아바타 메뉴
+객체에서와 마찬가지로 사용자에서도 메뉴를 열 수 있습니다. 이렇게 하면 볼륨을 제어하거나 보기에서 숨길 수 있습니다.
+룸 소유자 또는 진행자인 경우, 사용자의 마이크를 음소거하거나 룸에서 일시적으로 발길질을 할 수 있는 것과 같은 추가 권한을 갖게 됩니다.
 
 ![Screenshot of the Avatar Menu](img/intro-hubs-avatar-menu-min.jpeg)
 
 ### Change the Scene
 
-You can change your scene to suit the mood of your event. There are lots of environments to choose from in our scene database, or you can create your own custom worlds using our scene editor [Spoke](intro-spoke.html). Explore the scene browser by opening the dropdown menu and selecting Choose a Scene.
+행사 분위기에 맞게 장면을 바꿀 수 있습니다. 씬(scene) 데이터베이스에서 선택할 수 있는 다양한 환경이 있습니다. 또는 씬(scene) 편집기 [Spoke](intro-spoke.html)를 사용하여 자신만의 사용자 지정 월드를 만들 수 있습니다. 드롭다운 메뉴를 열고 Choose a Scene(장면 선택)을 선택하여 장면 브라우저를 탐색합니다.
 
-Note, only room moderators can change the scene. You also need to be signed in using your email address. Logging in is not required to use Hubs but doing so provides benefits such as being able to save favorite rooms, and upload custom avatars. All we need is an email address to authenticate your account &mdash; no additional information is required.   
+룸 진행자만 장면을 변경할 수 있습니다. 또한 이메일 주소를 사용하여 로그인해야 합니다. 허브를 사용하기 위해 로그인할 필요는 없지만 이렇게 하면 즐겨찾는 룸을 저장하고 사용자 지정 아바타를 업로드할 수 있는 등의 이점이 있습니다. 계정을 인증하기 위한 이메일 주소만 있으면 됩니다. 추가 정보는 필요하지 않습니다.
 
 <video autoplay loop muted controls >
   <source src="img/change-the-scene.mp4" type="video/mp4">
@@ -84,15 +83,14 @@ Note, only room moderators can change the scene. You also need to be signed in u
   Your browser does not support HTML5 video.
 </video>
 
-## Invite Friends 
+## 친구 초대
 
-Your new space is private, and no one else can join until you invite them. 
+새 공간은 비공개 공간이며 초대하기 전에는 다른 사용자가 참여할 수 없습니다.
 
-When you are ready to invite others click the "Share" button at the top of your screen. Copy the room URL or shortlink code and send it to your friends. 
+다른 사용자를 초대할 준비가 되면 화면 맨 위에 있는 "공유" 단추를 클릭하십시오. 룸 URL 또는 단축 링크 코드를 복사하여 친구에게 보냅니다.
 
 ![Screenshot of the Share pop-up](img/hubs-invite-dialogue.PNG)
 
-## Next Steps
-This was just a quick overview of some of Hubs' basic features. For a detailed overview of what you can do in Hubs check out [Hubs Features](hubs-features.html) in the documentation.
-
+## 다음 단계
+지금까지 허브의 몇 가지 기본 기능에 대해 간략히 살펴보았습니다. 허브에서 수행할 수 있는 작업에 대한 자세한 내용은 설명서의 [허브 기능](hubs-features.html)을 참조하십시오.
 

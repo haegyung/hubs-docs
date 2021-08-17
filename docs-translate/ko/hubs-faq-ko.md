@@ -3,137 +3,136 @@ id: hubs-faq
 title: FAQ
 ---
 
-## What is the capacity of a Hubs room?
+## 허브 룸의 용량은 어떻게 됩니까?
 
-We recommend a maximum of 25 in-room participants. This capacity is the default because low power devices, such as mobile phones and standalone VR headsets, may begin experiencing performance issues in busier rooms. You can adjust the room capacity in the [room settings](hubs-room-settings.html) menu. 
+객실 내 참가자는 최대 25명을 권장합니다. 이 용량은 휴대폰 및 독립 실행형 VR 헤드셋과 같은 저전력 장치에서 사용량이 많은 룸에서 성능 문제가 발생할 수 있기 때문에 기본값입니다. [room settings](hubs-room-settings.html) 메뉴에서 룸 용량을 조정할 수 있습니다.
 
-Once a room is full, all additional users (participant #26 and beyond) can still participate by watching from the lobby. Users in the lobby can see and hear what's happening in the room and interact via text chat; however, they are not represented as avatars in the room and their mic is not active. There is no hard limit on lobby capacity, however, performance may decrease once there are over one hundred people in the lobby.
+객실이 가득 차면 추가 사용자(참가자 #26 이상)는 로비에서 관람을 통해 계속 참여할 수 있습니다. 로비에 있는 사용자는 룸에서 일어나는 일을 보고 들을 수 있으며 문자 채팅을 통해 상호작용할 수 있지만 룸에서 아바타로 표현되지 않으며 마이크가 활성화되지 않습니다. 로비 수용 인원에는 큰 제한이 없지만, 로비에 100명이 넘으면 퍼포먼스가 떨어질 수 있다.
 
-If you want to scale Hubs for a larger event we recommend splitting crowds into multiple rooms with smaller groups, or live streaming the event, depending on the use case. 
+더 큰 이벤트를 위해 허브를 확장하려는 경우, 사용 사례에 따라 인파를 더 작은 그룹이 있는 여러 객실로 분할하거나 이벤트를 라이브 스트리밍하는 것이 좋습니다.
 
-For more information on setting up Hubs for large events, we recommend exploring [Hubs Cloud](https://hubs.mozilla.com/cloud) as an option for your organization's event needs.
+대규모 이벤트에 대한 허브 설정에 대한 자세한 내용을 보려면 조직의 이벤트 요구에 대한 옵션으로 [Hubs Cloud](https://hubs.mozilla.com/cloud)를 탐색하는 것이 좋습니다.
 
-## How long does a Hubs room last? 
+## 허브 룸은 얼마나 오래 지속되나요?
 
-Hubs rooms stay open forever unless you choose the "close room" option from the dropdown menu. Unless a room has been "closed", you will always be able to use the URL to revisit your room. If you plan to revisit a room, you might like to add it to your favorites for easy access.
+허브 룸은 드롭다운 메뉴에서 "룸 닫기" 옵션을 선택하지 않는 한 계속 열려 있습니다. 강의실이 "닫힘" 상태가 아닌 경우, 언제든지 URL을 사용하여 강의실을 다시 방문할 수 있습니다. 룸을 다시 방문하려는 경우 쉽게 액세스할 수 있도록 즐겨찾기에 룸을 추가할 수 있습니다.
 
-## Can I play video content in Hubs? 
+## 허브에서 비디오 컨텐츠를 재생할 수 있습니까?
 
-Hubs has the ability to play videos in the room, which allows you to watch with friends or live stream content from an existing stream. For videos, Hubs supports standard video formats. Live stream content is supported in the HLS format. You can embed videos from popular video hosting websites like Vimeo, YouTube, and Twitch, but due to high load these may sometimes be unreliable. For mission-critical content, we recommend hosting videos on the Hubs servers by uploading to your Hubs room or Spoke (there is a 128MB size limit for these videos) or using a hosting provider like Amazon S3.
+허브에는 룸에서 비디오를 재생할 수 있는 기능이 있어 친구와 함께 보거나 기존 스트림에서 컨텐츠를 라이브 스트림할 수 있습니다. 비디오의 경우 허브는 표준 비디오 형식을 지원합니다. 라이브 스트림 콘텐츠는 HLS 형식으로 지원됩니다. Vimeo, YouTube 및 Twitch와 같은 인기 비디오 호스팅 웹 사이트에서 동영상을 삽입할 수 있지만, 로드가 높기 때문에 신뢰할 수 없는 경우도 있습니다. 미션 크리티컬 콘텐츠의 경우 허브 룸 또는 스포크(이 비디오의 경우 128MB 크기 제한)로 업로드하거나 Amazon S3와 같은 호스팅 공급업체를 사용하여 허브 서버에서 비디오를 호스팅하는 것이 좋습니다.
 
-## Where does the chat log go? 
+## 채팅 로그는 어디로 가나요?
 
-The chat log only exists temporarily. Messages disappear after a set period of time. We are working on developing chat scrollback. Until this is released, you can also keep track of in-world chat by setting up the [Hubs Discord Bot](hubs-discord-bot.html).
+채팅 로그는 일시적으로만 존재합니다. 메시지는 설정된 기간이 지나면 사라집니다. 우리는 채팅 스크롤백 개발을 진행 중입니다. 이 버전이 릴리스될 때까지 [Hubs Discord-bot.html](허브-discord-bot.html)를 설정하여 내부 채팅을 추적할 수도 있습니다.
 
-## Can I share a PowerPoint presentation in Hubs?
+## 허브에서 PowerPoint 프레젠테이션을 공유할 수 있습니까?
 
-Hubs is great for giving presentations. Supported media types are PDF files, images, 3D models, audio, video, webcam input, and screen sharing. 
+허브는 프레젠테이션을 하기에 아주 좋습니다. 지원되는 미디어 유형은 PDF 파일, 이미지, 3D 모델, 오디오, 비디오, 웹캠 입력 및 화면 공유입니다.
 
-To use a PowerPoint in Hubs, you can convert it to a PDF file and import it directly into Hubs, or you can use screen sharing to stream a view of your presentation into Hubs.
+허브에서 PowerPoint를 사용하려면 PDF 파일로 변환하여 허브로 직접 가져오거나 화면 공유를 사용하여 프레젠테이션 보기를 허브로 스트리밍할 수 있습니다.
 
-## Is it possible to have my video or slides show up in a good place (like on a wall) automatically?
+## 내 비디오 또는 슬라이드가 좋은 위치(벽면)에 자동으로 표시되도록 할 수 있습니까?
 
-Precise positioning using the [object controls](./hubs-features.html#object-menu) in Hubs can be a bit tricky at the moment. ([We are working on it!](https://github.com/mozilla/hubs/issues/1324))
+현재 허브의 [object control](./vmx-controls.vmx.vmx#object-menu) 를 사용하여 정확한 위치를 지정하는 것은 다소 까다로울 수 있습니다 ([우리는 노력하고 있습니다!](https://github.com/mozilla/hubs/issues/1324))
 
-If precise positioning is important, you may prefer to build your media into the scene using [Spoke](https://hubs.mozilla.com/spoke), Hubs' web-based scene editing tool. Spoke has controls that let you fine tune object placement.
+정확한 위치가 중요한 경우 [Spoke](https://hubs.mozilla.com/spoke), 허브의 웹 기반 장면 편집 도구를 사용하여 미디어를 씬(scene)에 빌드하는 것이 좋습니다. 스포크에는 개체 배치를 미세 조정할 수 있는 컨트롤이 있습니다.
 
-In the meantime, you may find it easier to resize and place objects when using Hubs in VR. If you are setting up a room on desktop, we recommend directly facing the surface you wish to place your media on when importing the files. To move the media into position, you may find you have more control if you click on the object with your mouse to grab it, and then move it into place using the WASD keys.
+그동안 VR에서 허브를 사용할 때 개체 크기를 조정하고 배치하기가 더 쉬워질 수 있습니다. 바탕 화면에 룸을 설정하는 경우 파일을 가져올 때 미디어를 배치할 표면을 직접 바라보는 것이 좋습니다. 미디어를 제자리로 이동하려면 마우스를 사용하여 개체를 클릭한 다음 WASD 키를 사용하여 미디어를 제자리로 이동하면 제어력이 향상될 수 있습니다.
 
-## What devices does Hubs run on?
+## 허브는 어떤 장치에서 실행됩니까?
 
-Because it runs in the browser, Hubs is very cross-platform compatible. It works on mobile, desktop, and VR devices, and runs on most modern browsers. For more information check out the [supported devices & browsers](./hubs-create-join-rooms.html#supported-devices--browsers) section.
+브라우저에서 실행되기 때문에 허브는 플랫폼 간 호환성이 매우 높습니다. 모바일, 데스크톱 및 VR 디바이스에서 작동하며 대부분의 최신 브라우저에서 실행됩니다. 자세한 내용은 [.hubs-create-join-rooms.html#supported-devices--browser] 섹션을 참조하십시오.
 
-## Why are lines on my drawings disappearing?
+# # 왜 내 그림의 선들이 사라지죠?
 
-There is a maximum number of lines that can be included in drawings using the pen tool. Once the limit is reached, the first lines will start to disappear. To prevent this, periodically open the object menu on your drawing, and press the "create" button (magic wand). This will turn your drawing into an object, and reset your line count to 0. 
+펜 도구를 사용하여 도면에 포함할 수 있는 최대 선 수가 있습니다. 제한에 도달하면 첫 번째 줄이 사라지기 시작합니다. 이를 방지하려면 도면에서 개체 메뉴를 주기적으로 열고 "만들기" 버튼(마법 지팡이)을 누르십시오. 그러면 도면이 객체로 바뀌고 선 개수가 0으로 재설정됩니다.
 
-## Can I create custom environments?
+## 사용자 지정 환경을 만들 수 있습니까?
 
-Environments are completely customizable using [Spoke](https://hubs.mozilla.com/spoke), Hubs' web-based scene editing tool. [Learn more here.](intro-spoke.html)
+환경은 [Spoke](https://hubs.mozilla.com/spoke), Hubs의 웹 기반 장면 편집 도구를 사용하여 완전히 사용자 정의할 수 있습니다. [자세한 내용은 여기를 참조하십시오.](intro-spoke.html)
 
-## How do I record my event in Hubs?
+## 허브에서 이벤트를 녹화하려면 어떻게 해야 합니까?
 
-We recommend using screen recording software like [OBS](https://obsproject.com/) to capture events in Hubs. To hide the user interface when recording, you can press the backtick key ( ` ), or turn on [camera mode](hubs-room-settings.html#camera-mode).
+허브에서 이벤트를 캡처하려면 [OBS](https://obsproject.com/))과 같은 화면 기록 소프트웨어를 사용하는 것이 좋습니다. 녹화할 때 사용자 인터페이스를 숨기려면 백틱 키()를 누르거나 [카메라 모드](hubs-room-settings.html#camera-mode)를 켭니다.
 
-## Can I add custom interactive objects to my room?
+## 제 방에 사용자 지정 대화형 객체를 추가할 수 있습니까?
 
-[Spoke](https://hubs.mozilla.com/spoke) allows you to create model spawners in your room, enabling users to generate copies of 3D models in the room.
+[Spoke](https://hubs.mozilla.com/spoke)을 사용하면 룸에 모델 생성기를 만들 수 있으므로 사용자는 룸에 3D 모델의 복사본을 생성할 수 있습니다.
 
-It is not possible at the moment to add scripting or further interactivity to objects in Spoke or Hubs.
+지금은 스포크 또는 허브의 개체에 스크립팅 또는 추가 상호 작용을 추가할 수 없습니다.
 
-## Can I import 3D models from [other software]?
+## [기타 소프트웨어]에서 3D 모델을 가져올 수 있습니까?
 
-Hubs supports importing glTF binary (.glb) models. If the tool you use doesn't create .glb files, we recommend using a tool like [Blender](https://www.blender.org/) to convert your model. 
+허브는 glTF 이진(.glb) 모델 가져오기를 지원합니다. 사용하는 도구가 .glb 파일을 생성하지 않는 경우 [Blender](https://www.blender.org/))와 같은 도구를 사용하여 모델을 변환하는 것이 좋습니다.
 
-## Is it possible to create my own avatar?
+## 나만의 아바타를 만들 수 있나요?
 
-For sure! We love seeing custom avatars. You can either re-skin the default avatars or upload your own 3D model (.glb). For more information check out the [Creating Custom Avatars](./intro-avatars.html) section. 
+당연하죠! 우리는 세관 아바타를 보는 것을 좋아한다. 기본 아바타의 스킨을 다시 설정하거나 사용자 고유의 3D 모델(.glb)을 업로드할 수 있습니다. 자세한 내용은 [Creating Custom Avatars](.intro-avatars.html) 섹션을 참조하십시오.
 
-## Is it possible to create a link to another room from within a room? 
+## 룸 내에서 다른 룸으로 연결되는 링크를 만들 수 있습니까?
 
-Yes, just copy and paste a link for one Hubs room into another (or paste the URL into the Hubs chat box and press the little magic wand icon). Due to browser limitations, when you open the new Hubs room you have to go through the "enter room" process again.
+예, 한 허브 룸의 링크를 복사하여 다른 허브 룸에 붙여넣기만 하면 됩니다(또는 URL을 허브 대화 상자에 붙여넣고 작은 마법 지팡이 아이콘을 누름). 브라우저 제한으로 인해 새 허브 룸을 열 때 "룸 입장" 프로세스를 다시 거쳐야 합니다.
 
-## Can I prevent other people in the room from drawing, controlling slides/videos, etc? 
+## 방에 있는 다른 사람이 그림을 그리거나 슬라이드/비디오를 제어하지 못하도록 할 수 있습니까?
 
-If you are the room moderator you can turn these on/off by going to [room settings](hubs-room-settings.html) in the dropdown menu. 
+룸 진행자인 경우 드롭다운 메뉴의 [room settings](hubs-room-settings.html)로 이동하여 이 기능을 켜거나 끌 수 있습니다.
 
-## Is there a laser pointer tool in VR? 
+## VR에 레이저 포인터 도구가 있습니까?
 
-The pen in Hubs doubles as a laser pointer tool. When the pen is emitting a laser, you and others will see a line going from your avatar in the direction you are pointing.
+허브의 펜은 레이저 포인터 도구의 역할을 합니다. 펜이 레이저를 방출할 때, 여러분과 다른 사람들은 여러분이 가리키는 방향으로 아바타로부터 가는 선을 볼 것입니다.
 
-## How do I fly?
+## 하늘을 날고 싶을 때?
 
-You can type /fly in the text chat box, or press G on desktop, or press down on the joystick in Quest. 
+텍스트 대화 상자에 /fly를 입력하거나 바탕 화면에서 G을 누르거나 Quest(퀘스트)에서 조이스틱을 누를 수 있습니다.
 
-## How do I access the text chat box & preferences on Quest?
+## Quest에서 텍스트 대화 상자 및 기본 설정에 액세스하려면 어떻게 해야 합니까?
 
-You need to leave VR mode to access the text chat box & preferences on Quest. Press the home button on your controller and "quit" VR.
+퀘스트에서 문자 대화 상자 및 기본 설정에 액세스하려면 VR 모드를 종료해야 합니다. 컨트롤러의 홈 버튼을 누르고 VR을 "종료"합니다.
 
+## 내가 방을 나가면 왜 물건들이 사라지죠?
 
-## Why do things disappear when I leave the room?
+[문제 해결](hubs-roblezhooting.html#objects-disappear after-reaving-room) 섹션을 확인합니다.
 
-Check out the [troubleshooting](hubs-troubleshooting.html#objects-disappear-after-leaving-room) section.
+## 룸을 적재할 때 룸에 연결할 수 없다는 오류가 발생합니다. 도와주세요!
 
-## When I load a room, I get an error saying unable to connect to room. Help! 
+[문제 해결](허브-문제 해결.html#연결할 수 없음-오류) 섹션을 확인합니다.
 
-Check out the [troubleshooting](hubs-troubleshooting.html#unable-to-connect-error) section.
+## 방에 왜 에코가 있는 경우
 
-## Why is there echo in the room?
+[문제 해결](hubs-문제 해결.html#there-is-echo-in-the-room) 섹션을 확인합니다.
 
-Check out the [troubleshooting](hubs-troubleshooting.html#there-is-echo-in-the-room) section.
+## 허브는 이벤트 비용이 얼마입니까?
 
-## How much does Hubs cost for an event?
+[hubs.mozilla.com](https://hubs.mozilla.com/) 에서 개인 룸을 만드는 것은 무료입니다!
 
-Creating private rooms on [hubs.mozilla.com](https://hubs.mozilla.com/) is free!
+이벤트 개최에 관심이 있거나 자체 인프라/도메인에서 맞춤형 허브 환경을 구축하려면 [Hubs Cloud](https://hubs.mozilla.com/cloud) 를 참조하거나 [Hubs Events Form](https://mzl.la/hubsevents) 을 작성하여 이벤트 요구사항에 맞는 맞춤형 정보를 제공하십시오.
 
-If you are interested in hosting an event, or would like to create a customized Hubs environment on your own infrastructure/domain, check out [Hubs Cloud](https://hubs.mozilla.com/cloud) or fill out the [Hubs Events form](https://mzl.la/hubsevents) so that we can provided tailored information for your event needs.
+## 등록되지 않은 참석자가 이벤트에 참석하지 못하도록 할 수 있습니까?
 
-## Can I prevent unregistered attendees from attending my event? 
+허브 룸은 URL을 가진 개인만 액세스할 수 있습니다. 인증은 [Hubs Discord-bot.html](Hubs-discord-bot.html) 또는 [Hubs Cloud](https://hubs.mozilla.com/cloud) 의 승인된 사용자 목록을 사용하여 수행할 수 있습니다.
 
-Hubs rooms can only be accessed by individuals with the URL. Authentication can be done either the [Hubs Discord Bot](hubs-discord-bot.html), or using an approved list of users in [Hubs Cloud](https://hubs.mozilla.com/cloud).
+## 허브 룸에서 사용자 지정 코드를 실행할 수 있습니까?
 
-## Can I run custom code in a Hubs room?
+기본 허브 웹 사이트(hubs.mozilla.com)에서는 사용자 지정 코드를 실행할 수 없지만 허브 클라우드를 사용하여 자체 호스트하는 경우 사용자 코드를 추가할 수 있습니다(이전 응답 참조). 사용자 지정 코드를 추가하려면 허브 클라우드 클라이언트의 사용자 지정 포크를 직접 만들어야 합니다.
 
-You can't run custom code in the main Hubs website (hubs.mozilla.com) but you can add your own if you self-host using Hubs Cloud (see previous answers). To add custom code you will need to create your own custom fork of the Hubs Cloud client.
+자세한 내용은 [.hubs-cloud-custom-clients.html]에 대한 설명서를 참조하십시오.
 
-For more information, see our documentation on [custom clients](./hubs-cloud-custom-clients.html).
+## 다른 기능이나 스타일을 가진 허브의 커스텀 버전을 만들 수 있습니까?
 
-##  Is it possible for me to create a custom version of Hubs which has different features or styling? 
+이전 답변을 참조하십시오.
 
-See previous answer. 
+## X, Y, Z를 하기 위해 Mozilla에게 돈을 지불해도 되나요?
+사용자 지정 작업에 Mozilla에게 비용을 지불할 수는 없지만, 당사의 코드는 오픈 소스이며 [GitHub](http://github.com/mozilla/hubs) 에서 외부 기여자를 환영합니다. [Discord chat server](https://discord.gg/wHmY4nd) 의 #취업 채널에 게시할 수 있습니다. 다른 사람에게 비용을 지불하여 귀하를 위해 무언가를 구축하고자 하는 경우입니다.
 
-## Can I pay Mozilla to do X, Y, Z?
-It's not possible to pay Mozilla for custom work, however, our code is open source and we welcome external contributors in [GitHub](http://github.com/mozilla/hubs). You can post in the #work-for-hire channel of our [Discord chat server](https://discord.gg/wHmY4nd) if you are interested in paying someone to build something for you.
+## 허브에서 가상 이벤트를 실행할 수 있습니까?
+예, 시작하는 방법에 대한 자세한 내용은 [여기](.intro-events.html) 정보를 참조하십시오.
 
-## Can I run my virtual event in Hubs?
-Yes, check out the information [here](./intro-events.html) for more information on how to get started: 
+허브가 귀사의 이벤트에 적합한지 문의 사항이 있으면, 당사의 업무 시간에 들르거나 저희 팀원과 만나 뵙도록 하십시오. 스케줄은 커뮤니티 [Discord chat server](https://discord.gg/wHmY4nd) 를 참조하십시오.
 
-If you have questions about whether Hubs will be a good fit for your event, drop by our office-hours or meetup to speak to  a member of our team. See our community [Discord chat server](https://discord.gg/wHmY4nd) for the schedule.
+## X 기능을 추가하는 것을 고려해 보셨습니까?
 
-## Have you considered adding feature X? 
+Github에서 버그 및 기능 요청을 추적합니다. 원하는 기능이 있으면 [버그/기능 요청 목록](https://github.com/mozilla/hubs/issues) 에서 이미 언급한 적이 있는지 확인하십시오. 다른 사용자가 이미 해당 기능을 요청한 경우 해당 기능을 사용할 수 있도록 코멘트로 알려 주십시오. 아직 언급되지 않은 경우 언제든지 "기능 요청"을 제출하십시오. 참고: 기능 요청에 가능한 많은 세부 정보를 포함하여 이 기능이 사용 사례에 어떤 도움이 되는지 알려주십시오.
 
-We keep track of bugs and feature requests in GitHub. If there is a feature you would like, see if someone has already mentioned it in our [list of bugs/feature requests](https://github.com/mozilla/hubs/issues). If you find someone else has already asked for the feature, let us know in a comment that you would like it too. If it's not already mentioned, feel free to submit a "feature request." Note, please include as much detail as possible to feature requests to let us know how you see this feature benefiting your use case.
+## 다른 도움이 필요하다면?
 
-## Need help with something else?
-
-If you can't find what you need in the rest of the documentation, see the [help page](./help.html) for ways to get in touch.
+나머지 문서에서 필요한 내용을 찾을 수 없는 경우 [도움말 페이지](.help.html) 에서 연락 방법을 참조하십시오.

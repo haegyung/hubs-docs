@@ -4,30 +4,30 @@ title: AWS Estimating Costs and Cost Charts (Alpha)
 sidebar_label: Estimating Cost Charts (Alpha)
 ---
 
-This document explains how to estimate your costs. For a full description on:
+이 문서에서는 비용을 계산하는 방법에 대해 설명합니다. 에 대한 전체 설명:
 
-- How do costs work for Hubs Cloud?
-- Minimizing costs - Recommended user story
-- Minimizing costs - Settings in stack template
+- 허브 클라우드의 비용은 어떻게 작용합니까?
+- 비용 최소화 - 권장 사용자 사례
+- 비용 최소화 - 스택 템플릿의 설정
 
-See our [Costs and Minimizing Costs Information](hubs-cloud-aws-costs-ko.md) page.
+[비용 및 비용 최소화 정보](hubs-cloud-aws-costs-ko.md) 페이지를 참조하십시오.
 
-## Disclaimer for Estimating Costs
+## 비용 견적을 위한 고지 사항
 
-Estimating costs is difficult because AWS bills by resource usage and everyone uses Hubs differently. Below are **estimates** from our tests and should not be used as a source of truth for your AWS Hubs Cloud costs.
+리소스 사용량에 따른 AWS 청구서와 허브를 사용하는 사람마다 다르기 때문에 비용 추정이 어렵다. 아래는 NAT 테스트의 **견적**이며, AWS 허브 클라우드 비용의 진실의 원천으로 사용해서는 안 됩니다.
 
-**Are these estimates within range for you?** [Accuracy Assessment Hubs Cloud AWS Cost Charts](https://forms.gle/WD5dQ6k2zEjTkYQR6)
+**이 견적이 귀사에 적합한 범위입니까?** [정확성 평가 허브 클라우드 AWS 비용 차트](https://forms.gle/WD5dQ6k2zEjTkYQR6)
 
-### Accurately Predict Future Costs - AWS Cost Explorer
+### 미래의 비용을 정확하게 예측 - AWS 비용 탐색기
 
-For the **most accurate** way to see previous costs to predict your future costs enable:
+**가장 정확한 ** 이전 비용을 확인하여 향후 비용을 예측하는 방법은 다음과 같습니다.
 
-- [AWS Cost Explorer](https://console.aws.amazon.com/billing/home)
-- [AWS Cost Explorer Documentation](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-what-is.html)
+- [AWS 비용 탐색기](https://console.aws.amazon.com/billing/home)
+- [AWS 비용 탐색기 설명서](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-what-is.html)
 
-## Estimate your Event Cost
+## 이벤트 비용 견적
 
-Read the [Recommended User Story in Minimizing Costs Page](hubs-cloud-aws-costs-ko.md#minimize-your-costs---a-user-story) first, to understand this calculation better.
+이 계산을 더 잘 이해하려면 먼저 [비용 최소화의 권장 사용자 사례](hubs-cloud-aws-costs-ko.md#minimize-your-costs---a-user-story)를 읽어 보십시오.
 
 ## Rough Calculation for Estimating Costs
 

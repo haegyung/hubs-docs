@@ -4,28 +4,28 @@ title: Creating and Deploying Custom Clients
 sidebar_label: Custom Clients
 ---
 
-Now that you have a working Hubs Cloud instance, you can create and deploy custom versions of the [Hubs Client](https://hubs.mozilla.com) yourself! By forking the [hubs repository](https://github.com/mozilla/hubs), making code changes, then deploying it to your live instance.
+이제 작동하는 Hubs Cloud 인스턴스가 있으므로 [Hubs Client](https://hubs.mozilla.com)의 사용자 지정 버전을 직접 만들고 배포할 수 있습니다! [포크 저장소](https://github.com/mozilla/hubs),에 코드를 변경한 다음 라이브 인스턴스에 배포합니다.
 
-Your custom client code will be based off of the [`hubs-cloud` branch](https://github.com/mozilla/hubs/tree/hubs-cloud) which hosts Hubs client changes compatible with Hubs Cloud servers. Changes due to upgrades will be visible in merged PRs on the branch.
+사용자 지정 클라이언트 코드는 허브 클라우드 서버와 호환되는 허브 클라이언트 변경 사항을 호스트하는 ['branch-cloud' branch](https://github.com/mozilla/hubs/tree/hubs-cloud))에 기반합니다. 업그레이드로 인한 변경 내용은 분기의 병합된 PR에 표시됩니다.
 
-## Setup your Custom Client with your fork and upstream
+## 포크 및 업스트림으로 사용자 지정 클라이언트 설정
 
-### Setup your fork of the hubs repo
+### 허브 포크를 설정합니다. repo
 
-Your fork is a copy of the hubs repository on your github account.
+포크는 github 계정에 있는 허브 리포지토리의 복사본입니다.
 
-1. Create a [github account](https://github.com)
-1. Go to https://github.com/mozilla/hubs
-1. Click the "Fork" button in the upper right hand corner
-1. Select your newly forked repo (upper left should say "<your github username> / hubs" NOT "mozilla/hubs")
-1. Click green "Code button" to open the **clone** options for your repo
-1. **Copy** the url, you'll need this copied url for the next steps (everyone new to git use HTTPS)
+1. [github 계정](https://github.com)을 만듭니다.
+1. https://github.com/mozilla/hubs으로 이동합니다.
+1. 오른쪽 상단 모서리에 있는 "포크" 버튼을 클릭합니다.
+1. 새로 포크된 레포를 선택합니다(왼쪽 상단에 "mozilla/hubs"가 아니라 "[your github username]/hubs"로 표시되어야 함).
+1. 녹색 "코드 버튼"을 클릭하여 Repo에 대한 **clone** 옵션을 엽니다.
+1. **copy** URL. 다음 단계를 위해 복사된 URL이 필요합니다(처음 시작하는 모든 사용자는 HTTPS 사용).
 
-Next, you will be cloning this repo onto your local machine.
+그런 다음 로컬 컴퓨터에 이 복제본을 복제합니다.
 
-You'll need: **git** installed for this step.
+이 단계에는 **git**이(가) 설치되어 있어야 합니다.
 
-Run the following commands. To setup your forked repo on your machine.
+다음 명령을 실행합니다. 컴퓨터에 포크 리포(forked repo)를 설정합니다.
 
 ```bash
 # Clone your forked hubs repository locally
