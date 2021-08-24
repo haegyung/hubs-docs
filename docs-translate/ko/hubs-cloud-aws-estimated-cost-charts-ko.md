@@ -4,7 +4,7 @@ title: AWS Estimating Costs and Cost Charts (Alpha)
 sidebar_label: Estimating Cost Charts (Alpha)
 ---
 
-이 문서에서는 비용을 계산하는 방법에 대해 설명합니다. 에 대한 전체 설명:
+이 문서에서는 비용을 계산하는 방법에 대해 설명합니다. 전체적으로 설명을 하기위해:
 
 - 허브 클라우드의 비용은 어떻게 작용합니까?
 - 비용 최소화 - 권장 사용자 사례
@@ -14,9 +14,10 @@ sidebar_label: Estimating Cost Charts (Alpha)
 
 ## 비용 견적을 위한 고지 사항
 
-리소스 사용량에 따른 AWS 청구서와 허브를 사용하는 사람마다 다르기 때문에 비용 추정이 어렵다. 아래는 NAT 테스트의 **견적**이며, AWS 허브 클라우드 비용의 진실의 원천으로 사용해서는 안 됩니다.
+리소스 사용량에 따른 AWS 청구서와 허브를 사용하는 사람마다 다르기 때문에 비용 추정이 어렵습니다.
+아래는 NAT 테스트의 **견적**이며, AWS 허브 클라우드 비용의 절대적으로 추산된 비용으로 생각하고 사용해서는 안 됩니다.
 
-**이 견적이 귀사에 적합한 범위입니까?** [정확성 평가 허브 클라우드 AWS 비용 차트](https://forms.gle/WD5dQ6k2zEjTkYQR6)
+**이 견적이 여러분에게 적합한 범위입니까?** [정확성 평가 허브 클라우드 AWS 비용 차트](https://forms.gle/WD5dQ6k2zEjTkYQR6)
 
 ### 미래의 비용을 정확하게 예측 - AWS 비용 탐색기
 
@@ -181,4 +182,4 @@ To see how vCPU to CCU Min/Max was estimated see [AWS Estimated CCU Limits](hubs
 
 ## Are these estimates within range for you?
 
-Tell us here: [Accuracy Assessment Hubs Cloud AWS Cost Charts](https://forms.gle/WD5dQ6k2zEjTkYQR6)
+저희에게 제보해주세요: [Accuracy Assessment Hubs Cloud AWS Cost Charts](https://forms.gle/WD5dQ6k2zEjTkYQR6)
