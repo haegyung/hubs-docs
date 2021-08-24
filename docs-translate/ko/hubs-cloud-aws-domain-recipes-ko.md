@@ -5,21 +5,24 @@ sidebar_label: Domain Recipes
 ---
 이 안내서에서는 허브 클라우드 스택을 만들기 전에 필요한 도메인을 등록하고 구입하는 몇 가지 방법을 제공합니다.
 
-사이트 도메인: **사이트 도메인 이름**, **내부 도메인* 및 **단축 링크 도메인**
+사이트 도메인: **Site Domain name**, **Internal Domain* 및 **Short Link Domain**
 
-전자 메일 도메인: **보내는 전자 메일 도메인** 및 **보내는 전자 메일 하위 도메인 접두사**
+전자 메일 도메인: **Outgoing Email Domain** 및 **Outgoing Email Subdomain Prefix**
 
 설치를 간소화하려면 DNS 공급자로 Route 53 Hosted Zones를 사용하도록 외부 도메인을 설정하는 것이 좋습니다. 그러면 Hubs Cloud에서 DNS 및 SSL 인증서 갱신을 관리할 수 있습니다.
 
 ## Route 53을 호스팅/DNS 공급자로 사용하도록 외부 도메인 설정
 
-**도메인 사용 안 함** NameChep/GoDaddy/HostGator/etc. 또는 다른 외부 도메인 등록 담당자에 등록되었습니까? HC를 더 쉽게 설정하려면 AWS Route 53을 호스팅/DNS 공급자(AWS Route 53 Hosted Zones)로 가리키도록 도메인의 이름 서버를 설정하는 것이 좋습니다. 다음 섹션의 **로 53**에서 설정하는 방법을 따르십시오.
+**도메인 사용을 안하고 있는 경우** NameChep/GoDaddy/HostGator/etc. 또는 다른 외부 도메인 등록 담당자에 등록되었습니까?
+HC를 더 쉽게 설정하려면 AWS Route 53을 호스팅/DNS 공급자(AWS Route 53 Hosted Zones)로 가리키도록 도메인의 이름 서버를 설정하는 것이 좋습니다.
+다음 섹션의 **Route 53** 에서 설정하는 방법을 따르십시오.
 
-**이미 도메인을 사용하고 있습니까?** 이미 호스팅하고 있는데 네임 서버를 변경할 수 없습니까? 그런 다음 Recipe 3을 사용하여 배포합니다.
+**이미 도메인을 사용하고 있나요?** 이미 호스팅하고 있는데 name server 를 변경할 수 없습니까? 그런 다음 **Recipe 3**을 사용하여 배포합니다.
 
 ### 53번 도로에서 설정하는 방법
 
-[Route 53 Hosted Zones](https://console.aws.amazon.com/route53/home#hosted-zones:))의 지침에 따라 "Create Hosted Zone"을 선택한 다음 도메인 등록 담당자의 도메인 이름 서버를 AWS 서버 쪽으로 업데이트해야 합니다.
+[Route 53 Hosted Zones](https://console.aws.amazon.com/route53/home#hosted-zones:) 의 지침에 따라 "Create Hosted Zone"을 선택한 다음
+도메인 등록 담당자의 도메인 이름 서버를 AWS 서버 쪽으로 업데이트해야 합니다.
 
 도메인 등록자에 대한 특정 지침과 도메인 등록자의 도메인 이름 서버를 Route 53으로 변경하려면 웹 검색을 수행하십시오.
 
@@ -41,11 +44,11 @@ sidebar_label: Domain Recipes
 
 도메인을 사용하지 않는 경우에는 그럴 필요가 없지만(단, CAN) 위의 **Route 53**에서 설정하는 방법을 따르십시오.
 
-예를 들어, mozilla.com을 사용하고 기존 사이트를 중단하지 않으려면 [Recipe3](hubs-cloud-aws-domain-recipes-ko.md#recipe-3-domain-can-not-be-on-route-53) 및 _NOT_ 이름 변경 서버를 따라 hubs.mozilla.com이 하위 도메인으로 작동하도록 AWS를 가리켜야 했습니다.
+예를 들어, mozilla.com을 사용하고 기존 사이트를 중단하지 않으려면 [Recipe3](hubs-cloud-aws-domain-recipes-ko.md#recipe-3-domain-can-not-be-on-route-53) 및 _NOT_ 네임 변경 서버를 따라 hubs.mozilla.com이 하위 도메인으로 작동하도록 AWS를 가리켜야 했습니다.
 
-### 두 번째 도메인(.co.uk, .com.fr 등)을 사용하시겠습니까?
+### 두 번째 도메인(.co.uk, .com.fr 등)을 사용하고 있나요?
 
-53번 경로(알려진 버그가 있음)에서 도메인을 구입했는지 여부에 관계없이 도메인 Recipe 3을 사용하십시오.
+Route 53 (알려진 버그가 있음)에서 도메인을 구입했는지 여부에 관계없이 도메인 Recipe 3을 사용하십시오.
 
 ## Recipe 1: Dedicated domain on Route 53
 
@@ -115,14 +118,15 @@ sidebar_label: Domain Recipes
 **[Set up or purchase 2 domains on Route 53 (optional 3 domains)](hubs-cloud-aws-domain-recipes-ko.md#setup-external-domains-to-use-route-53-as-the-hostingdns-provider)**
 
 1. `myhub.link` - Short link domain name
-2. `mysite-internal.com` - Internal server domain + email domain. This can be any name you want, and will not be seen by users.
-3. _(optional)_ `mysite-mail.com` - Email domain, if using `mysite-internal.com` for emails is not what you want.
+2. `mysite-internal.com` - Internal server domain + email domain. 여러분이 원하는 어느 이름으로도 될 수 있지만 유저가 볼 수 없도록만 설정해주세요.
+3. _(optional)_ `mysite-mail.com` - Email domain, 이메일에 `mysite-internal.com` 을 사용하는 것이 원하는 것이 아닌 경우.
 
-To use an existing email provider, read through our [Using an Existing Email Provider Guide](hubs-cloud-aws-existing-email-provider-ko.md)
 
-**First, follow [Using an Existing Domain: SSL Certificates instructions](hubs-cloud-aws-existing-domain-ko.md)**
+존재하는 이메일 provider 를 사용하기 위해 [Using an Existing Email Provider Guide](./hubs-cloud-aws-existing-email-provider-ko.md) 를 읽어주세요.
 
-**Next, specify the following when creating the stack:**
+**먼저, [Using an Existing Domain: SSL Certificates instructions](hubs-cloud-aws-existing-domain-ko.md)** 를 따라주세요.
+
+**다음으로 스택을 생성할 때 아래 나오는 표를 참고해서 생성해주세요:**
 
 | STACK OPTIONS                       | RECIPE 3                                                                                       |
 | ----------------------------------- | ---------------------------------------------------------------------------------------------- |
