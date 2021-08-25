@@ -9,7 +9,7 @@ sidebar_label: Recipe: 3rd Party Integrations
 
 그러나 허브에 대해 이러한 다양한 컨텐츠 탭을 활성화하기 전에 통합을 활성화하는 데 필요한 API 키를 추가해야 합니다.
 
-[관리 콘솔](hubs-cloud-getting-started-ko.md)에서 **서버 설정**을 선택합니다.
+[관리 콘솔(Admin Console)](hubs-cloud-getting-started-ko.md)에서 **서버 설정** 을 선택합니다.
 
 ![Hubs Cloud](img/hubs-cloud-server-settings.jpeg)
 
@@ -17,11 +17,11 @@ sidebar_label: Recipe: 3rd Party Integrations
 
 ### Google 폴리
 
-[Google Poly API Guide](https://developers.google.com/poly/develop/api)에 따라 키를 받으십시오.
+[Google Poly API Guide](https://developers.google.com/poly/develop/api) 에 따라 키를 받으십시오.
 
 ### 스케치 팹
 
-[Sketchfab](https://www.sketchfab.com) 계정을 만든 다음 [API 토큰 찾기](https://help.sketchfab.com/hc/en-us/articles/202600683-Finding-your-API-Token))를 만듭니다.
+[Sketchfab](https://www.sketchfab.com) 계정을 만든 다음 [API 토큰 찾기](https://help.sketchfab.com/hc/en-us/articles/202600683-Finding-your-API-Token) 를 만듭니다.
 
 ##GIF 수
 
@@ -29,7 +29,7 @@ sidebar_label: Recipe: 3rd Party Integrations
 
 ## 비디오 & 이미지
 
-[Azure Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/)) 계정을 만들고 [Bing Video Search API](https://azure.microsoft.com/en-us/services/cognitive-services/bing-video-search-api/) 및 [Bing Image Search API](https://azure.microsoft.com/en-us/services/cognitive-services/bing-image-search-api/))를 활성화합니다.
+[Azure Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) 계정을 만들고 [Bing Video Search API](https://azure.microsoft.com/en-us/services/cognitive-services/bing-video-search-api/) 및 [Bing Image Search API](https://azure.microsoft.com/en-us/services/cognitive-services/bing-image-search-api/) 를 활성화합니다.
 
 1. [portal.azure.com](https://portal.azure.com)에서 Azure 계정에 가입합니다.
 

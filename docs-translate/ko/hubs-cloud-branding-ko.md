@@ -4,7 +4,7 @@ title: Hubs Cloud Brand Guidelines
 sidebar_label: Advanced: Brand Guidelines
 ---
 
-__유념해야 할 중요한 사항__
+__주의해야 할 중요한 사항__
 
 __Mozilla Hubs__는 https://hubs.mozilla.com에 있는 Mozilla의 공개 제품 이름입니다.
 
@@ -18,18 +18,18 @@ Mozilla 상표(Mozilla 또는 Firefox 로고 및 브랜드 포함)를 사용할 
 
 제품 또는 사이트가 Mozilla와 제휴되었거나 Mozilla의 승인을 받았다는 의미의 언어를 사용하지 마십시오. 여기에는 "파트너" 또는 "파트너" 또는 "스폰서 제공"과 같은 용어가 포함됩니다.
 
-__다운로드__
+__다운로드(Download)__
 
 Mozilla Hubs 및 Hubs Cloud의 공식 로고입니다.
 
 모질라 허브
 
-![Mozilla 허브](img/mozilla-hubs.png)
+![Mozilla 허브](../../website/static/img/mozilla-hubs.png)
 
 허브 클라우드 - 불투명 배경
 
-![허브 구름 불투명 배경](img/hubs-cloud-opaque.png)
+![허브 클라우드 불투명 배경](../../website/static/img/hubs-cloud-opaque.png)
 
 허브 클라우드 - 투명 배경
 
-![허브 클라우드 투명 배경](img/hubs-cloud-transparent.png)
+![허브 클라우드 투명 배경](../../website/static/img/hubs-cloud-transparent.png)

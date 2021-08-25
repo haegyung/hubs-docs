@@ -5,7 +5,7 @@ sidebar_label: Customizing Look & Feel
 ---
 
 # 허브 사용자 인터페이스에 대한 공지사항
-2021년 1월 25일, 우리는 hubs.mozilla.com에서 허브의 사용자 인터페이스에 대한 중요한 업데이트를 발표했습니다. 이 변경 사항은 2021년 3월 25일 이후가 되어야 새로운 허브 클라우드 배포에서 적용됩니다. 허브 클라우드에 업데이트가 릴리스되기 전에 허브 클라우드 배포 관리자가 자체 릴리스를 고려하고 새 UI로 업데이트하기 위한 작업 계획을 결정할 것을 권장합니다.
+2021년 1월 25일, 우리는 hubs.mozilla.com에서 허브의 사용자 인터페이스에 대한 중요한 업데이트를 발표했습니다. 이 변경 사항은 2021년 3월 25일 이후가 되어야 새로운 허브 클라우드 배포에서 적용됩니다. 허브 클라우드에 업데이트가 릴리스(releases)되기 전에 허브 클라우드 배포 관리자가 자체 릴리스를 고려하고 새 UI로 업데이트하기 위한 작업 계획을 결정할 것을 권장합니다.
 
 * 허브 클라우드 클라이언트의 모양과 느낌을 변경하지 않은 경우 3월 25일 이후에 허브 클라우드 인스턴스가 업데이트되어 새로운 UI가 제공됩니다.
 
@@ -23,17 +23,17 @@ Hubs 클라이언트의 이전 버전에서 새 UI로 쉽게 전환할 수 있�
 
 사용자 지정 색상과 브랜드를 추가하여 허브의 모양과 느낌을 완전히 사용자 정의할 수 있습니다.
 
-먼저 [관리 콘솔](hubs-cloud-getting-started-ko.md)을 열고 **앱 설정**:
+먼저 [관리 콘솔(Admin Console)](hubs-cloud-getting-started-ko.md)을 열고 **앱 설정**:
 
-![허브 클라우드 앱 설정](img/hubs-cloud-app-settings.jpeg)
+![허브 클라우드 앱 설정](../../website/static/img/hubs-cloud-app-settings.jpeg)
 
 여기서 **Images**:를 선택하여 허브의 모든 다양한 이미지를 교체할 수 있습니다.
 
-![허브 클라우드 이미지 설정](img/hubs-cloud-image-settings.jpeg)
+![허브 클라우드 이미지 설정](../../website/static/img/hubs-cloud-image-settings.jpeg)
 
 결과는? 랜딩 페이지 및 로딩 페이지의 브랜딩:
 
-![Hubs Cloud Custom Branding](img/hubs-cloud-custom-branding.png)
+![Hubs Cloud Custom Branding](../../website/static/img/hubs-cloud-custom-branding.png)
 
 또한 완전히 사용자 정의된 색상표를 추가할 수 있습니다. **테마**로 이동하여 아래 예제와 같이 원하는 테마를 설명하는 JSON 배열을 붙여넣으십시오.
 
@@ -85,4 +85,4 @@ Hubs 클라이언트의 이전 버전에서 새 UI로 쉽게 전환할 수 있�
 ]
 ```
 
-Use the boolean attributes, `"default"` and `"darkModeDefault"` to set a default theme from your custom themes array.
+논리(Bool) 속성(attributes) `"default"` 및 `"darkModeDefault"`를 사용하여 커스터마이징 테마 배열(Array)에서 기본 테마를 설정합니다.

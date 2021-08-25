@@ -35,25 +35,25 @@ sidebar_label: Updating the Stack
 
 💾 아래 단계를 수행하기 전에, [💾 Backup and Restore](hubs-cloud-aws-backup-and-restore-ko.md)를 위해 스택을 백업했는지 확인하십시오.
 
-1. 🔎 **스택이 허브 클라우드 개인 서버인지, 엔터프라이즈 단일 서버인지, 엔터프라이즈 다중 서버인지 확인**
+1. 🔎 **스택이 허브 클라우드 개인 서버(Personal)인지, 엔터프라이즈 단일 서버(Single-Server)인지, 엔터프라이즈 다중 서버(Multi-Server)인지 확인**
 1. 클라우드 구성 > 스택 > 매개변수 탭 선택
 1. 스택에 앱 서버 수 또는 스트리밍 서버 수가 나열되어 있습니까?
 1. 있는 경우 Enterprise 다중 서버가 있어야 합니다.
 1. "아니오"인 경우 개인 또는 엔터프라이즈 단일 서버가 있습니다.
 1. 💤 **오프라인 모드로 스택 업데이트 [⬆문서 스택 업데이트](hubs-cloud-aws-updating-the-stack-ko.md)** 참조
 1. ⌛ **오프라인 모드 업데이트가 완료될 때까지 기다립니다**
-1. 📎 **다음, AWS Marketplace 흐름에서 최신 템플릿 URL을 가져옵니다(_DO NOT CREATE A NEW STACK_).*
-1. 새 탭을 열고 [hubs.mozilla.com/cloud](https://hubs.mozilla.com/cloud))로 이동합니다.
-1. (1단계에 따라) Personal 또는 Enterprise를 선택한 다음 AWS Marketplace 흐름을 살펴봅니다. ** 스택은 만들지 마십시오.*
+1. 📎 **다음, AWS Marketplace 흐름에서 최신 템플릿 URL을 가져옵니다(_DO NOT CREATE A NEW STACK_).**
+1. 새 탭을 열고 [hubs.mozilla.com/cloud](https://hubs.mozilla.com/cloud) 로 이동합니다.
+1. (1단계에 따라) Personal 또는 Enterprise를 선택한 다음 AWS Marketplace 흐름을 살펴봅니다. ** 스택은 만들지 마십시오.**
 1. "스택 만들기" 페이지로 이동합니다. 1단계 템플릿 페이지 지정
 1. 템플릿 지정 섹션에서 **"Amazon S3 URL"** 복사
 1. 📝 **실시간 스택의 현재 템플릿 교체**
 1. 클라우드 구성 > 스택 > 스택 선택
 1. [업데이트]를 클릭합니다.
 1. "현재 템플릿 바꾸기"를 선택합니다.
-1. Amazon S3 URL 섹션의 4단계에서 이전에 복사한 **"Amazon S3 URL"*을 붙여넣습니다.
+1. Amazon S3 URL 섹션의 4단계에서 이전에 복사한 **"Amazon S3 URL"** 을 붙여넣습니다.
 1. 다음을 클릭합니다.
 1. ✅ 입력된 모든 값이 올바르게 표시됩니까? ***이(가) 올바르게 표시되지 않으면 잘못된 개인/엔터프라이즈 템플릿을 복사한 것일 수 있습니다! 템플릿 교체 단계로 돌아갑니다. 그런 다음 4단계에서 올바른 템플릿을 복사하여 붙여넣습니다.
 1. ⌛ **새 템플릿이 오프라인 모드로 유지되도록 스택 업데이트를 완료합니다**
-1. 🌅 **업데이트가 완료된 후 [⬆는 스택 업데이트를 온라인 모드(hubs-cloud-aws-updating-the-stack-ko.md)로 전환합니다(오프라인 모드 해제).**
+1. 🌅 **업데이트가 완료된 후 [⬆는 스택 업데이트를 온라인 모드](./hubs-cloud-aws-updating-the-stack-ko.md) 로 전환합니다(오프라인 모드 해제).**
 1. 🎉 **완료! 축하드려요.** 🎉

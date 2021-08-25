@@ -4,9 +4,9 @@ title: Creating and Deploying Custom Clients
 sidebar_label: Custom Clients
 ---
 
-이제 작동하는 Hubs Cloud 인스턴스가 있으므로 [Hubs Client](https://hubs.mozilla.com)의 사용자 지정 버전을 직접 만들고 배포할 수 있습니다! [포크 저장소](https://github.com/mozilla/hubs),에 코드를 변경한 다음 라이브 인스턴스에 배포합니다.
+이제 작동하는 Hubs Cloud 인스턴스가 있으므로 [Hubs Client](https://hubs.mozilla.com) 의 사용자 지정 버전을 직접 만들고 배포할 수 있습니다! [포크 저장소](https://github.com/mozilla/hubs) 에 코드를 변경한 다음 라이브 인스턴스에 배포합니다.
 
-사용자 지정 클라이언트 코드는 허브 클라우드 서버와 호환되는 허브 클라이언트 변경 사항을 호스트하는 ['branch-cloud' branch](https://github.com/mozilla/hubs/tree/hubs-cloud))에 기반합니다. 업그레이드로 인한 변경 내용은 분기의 병합된 PR에 표시됩니다.
+사용자 지정 클라이언트 코드는 허브 클라우드 서버와 호환되는 허브 클라이언트 변경 사항을 호스트하는 ['branch-cloud' branch](https://github.com/mozilla/hubs/tree/hubs-cloud) 에 기반합니다. 업그레이드로 인한 변경 내용은 분기의 병합된 PR에 표시됩니다.
 
 ## 포크 및 업스트림으로 사용자 지정 클라이언트 설정
 
