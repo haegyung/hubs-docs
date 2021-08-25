@@ -4,9 +4,11 @@ title: Recommended Asset Packs
 sidebar_label: Asset Packs
 ---
 
-We've compiled some avatar and scene collections you can easily import into your hub. This content is [Creative Commons 3](https://creativecommons.org/licenses/by/3.0/us/) licensed. License compliance with attribution is handled automatically by Hubs Cloud when the content is surfaced to users.
+We've compiled some avatar and scene collections you can easily import into your hub. This content is [Creative Commons 3](https://creativecommons.org/licenses/by/3.0/us/) licensed.
+License compliance with attribution is handled automatically by Hubs Cloud when the content is surfaced to users.
 
-To import these packs, simply specify the URL for the pack specified below in the [Import Content](./hubs-cloud-importing-content.md) tool in the [Admin Console](./hubs-cloud-getting-started.md). Once you input the URL you will be able to preview the contents of the pack and choose which items to import.
+To import these packs, simply specify the URL for the pack specified below in the [Import Content](./hubs-cloud-importing-content.md) tool in the [Admin Console](./hubs-cloud-getting-started.md).
+Once you input the URL you will be able to preview the contents of the pack and choose which items to import.
 
 ## Avatar Packs
 
@@ -49,4 +51,5 @@ The full set of packs managed by Mozilla can be found in our [Hubs Cloud Github 
 
 ## Making your own packs
 
-Making a pack is simple. A pack is just a simple text file with a `.pack` file extension that is a list of URLs, on per line, pointing to avatar or scene URLs on any existing hub on the web. (Including your own!) Feel free to share your own packs! If you have a pack you'd like Mozilla to consider sharing, please [contact us](mailto:hubs@mozilla.com) or open a PR on our [Hubs Cloud Github Repo](https://github.com/mozilla/hubs-cloud/tree/master/asset-packs).
+Making a pack is simple. A pack is just a simple text file with a `.pack` file extension that is a list of URLs, on per line, pointing to avatar or scene URLs on any existing hub on the web. 
+(Including your own!) Feel free to share your own packs! If you have a pack you'd like Mozilla to consider sharing, please [contact us](mailto:hubs@mozilla.com) or open a PR on our [Hubs Cloud Github Repo](https://github.com/mozilla/hubs-cloud/tree/master/asset-packs).

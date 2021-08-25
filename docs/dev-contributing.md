@@ -26,7 +26,8 @@ Hubs has a client-server architecture that gives multiple users the ability to c
 
 For more information on the inner workings of Hubs and the architectural decisions behind the project, check out [this presentation on the Mozilla Hubs Code Base](https://vimeo.com/365531296) by Engineering Lead Greg Fodor.
 
-Issues that are open are tagged. If you explore a bug or feature request that you'd like to fix, make a comment on the case so we know you're looking into it! We try to use the '[good first issue](https://github.com/mozilla/hubs/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)' tag to identify some cases that may be easier than others to begin with as you get started with the code base. 
+Issues that are open are tagged. If you explore a bug or feature request that you'd like to fix, make a comment on the case so we know you're looking into it!
+We try to use the '[good first issue](https://github.com/mozilla/hubs/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)' tag to identify some cases that may be easier than others to begin with as you get started with the code base. 
 
 Steps to contributing code to the Hubs project:
 
@@ -60,7 +61,8 @@ We will do our best to respond to and tag inbound issues as they are submitted i
 If you are a 3D artist and want to support what we're doing with Hubs, consider creating and releasing content under a Creative Commons license or creating scenes using the [Spoke web editor](https://hubs.mozilla.com/spoke) and releasing them as remixable environments. Content with low polygon counts that are optimized to run well on the web are much appreciated! In particular, we'd love to see scenes that capture a wide range of experiences. 
 
 ### 📜 Documentation 
-Our documentation for Hubs is hosted on the [GitHub Hubs Wiki](https://github.com/mozilla/hubs/wiki) section of the project. The documentation for Spoke is hosted on the [GitHub Spoke Wiki](https://github.com/mozilla/spoke/wiki) For contributing corrections or additional pages for the Wiki, please file an issue as a suggestion in the corresponding repository with your proposed content and we will review it and add it to the wiki when all looks good! 
+Our documentation for Hubs is hosted on the [GitHub Hubs Wiki](https://github.com/mozilla/hubs/wiki) section of the project. 
+The documentation for Spoke is hosted on the [GitHub Spoke Wiki](https://github.com/mozilla/spoke/wiki) For contributing corrections or additional pages for the Wiki, please file an issue as a suggestion in the corresponding repository with your proposed content and we will review it and add it to the wiki when all looks good! 
 
 ### 🌐 Localization 
 Hubs is currently en-US only, but if you would like to work with us on localization efforts, submit a suggestion through the GitHub issues and we'll work with you from there. 

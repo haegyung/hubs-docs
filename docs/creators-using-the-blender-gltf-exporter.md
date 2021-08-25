@@ -10,7 +10,10 @@ To ensure you are using the latest release of Blender, look at the top right of 
 
 
 ### What things will export to glTF?
-Not everything you make in Blender can be exported to the glTF (glb) format. This is constantly changing due to ongoing improvements to the Blender glTF importer/exporter add-on, as well as changes to the glTF file format itself. Generally speaking, you can export models with or without textures and/or vertex colors, models with skeletal armatures, models with shape keys (morphing), and models with animation. Things that will *not* export properly (unless things change at some point): Blender's particle systems, cached vertex animations (like fluid or cloth simulations), and certain types of shaders, to name a few.
+Not everything you make in Blender can be exported to the glTF (glb) format. This is constantly changing due to ongoing improvements to the Blender glTF importer/exporter add-on, as well as changes to the glTF file format itself.
+Generally speaking, you can export models
+with or without textures and/or vertex colors, models with skeletal armatures, models with shape keys (morphing), and models with animation. Things that will *not* export properly
+(unless things change at some point): Blender's particle systems, cached vertex animations (like fluid or cloth simulations), and certain types of shaders, to name a few.
 
 If you have questions or problems getting certain parts of your Blender file to export, please refer to the following for more information:
 
@@ -27,7 +30,8 @@ It's easy to scale things in Blender and then forget to **apply that scale (CTRL
 
 **+ Object should be at or near the world origin (0, 0, 0)**
 
-Not having your object near the origin of the world is a very common problem with models that come from third party sites like Sketchfab or Google Poly, especially if they are animated. You can tell you're having this problem when your model gets dropped into Hubs and it is far from where the loading cube was located.
+Not having your object near the origin of the world is a very common problem with models that come from third party sites like Sketchfab or Google Poly, especially if they are animated. 
+You can tell you're having this problem when your model gets dropped into Hubs and it is far from where the loading cube was located.
 
 **+ Apply any modifiers that you want to see**
 
@@ -75,9 +79,15 @@ Instead of repeating that information, here are some helpful tips:
 
 **+ Whenever possible, use 'unlit' materials**
 
-While 'unlit' is a somewhat confusing name, it refers to materials where the lights within the scene have no effect on the object(s). In other words, they appear fully lit on their own. Unlit materials are the 'cheapest' materials to render and look the same on all devices. For this reason, many times people will 'bake' the lighting and shadow information into the baseColor texture first, then apply it to an unlit material. The Blender manual mentions how to make an unlit shader graph, but it's not particularly obvious.
+While 'unlit' is a somewhat confusing name, it refers to materials where the lights within the scene have no effect on the object(s).
+In other words, they appear fully lit on their own
+. Unlit materials are the 'cheapest' materials to render and look the same on all devices.
+For this reason, many times people will 'bake' the lighting and shadow information into the baseColor texture first, then apply it to an unlit material.
+The Blender manual mentions how to make an unlit shader graph, but it's not particularly obvious.
 
-Part of why this is difficult is because you must use the 'Background' node in your shader graph--but the 'Background' node is not listed with all the other nodes by default. Instead, you must find that node by switching the Shader editor to 'World' mode, then copy/paste it into your object's shader graph. You can add it to your Quick Favorites menu to make it easy to find later:
+Part of why this is difficult is because you must use the 'Background' node in your shader graph--but the 'Background' node is not listed with all the other nodes by default.
+Instead, you must find that node by switching the Shader editor to 'World' mode, then copy/paste it into your object's shader graph.
+You can add it to your Quick Favorites menu to make it easy to find later:
 
 <video autoplay loop muted controls >
   <source src="img/BlenderShaderBackground.mp4" type="video/mp4">
@@ -85,7 +95,8 @@ Part of why this is difficult is because you must use the 'Background' node in y
   Your browser does not support HTML5 video.
 </video>
 
-Once you have the Background node, you can plug your texture into it, and send that to the Material Output. When you export to glb and bring the object into Spoke or Hubs, it will be 'unlit' (or fully lit, depending how you think of it.)
+Once you have the Background node, you can plug your texture into it, and send that to the Material Output.
+When you export to glb and bring the object into Spoke or Hubs, it will be 'unlit' (or fully lit, depending how you think of it.)
 
 <video autoplay loop muted controls >
   <source src="img/BlenderShaderBackground2.mp4" type="video/mp4">

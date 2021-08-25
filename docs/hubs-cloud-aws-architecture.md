@@ -16,7 +16,8 @@ When setting up your stack, you can also optionally enable an Application Load B
 
 AWS Simple Email Service is used for email unless you configure a custom SMTP server.
 
-Uploaded assets are stored on Elastic File Store, and static assets (JS/CSS/Images) are stored on S3. The database is a PostgreSQL compatible AWS Aurora Serverless database, which will be paused if not in-use unless configured to have pausing disabled.
+Uploaded assets are stored on Elastic File Store, and static assets (JS/CSS/Images) are stored on S3. 
+The database is a PostgreSQL compatible AWS Aurora Serverless database, which will be paused if not in-use unless configured to have pausing disabled.
 
 Configuration secrets are stored in AWS Secrets Manager as well as AWS Parameter Store as encrypted strings.
 
