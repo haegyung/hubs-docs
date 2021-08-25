@@ -11,7 +11,7 @@ title: Publish Scenes
 
 ![Hubs Image](../../website/static/img/spoke-scene-remixing.jpeg)
 
-장면을 허브로 내보내기 전에 항상 평면도를 생성해야 합니다! 자세한 내용은 [플랫플랜](..physics-and-navigation.html)을 참조하십시오.
+장면을 허브로 내보내기 전에 항상 평면도를 생성해야 합니다! 자세한 내용은 [플랫플랜](..physics-and-navigation.html) 을 참조하십시오.
 
 Click the 'Publish to Hubs...' button in the upper right corner. You will receive a prompt to rename your scene. 
 
