@@ -19,7 +19,7 @@ title: Troubleshooting
 
 유선 헤드셋이 연결되어 있지 않으면 다음을 확인하는 것이 좋습니다.
 
-* 사용 중인 브라우저가 WebVR을 지원합니까? 유선 연결 WebVR 환경을 위해 Firefox를 사용하는 것이 좋습니다. 설치 프로그램이 https://webvr.info/samples/XX-vr-controllers.html에서 작동하는지 확인하십시오.
+* 사용 중인 브라우저가 WebVR 을 지원합니까? 유선 연결 WebVR 환경을 위해 Firefox를 사용하는 것이 좋습니다. 설치 프로그램이 https://webvr.info/samples/XX-vr-controllers.html에서 작동하는지 확인하십시오.
 * 브라우저가 최신 상태입니까?
 * SteamVR(Vive / Windows 혼합 리얼리티) 또는 Oculus App(Rift)이 설치되어 있으며 최신 상태입니까?
 * VR 헤드셋에 다른 지원 소프트웨어(예: Windows 혼합 리얼리티 포털)가 필요합니까? 이것은 설치되고 최신 상태입니까?
@@ -28,7 +28,7 @@ title: Troubleshooting
 
 ## There is echo in the room
 
-참가자가 헤드폰을 착용하지 않을 경우 에코가 발생할 수 있습니다. 참가자가 말을 하지 않을 때 마이크를 음소거하도록 요청하거나 룸 진행자로서는 아바타 메뉴에서 직접 음소거할 수 있습니다. 아바타 메뉴에서 사용자의 볼륨을 줄일 수도 있습니다. 자세한 내용은 [Hubs Features](.hubs-features.html)를 참조하십시오.
+참가자가 헤드폰을 착용하지 않을 경우 에코가 발생할 수 있습니다. 참가자가 말을 하지 않을 때 마이크를 음소거하도록 요청하거나 룸 진행자로서는 아바타 메뉴에서 직접 음소거할 수 있습니다. 아바타 메뉴에서 사용자의 볼륨을 줄일 수도 있습니다. 자세한 내용은 [Hubs Features](.hubs-features.html) 를 참조하십시오.
 
 ## I have generally bad performance in a room on an otherwise powerful computer
 

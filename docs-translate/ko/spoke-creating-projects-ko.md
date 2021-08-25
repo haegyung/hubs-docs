@@ -1,4 +1,4 @@
----
+\---
 id: spoke-creating-projects
 title: Create Project
 ---
@@ -6,23 +6,23 @@ title: Create Project
 
 ## Start a new project
 
-[hubs.mozilla.com/spoke](https://hubs.mozilla.com/spoke))에 새 스포크 프로젝트 헤드를 만들려면 '시작하기'를 클릭하십시오.
+[hubs.mozilla.com/spoke](https://hubs.mozilla.com/spoke) 에 새 스포크 프로젝트 헤드를 만들려면 '시작하기'를 클릭하십시오.
 
-![Spoke Landing Page](img/spoke-landing-page.jpeg)
+![Spoke Landing Page](../../website/static/img/spoke-landing-page.jpeg)
 
 처음 사용하는 경우 튜토리얼에 따라 기능을 익히는 옵션이 제공됩니다. 이전에 Speak에서 장면을 만들어 로그인한 경우 여기에 이전 프로젝트가 나열됩니다.
 
-![Spoke Projects Page](img/spoke-projects-page-welcome.jpeg)
+![Spoke Projects Page](../../website/static/img/spoke-projects-page-welcome.jpeg)
 
 "새 프로젝트"를 선택하면 커뮤니티에서 리믹스할 기존 장면을 선택하거나 "새 빈 프로젝트"를 선택하여 처음부터 시작할 수 있습니다.
 
-![Spoke Templates](img/spoke-template.jpeg)
+![Spoke Templates](../../website/static/img/spoke-template.jpeg)
 
-여기서부터는 원하는 대로 장면을 커스터마이징할 수 있습니다. [콘텐츠 추가](spoke-adding-scene-content-ko.md)를 현장에 사용하거나 [아키텍처 키트](spoke-architecture-kit-ko.md)로 집을 지어 보십시오.
+여기서부터는 원하는 대로 장면을 커스터마이징할 수 있습니다. [콘텐츠 추가](./spoke-adding-scene-content-ko.md)를 현장에 사용하거나 [아키텍처 키트](./spoke-architecture-kit-ko.md)로 집을 지어 보십시오.
 
  <video autoplay loop muted controls >
-  <source src="img/spoke-rock-kit.mp4" type="video/mp4">
-  <img src="img/spoke-interface.jpeg" alt="Screenshot of the Spoke Interface">
+  <source src="../../website/static/img/spoke-rock-kit.mp4" type="video/mp4">
+  <img src="../../website/static/img/spoke-interface.jpeg" alt="Screenshot of the Spoke Interface">
   Your browser does not support HTML5 video.
 </video>
 
@@ -37,8 +37,8 @@ title: Create Project
 4. 'Remix in Speak'를 선택합니다.
 
  <video autoplay loop muted controls >
-  <source src="img/hubs-scene-remix.mp4" type="video/mp4">
-  <img src="img/spoke-scene-remixing.jpeg" alt="Screenshot of the scene remixing screen">
+  <source src="../../website/static/img/hubs-scene-remix.mp4" type="video/mp4">
+  <img src="../../website/static/img/spoke-scene-remixing.jpeg" alt="Screenshot of the scene remixing screen">
   Your browser does not support HTML5 video.
 </video>
 

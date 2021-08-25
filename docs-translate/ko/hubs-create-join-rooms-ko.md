@@ -4,13 +4,13 @@ title: Create and Join Rooms
 ---
 
 ## 새로운 방 생성하기
-To create your own room, head to [hubs.mozilla.com](https://hubs.mozilla.com/) and click "Create a Room". Your new space is private; no one else can join until you invite them.
+나만의 방을 만들려면 [hubs.mozilla.com](https://hubs.mozilla.com/) 으로 이동하여 "방 만들기"를 클릭하세요. 새 공간(Space)은 비공개입니다. 초대할 때까지 아무도 참여할 수 없습니다.
 
 ## 기존에 있는 방에 참여하기
-You can join an existing Hubs room using either a URL or a numeric code. If you have a URL, navigate to the URL in your browser. If you have a numeric code, visit [hubs.link](https://hubs.link) to use it.
+URL 또는 숫자 코드를 사용하여 기존 Hubs 회의실에 참여할 수 있습니다. URL이 있는 경우 브라우저에서 해당 URL로 이동합니다. 숫자 코드가 있는 경우 [hubs.link](https://hubs.link) 를 방문하여 사용하세요.
 
 ## 방에 입장하기
-Before entering a Hubs room you are in the room's lobby. You can see and hear what's going on in the room but you can only interact with the others using text chat. The process of entering a room is a bit different depending on your device.
+Hubs 방에 들어가기 전에 방의 로비에 있습니다. 방에서 무슨 일이 일어나고 있는지 보고 들을 수 있지만 문자 채팅을 통해서만 다른 사람들과 상호 작용할 수 있습니다. 방에 들어가는 과정은 기기에 따라 약간 다릅니다.
 
 ### 데스크탑 / 모바일에서 사용하기 
 
@@ -42,7 +42,7 @@ VR 헤드셋에서 브라우저를 열고 [hubs.link](https://hubs.link)로 이�
 
 문제 해결에 대한 자세한 내용은 허브 [문제 해결](.hubs-문제 해결.html) 페이지를 참조하십시오.
 
-<!-- ![Enter room on Wired in device](img/hubs-enter-connected-vr.jpeg)
+<!-- ![Enter room on Wired in device](../../website/static/img/hubs-enter-connected-vr.jpeg)
 
 ### On Cardboard
 

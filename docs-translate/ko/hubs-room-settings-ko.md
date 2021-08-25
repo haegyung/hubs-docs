@@ -5,13 +5,13 @@ title: Room Settings
 
 ## Change the Scene
 
-저희의 추천 장면 브라우저에는 선택할 수 있는 장면들이 많이 있습니다. 장면 편집기 [Spoke](.intro-spoke.html) 를 사용하여 직접 업로드할 수도 있습니다. 룸 진행자인 경우 드롭다운 메뉴를 열고 "장면 선택"을 선택하여 장면 브라우저를 찾습니다.
+저희의 추천 장면 브라우저에는 선택할 수 있는 장면들이 많이 있습니다. 장면 편집기(Scene Editor) [Spoke](.intro-spoke.html) 를 사용하여 직접 업로드할 수도 있습니다. 룸 진행자인 경우 드롭다운 메뉴를 열고 "장면 선택(Select a scene)"을 선택하여 장면 브라우저를 찾습니다.
 
 주요 장면만 여러 장치에서 성능을 테스트했습니다. 피쳐링 장면을 선택하는 방법에 대한 자세한 내용은 [Featured Content Guidelines](./creators-content-guidelines.html) 을 참조하십시오.
 
 <video autoplay loop muted controls >
-  <source src="img/change-the-scene.mp4" type="video/mp4">
-  <img src="img/intro-hubs-scene-browser-min.jpeg" alt="Screenshot of the Scene Browser">
+  <source src="../../website/static/img/change-the-scene.mp4" type="video/mp4">
+  <img src="../../website/static/img/intro-hubs-scene-browser-min.jpeg" alt="Screenshot of the Scene Browser">
   Your browser does not support HTML5 video.
 </video>
 
@@ -56,7 +56,7 @@ title: Room Settings
 
 허브에 룸을 만들면 기본적으로 개인 룸입니다. 링크 또는 액세스 코드를 다른 사용자와 공유하면 특정 룸에 들어갈 수 있으므로 일반적으로 누가 링크를 가지고 있는지 주의해야 합니다.
 
-허브 룸을 불협화음 서버의 채널에 연결하고 서버 구성원이 불협화음 계정에 가입하도록 할 수 있습니다. 사용자를 서버에서 금지하거나 불일치 채널에서 제거하면 해당 사용자가 룸에 대한 링크를 아직 가지고 있더라도 연결된 허브 룸에 다시 가입할 수 없습니다. 허브 불협화음 보트에 대한 자세한 내용은 [여기](.hubs-discord-bot.html) 를 참조하십시오.
+허브 룸을 디스코드 서버의 채널에 연결하고 서버 구성원이 디스코드 계정에 가입하도록 할 수 있습니다. 사용자를 서버에서 금지하거나 디스코드 채널에서 제거하면 해당 사용자가 룸에 대한 링크를 아직 가지고 있더라도 연결된 허브 룸에 다시 가입할 수 없습니다. 허브 디스코드 Vote 에 대한 자세한 내용은 [여기](.hubs-discord-bot.html) 를 참조하십시오.
 
 ## Favorite Rooms
 
@@ -66,4 +66,4 @@ title: Room Settings
 
 ## Close a Room
 
-허브 룸을 나갈 때 URL을 통해 해당 룸에 액세스할 수 있습니다. 드롭다운 메뉴에서 "룸 닫기"를 선택하여 룸을 영구적으로 닫도록 선택할 수 있습니다. 객실 링크 및 코드는 객실 소유자를 포함한 그 누구에게도 더 이상 적용되지 않습니다.
+허브 룸을 나갈 때 URL을 통해 해당 룸에 액세스할 수 있습니다. 드롭다운 메뉴에서 "룸 닫기"를 선택하여 룸을 영구적으로 닫도록 선택할 수 있습니다. 방 링크 및 코드는 방 소유자를 포함한 그 누구에게도 더 이상 적용되지 않습니다.

@@ -14,17 +14,17 @@ Mozilla는 일부 초기 콘텐츠를 허브에 추가하기 위해 가져올 �
 
 [^1]: 'Spoke'는 [hubs.mozilla.com](https://hubs.mozilla.com)의 장면 편집기에 사용되는 Mozilla 상표 이름입니다.
 
-![허브 클라우드 가져오기 콘텐츠](img/hubs-cloud-import-content.jpeg)
+![허브 클라우드 가져오기 콘텐츠](../../website/static/img/hubs-cloud-import-content.jpeg)
 
 URL이 있으면 가져올 URL을 지정해야 합니다.
 
-![허브 클라우드 가져오기 콘텐츠 URL](img/hubs-cloud-import-content-url.jpeg)
+![허브 클라우드 가져오기 콘텐츠 URL](../../website/static/img/hubs-cloud-import-content-url.jpeg)
 
 다른 허브의 장면 또는 아바타에 쉼표로 구분된 URL을 입력할 수 있습니다(https://hubs.mozilla.com/scenes/rWgv5zN/winter-cheer), [advatar](https://hubs.mozilla.com/avatars/PcJ8Sxb))). 또는 [hubs-cloud-asset-packs-ko.md]에 대한 링크를 지정할 수 있습니다.
 
 내용 URL을 지정하면 가져오려는 내용의 미리보기가 표시됩니다. 그런 다음 특정 항목을 제외하거나 포함하도록 선택하고 특수 태그를 설정할 수 있습니다.
 
-![허브 클라우드 가져오기 컨텐츠 UI](img/hubs-cloud-import-ui.jpeg)
+![허브 클라우드 가져오기 컨텐츠 UI](../../website/static/img/hubs-cloud-import-ui.jpeg)
 
 준비가 되었으면 가져오기 버튼을 클릭하여 내용 가져오기를 시작합니다.
 

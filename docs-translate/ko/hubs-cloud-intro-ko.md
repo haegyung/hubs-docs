@@ -4,14 +4,14 @@ title: Introduction to Hubs Cloud
 sidebar_label: Introduction
 ---
 
-![Hubs Cloud](img/hubs-cloud-logo.jpeg)
+![Hubs Cloud](../../website/static/img/hubs-cloud-logo.jpeg)
 
-[Hubs Cloud](https://hubs.mozilla.com/cloud)를 사용하면 개인 서버에서 자신만의 허브를 실행할 수 있습니다.
+[Hubs Cloud](https://hubs.mozilla.com/cloud) 를 사용하면 개인 서버에서 자신만의 허브를 실행할 수 있습니다.
 
 ### 자신만의 허브 클라우드 서버 설정:
-- AWS의 경우 [AWS Quick Start](hubs-cloud-aws-quick-start-ko.md)를 참조하십시오.
-- Digital Ocean은 [Digital Ocean Quick Start](hubs-cloud-do-quick-start-ko.md)를 참조하십시오.
-- 허브가 가동되면 [시작 가이드](hubs-cloud-getting-started-ko.md)를 참조하십시오.
+- AWS의 경우 [AWS Quick Start](./hubs-cloud-aws-quick-start-ko.md)를 참조하십시오.
+- Digital Ocean은 [Digital Ocean Quick Start](./hubs-cloud-do-quick-start-ko.md)를 참조하십시오.
+- 허브가 가동되면 [시작 가이드](./hubs-cloud-getting-started-ko.md)를 참조하십시오.
 
 ### 허브 클라우드 주요 기능:
 

@@ -63,7 +63,7 @@ hubs.mozilla.com을 통해 Hubs를 사용해 보십시오. 주요 이벤트, 독
 
 [사용자 액세스 제한 문서 참조](./hubs-cloud-limiting-user-access-ko.md)
 
-# # 당신의 질문을 모르겠나요?
+## 당신의 질문을 모르겠나요?
 
 허브에 대한 질문은 [Hubs FAQ](./hubs-faq-ko.md)를 참조하십시오.
 

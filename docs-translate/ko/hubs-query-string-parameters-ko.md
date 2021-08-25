@@ -4,9 +4,10 @@ title: Hubs Query String Parameters
 sidebar_label: Hubs Query String Parameters
 ---
 
-허브의 기본 설정 패널에서 사용할 수 없는 일부 개발자 지향 옵션은 쿼리 문자열 매개 변수로 사용할 수 있습니다. 이러한 기능은 주로 개발 또는 디버깅을 목적으로 하며 대부분의 사용자가 사용할 필요가 없습니다.
+허브의 기본 설정 패널에서 사용할 수 없는 일부 개발자 지향 옵션은 쿼리 문자열 매개 변수로 사용할 수 있습니다. 이러한 기능은 주로 개발 또는 디버깅을 목적으로 하며 대부분의 사용자는 별도로 사용할 필요가 없습니다.
 
 Examples:
+
 ```
 https://hubs.mozilla.com/12345/my-room-name?allow_multi
 https://localhost:8080/?hub_id=12345&allow_multi

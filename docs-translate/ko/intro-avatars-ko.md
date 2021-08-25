@@ -20,7 +20,7 @@ title: Creating Custom Avatars
 5. 여기서 자신의 아바타 목록을 볼 수 있습니다. 첫 번째 자리에는 "아바타 만들기"라고 표시됩니다.
 6. 아바타 사용자 지정 화면에서 기본 체형 중 하나를 선택합니다.
 7. "기본 지도"를 클릭하고 이미지 파일을 업로드합니다. 로봇 피부에 대한 사용자 지정 텍스처를 설계하려면 아래 세부 정보를 참조하십시오.
-8. 아바타를 구합니다.
+8. 아바타를 저장합니다.
 
 <video autoplay loop muted controls >
   <source src="img/hubs-reskin-avatar.mp4" type="video/mp4">
@@ -40,7 +40,7 @@ title: Creating Custom Avatars
 
 박스 봇의 새 스킨을 만드는 가장 쉬운 방법은 마인크래프트 아바타 제작 도구를 사용하여 자신만의 스킨을 만들거나 온라인에서 크리에이티브 커먼즈 마인크래프트 스킨을 검색하는 것입니다.
 
-![Examples of box bots](img/box-bot-examples.jpeg)
+![Examples of box bots](../../website/static/img/box-bot-examples.jpeg)
 
 ## Advanced Avatar Customization
 

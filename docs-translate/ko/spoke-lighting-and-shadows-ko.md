@@ -5,7 +5,7 @@ title: Lighting and Shadows
 
 ## Lights
 
-조명이 장면의 분위기를 바꿀 수 있습니다. [Skyboxes](.spoke-skyboxes.html) 외에도, 조명은 다음 소스에서 발생할 수 있습니다.
+조명이 장면(Scene)의 분위기를 바꿀 수 있습니다. [Skyboxes](.spoke-skyboxes.html) 외에도, 조명(Lighting)은 다음 소스에서 발생할 수 있습니다.
 
 
 | Light         | Effect  |

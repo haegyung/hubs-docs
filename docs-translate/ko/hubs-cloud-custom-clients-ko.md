@@ -14,7 +14,7 @@ sidebar_label: Custom Clients
 
 포크는 github 계정에 있는 허브 리포지토리의 복사본입니다.
 
-1. [github 계정](https://github.com)을 만듭니다.
+1. [github 계정](https://github.com) 을 만듭니다.
 1. https://github.com/mozilla/hubs으로 이동합니다.
 1. 오른쪽 상단 모서리에 있는 "포크" 버튼을 클릭합니다.
 1. 새로 포크된 레포를 선택합니다(왼쪽 상단에 "mozilla/hubs"가 아니라 "[your github username]/hubs"로 표시되어야 함).

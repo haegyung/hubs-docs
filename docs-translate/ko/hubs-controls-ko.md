@@ -187,7 +187,7 @@ https://magnetikonline.github.io/markdown-toc-generate/ to generate a table of c
 
 ## Oculus Touch Controls
 
-You can also use the [keyboard keys](#keyboard-and-mouse-controls) listed above while using your Oculus Rift.
+Oculus Rift를 사용하는 동안 위에 나열된 [키보드 키](#keyboard-and-mouse-controls)를 사용할 수도 있습니다.
 
 <table>
     <tr>
@@ -274,7 +274,7 @@ You can also use the [keyboard keys](#keyboard-and-mouse-controls) listed above 
 
 ## Vive Controls
 
-You can also use the [keyboard keys](#keyboard-and-mouse-controls) listed above while using your Vive.
+Vive를 사용하는 동안 위에 나열된 [키보드 키](#keyboard-and-mouse-controls)를 사용할 수도 있습니다.
 
 <table>
     <tr>
@@ -376,7 +376,7 @@ You can also use the [keyboard keys](#keyboard-and-mouse-controls) listed above 
 
 ## Windows Mixed Reality Controls
 
-You can also use the [keyboard keys](#keyboard-and-mouse-controls) listed above while using your Windows Mixed Reality headset.
+Windows Mixed Reality 헤드셋을 사용하는 동안 위에 나열된 [키보드 키](#keyboard-and-mouse-controls)를 사용할 수도 있습니다.
 
 <table>
     <tr>

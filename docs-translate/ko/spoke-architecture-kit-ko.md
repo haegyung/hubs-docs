@@ -7,17 +7,17 @@ Architecture Kit의 론칭으로 크리에이터들은 외부 도구를 사용�
 
 이 키트에는 건물을 만드는 데 함께 사용하도록 설계된 400여 개의 다양한 조각이 들어 있으며, 여기에는 벽, 바닥, 천장 및 지붕 조각뿐만 아니라 창문, 트림, 계단 및 문도 포함됩니다.
 
-![Hubs Image](img/CoastalCliffHouseShot1.jpg)
+![Hubs Image](../../website/static/img/CoastalCliffHouseShot1.jpg)
 
 ## architecture kit 사용법
 
-[Spoke](https://hubs.mozilla.com/spoke)으로 이동하여 새 프로젝트를 시작하십시오. 자산 패널에서 "Architecture Kit" 섹션을 찾습니다.
+[Spoke](https://hubs.mozilla.com/spoke) 으로 이동하여 새 프로젝트를 시작하십시오. 자산 패널에서 "Architecture Kit" 섹션을 찾습니다.
 
-![Spoke Properties Panel](img/spoke-architecture-kit-asset-panel.png)
+![Spoke Properties Panel](../../website/static/img/spoke-architecture-kit-asset-panel.png)
 
 자산 패널에서 장면으로 구성 요소를 끌어다 놓습니다. 객체의 특성 패널에서 텍스처 재료를 변경합니다.
 
-![Spoke Properties Panel](img/spoke-architecture-kit-properties-panel.png)
+![Spoke Properties Panel](../../website/static/img/spoke-architecture-kit-properties-panel.png)
 
 ## Making kit pieces double sided
 
@@ -27,7 +27,7 @@ Architecture Kit의 론칭으로 크리에이터들은 외부 도구를 사용�
 
 기본적으로 벽과 같은 키트 조각은 모서리, 특히 외부 모서리에 연결되지 않습니다. 당신은 좁은 틈을 발견할 수 있습니다. 이 스폿은 트림 조각에 맞도록 설계되었습니다.
 
-![Spoke Properties Panel](img/spoke-architecture-kit-trim.png)
+![Spoke Properties Panel](../../website/static/img/spoke-architecture-kit-trim.png)
 
 ## Examples of rooms built with the architecture kit
 
