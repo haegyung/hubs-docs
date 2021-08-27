@@ -3,112 +3,112 @@ id: spoke-user-interface
 title: User Interface
 ---
 
-![Hubs Image](img/spoke-user-interface.jpeg)
+![Hubs Image](../website/static/img/spoke-user-interface.jpeg)
 
 ## Toolbar
 
-![Toolbar](img/spoke-toolbar.jpeg)
+![Toolbar](../website/static/img/spoke-toolbar.jpeg)
 
 ### 1. Dropdown Menu
 
-In the dropdown menu you will find options to save, save as, export your file, as well as find help on how to use Spoke. 
+드롭다운 메뉴에서 파일을 저장, 저장 및 내보낼 수 있는 옵션과 스포크 사용 방법에 대한 도움말을 찾을 수 있습니다.
 
 ### 2. Transformation Tools
 
-__Translate [T]:__ Reveals the translation gizmo, drag the arrows to move object along the X, Y, or Z axis. you can also move objects around using the grab tool. While objects are selected press G to grab the selection move your mouse and click to place the object in the scene. PRess Esc or G again to cancel the current grab operation. 
+__Translate [T]:__ 변환 기모를 표시하고 화살표를 끌어 X, Y 또는 Z 축을 따라 객체를 이동합니다. 붙잡기 도구를 사용하여 객체를 이동할 수도 있습니다. 객체를 선택한 상태에서 G를 눌러 선택 영역을 잡고 마우스를 클릭한 다음 객체를 씬(scene)에 배치합니다. 현재 붙잡기 작업을 취소하려면 Esc 또는 G를 다시 누릅니다.
 
-__Rotate [R]:__ Reveals the rotation gizmo, drag the rings of the gizmo to rotate the object along the X, Y, or Z axis.
+__Rotate [R]:__ 회전 기모를 표시하고 기모의 링을 끌어 X, Y 또는 Z 축을 따라 객체를 회전시킵니다.
 
-__Scale [Y]:__ Reveals the scale gizmo, drag the center cube of the gizmo to scale the object up or down.
+__Scale [Y]:__ 축척 기모를 표시하고 기모의 중심 큐브를 끌어 개체를 위 또는 아래로 축척합니다.
 
 ### 3. Grid Tools
 
-__Toggle Transform Space [Z]:__ - regarding the transform space-- It's changing the transform gizmo to be oriented to the World XYZ vs. the Object's XYZ. You won't really see a difference until you rotate the object.
-like, rotate a car 45 degrees. Then, to go 'forward', you'd want to switch to the object's local axis
+__Toggle Transform Space [Z]:__ - 변환 공간과 관련하여-- 변환 기모를 World XYZ 대 물체의 XYZ 방향으로 변경합니다. 객체를 회전할 때까지 차이를 볼 수 없습니다.
+차를 45도 돌린다든가 그런 다음 '앞으로' 이동하려면 객체의 로컬 축으로 전환해야 합니다.
 
-__Transform Pivot [X]:__ Sometimes placing an object can be tough if the model's pivot point is set incorrectly. You can change how the pivot is caluclated using this dropdown menu. Can be set to center, bottom, or selection. 
+__Transform Pivot [X]:__ 모델의 피벗 점이 잘못 설정된 경우 객체를 배치하는 것이 어려울 수 있습니다. 이 드롭다운 메뉴를 사용하여 피벗 계산 방법을 변경할 수 있습니다. 중심, 하단 또는 선택으로 설정할 수 있습니다.
 
-__Toggle Snap mode [C]:__  Sometimes you may want to move and object with a prevision position or rotation. To do this toggle the snapping mode by clicking on the magnet icon. You can set the translation and rotation snap settings by using the dropdown menus. 
+__Toggle Snap mode [C]:__ 때로는 미리보기 위치나 회전으로 이동하거나 객체를 만들 수 있습니다. 이렇게 하려면 자석 아이콘을 클릭하여 스냅 모드를 전환합니다. 드롭다운 메뉴를 사용하여 변환 및 회전 스냅 설정을 설정할 수 있습니다. 
 
-__Snap Mode Controls:__ determines how precisely your transformation tools are applied
+__Snap Mode Controls:__ 변환 도구가 얼마나 정확하게 적용되는지 결정합니다.
 
-__Toggle Grid Visibility:__ Shows/hides the grid on 3D grid. In placement mode, objects canbe placed on top of other objects or the grid. When building verticailly it can be useful to change the grid height 
+__Toggle Grid Visibility:__ 3D 그리드에서 그리드를 표시하거나 숨깁니다. 배치 모드에서는 개체를 다른 개체 또는 그리드 위에 배치할 수 있습니다. 수직 건물인 경우 그리드 높이를 변경하는 것이 유용할 수 있습니다.
 
-- Press `=` to increase grid height 
-- Press `-` to decrease grid height
+- 그리드 높이를 높이려면 '='를 누릅니다.
+- 그리드 높이를 낮추려면 '-'를 누릅니다.
 
 ### 4. Publish To Hubs
 
-Click this button to open the publish dialog where you can edit your scene's information before publishing it to Hubs.
+장면 정보를 허브에 게시하기 전에 편집할 수 있는 게시 대화 상자를 열려면 이 단추를 클릭합니다.
 
 ## Viewport Panel
-![Viewport Panel](img/spoke-viewport-panel.jpeg)
+![Viewport Panel](../website/static/img/spoke-viewport-panel.jpeg)
 
-The viewport shows a preview of your scene where you can select and move objects.
-  
-  > Note that whatever the viewport is looking at when you publish the scene to hubs will be the scene's thumbnail image.
+뷰포트는 객체를 선택하고 이동할 수 있는 장면의 미리보기를 표시합니다.
+
+  > 씬(scene)을 허브에 게시할 때 뷰포트가 보는 것은 씬(scene)의 축소 이미지입니다.
 
 ### Object Selection
-You can select objects by clicking on them (hold shift to select multiple objects). 
+객체를 클릭하여 객체를 선택할 수 있습니다(쉬프트를 누른 채로 여러 객체를 선택).
 
 ### Camera Movement
-Left click and drag to orbit around your scene. Hold the right mouse button to enter fly mode where you can use your mouse to look around the scene and the WASD keys to move the camera. Press the `F` key to focus the selected objects.
+좌클릭하고 끌어서 장면 주변을 한 바퀴 돌 수 있습니다. 마우스 오른쪽 버튼을 눌러 이동 모드로 들어갑니다. 마우스를 사용하여 장면을 둘러보고 WASD 키를 사용하여 카메라를 이동할 수 있습니다. 선택한 객체의 포커스를 맞추려면 'F' 키를 누릅니다.
 
 ### Transform Gizmo
-When you have one or more objects selected, the transform gizmo will appear.
+하나 이상의 객체를 선택하면 변환 기모가 나타납니다.
 
 ## Hierarchy Panel
-![Hierarchy Panel](img/spoke-hierarchy-panel.jpeg)
+![Hierarchy Panel](../website/static/img/spoke-hierarchy-panel.jpeg)
 
-Objects you add to the scene show up in the hierarchy panel. Double click the object focus it in the viewport. You can drag objects inside the hierarchy panel to reorder or reparent them. You can also drag drop items from the assets panel and files from your computer into the hierarchy panel to add them to your scene.
+씬(scene)에 추가하는 개체가 계층 패널에 표시됩니다. 뷰포트에서 객체의 포커스를 두 번 클릭합니다. 계층 패널 내부에서 개체를 끌어 다시 정렬하거나 상위 항목을 변경할 수 있습니다. 또한 드롭 항목을 자산 패널에서 계층 패널로 끌어 씬(scene)에 추가할 수 있습니다.
 
 ## Properties Panel
-![Properties Panel](img/spoke-properties-panel.jpeg)
+![Properties Panel](../website/static/img/spoke-properties-panel.jpeg)
 
-Additional object properties can be set in the properties panel. This includes things like shadows, light color, and more.
+추가 객체 특성은 특성 패널에서 설정할 수 있습니다. 여기에는 그림자, 밝은 색 등의 것들이 포함됩니다.
 
-Objects are added to Spoke and can be customized by changing their properties. Different types of objects have different properties available to them (for example, a light will have an "intensity" property, but a 3D model won’t). Most objects will have transform properties, which represent the physical position in the space.
+개체는 스포크에 추가되며 속성을 변경하여 사용자 지정할 수 있습니다. 물체 유형에 따라 사용할 수 있는 특성이 다릅니다(예: 조명에는 "명암" 특성이 있지만 3D 모델에는 해당되지 않습니다). 대부분의 개체는 공간 내의 물리적 위치를 나타내는 변환 특성을 가집니다.
+
 ## Assets Panel
-![Assets Panel](img/spoke-assets-panel.jpeg)
+![Assets Panel](../website/static/img/spoke-assets-panel.jpeg)
 
-You can find content to add to your scene in the assets panel. You can click on assets to add them to the scene. Assets can also be dragged from the assets panel and dropped onto the viewport, hierarchy panel, or properties panel. 
+asset 패널에서 씬(scene)에 추가할 컨텐츠를 찾을 수 있습니다. 자산을 클릭하여 씬(scene)에 추가할 수 있습니다. 자산 패널에서 자산을 끌어 뷰포트, 계층 패널 또는 속성 패널로 놓을 수도 있습니다.
 
 ### Asset Sources
 
-On the left side of the assets panel are a list of sources:
+자산 패널의 왼쪽에는 원본 목록이 있습니다.
 
 #### Elements
-Elements are the basic building blocks in Spoke. You'll find lights, media, spawn points, and every other type of object here.
+요소는 스포크의 기본 구성 요소입니다. 조명, 매체, 점 생성 및 기타 모든 유형의 객체를 찾을 수 있습니다.
 
 #### My Assets
-Upload and search your own 3D models, images, videos, and audio.
+사용자 고유의 3D 모델, 이미지, 비디오 및 오디오를 업로드하고 검색합니다.
 
 #### Architecture Kit
-The Architecture Kit contains pieces that can be put together to construct a wide variety of structures. This kit contains floors, walls, stairs, and more.
+건축 키트에는 다양한 구조물을 조립할 수 있는 조각들이 들어 있습니다. 이 키트에는 바닥, 벽, 계단 등이 포함되어 있습니다.
 
 #### Rock Kit
-The Rock Kit contains a collection of realistic rock models that can be used to add detail to terrain, construct platforms, or anything else you might need a rock for.
+바위 키트에는 지형, 구조 플랫폼 또는 바위가 필요할 수 있는 기타 사항에 세부 정보를 추가하는 데 사용할 수 있는 사실적인 바위 모델이 포함되어 있습니다.
 
 #### Sketchfab
-Sketchfab is an online marketplace for 3D models. It contains a wide variety of high quality models to help you fill out your scene.
+Sketchfab은 3D 모델을 위한 온라인 마켓플레이스입니다. 다양한 고품질 모델이 포함되어 있어 장면을 채울 수 있습니다.
 
 #### Google Poly
-Google Poly is another source for 3D models. Most models are in a flat low poly style.
+구글 폴리는 또 다른 3D 모델 공급처다. 대부분의 모델은 플랫 로우 폴리 스타일입니다.
 
 #### Bing Images
-Search Bing for images from around the web.
+Bing에서 웹 주위의 이미지를 검색합니다.
 
 #### Bing Videos
-Search Bing for videos from around the web.
+Bing에서 웹 주위의 동영상을 검색합니다.
 
 #### Twitch
-Find live streams of games and more on Twitch.
+Twitch에서 실시간 게임 및 기타 정보를 찾을 수 있습니다.
 
 #### Tenor Gifs
-Find animated gifs to add to your scene on Tenor.
+테너에서 자신의 장면에 추가할 애니메이션 GIF를 찾아보십시오.
 
 ## Experimental Features
+우리는 스포크의 새로운 기능을 지속적으로 개발하고 있습니다. 실험 기능을 활성화하면 실험 기능을 사용할 수 있습니다. 이러한 기능은 아직 테스트 단계에 있으므로 계속 지원되지 않을 수 있습니다.
 
-We're continuously working on new features for Spoke. To try them out, you can enable experimental features. Note that these features are still in testing stages, and may not continue to be supported.
-
-![Experimental Features](img/spoke-experimental-features.jpeg)
+![Experimental Features](../website/static/img/spoke-experimental-features.jpeg)

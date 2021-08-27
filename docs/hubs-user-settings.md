@@ -3,34 +3,34 @@ id: hubs-user-settings
 title: User Settings
 ---
 
-## Changing Name and Avatar
+## 이름 및 아바타 변경
 
-The first time you enter a Hubs room you will choose a name and an avatar. You can change them at any time by clicking the 'People' menu in the top left corner of the screen and selecting your own name from the list.
+허브 룸에 처음 들어가면 이름과 아바타를 선택할 수 있습니다. 화면 왼쪽 상단 모서리에 있는 '사용자' 메뉴를 클릭하고 목록에서 자신의 이름을 선택하여 언제든지 변경할 수 있습니다.
 
-Use one of our featured avatars or [upload your own](intro-avatars.html).
+NAT의 특별 아바타를 사용하거나 [Upload your own](intro-avatars.html)을 사용하십시오.
 
-### My Avatars
+### 나의 아바타들
 
-For quick access to your favorite avatars, you can save them to "My Avatars" for quick access. Press the "Copy to my Avatars" icon associated with the avatar in the avatar selection screen. 
+즐겨찾기에 빠르게 액세스하려면 "My Avatars"에 저장하여 빠르게 액세스할 수 있습니다. 아바타 선택 화면에서 아바타와 연결된 "내 아바타에 복사" 아이콘을 누릅니다.
 
-![Screenshot of avatar selection screen](img/hubs-save-avatar.jpeg)
+![아바타 선택 화면 스크린샷](../website/static/img/hubs-save-avatar.jpeg)
 
-## User Preferences
+## 사용자 기본 설정
 
-Advanced user preferences (e.g., media volume, movement controls, graphics resolution, etc), can be found in the user preferences section of the dropdown menu.
+고급 사용자 환경설정(예: 미디어 볼륨, 이동 제어, 그래픽 해상도 등)은 드롭다운 메뉴의 사용자 환경설정 섹션에서 찾을 수 있습니다.
 
-![Screenshot of avatar selection screen](img/hubs-preference-menu.png)
+![ 아바타 선택 화면 스크린샷](../../website/static/img/hubs-preference-menu.png)
 
-## User Accounts
+## 사용자 계정
 
-You don't need an account to use Hubs, but some features are only available if you sign in. These include:
+허브를 사용하는 데는 계정이 필요하지 않지만 일부 기능은 로그인한 경우에만 사용할 수 있습니다. 여기에는 다음이 포함됩니다.
 
-* Uploading custom avatars.
-* Saving avatars to "My Avatars".
-* Changing scenes.
-* Uploading custom scenes.
-* Pinning objects in a room.
-* Using room moderation tools.
-* Saving rooms to favorites.
+* 사용자 지정(Customized) 아바타 업로드하기.
+* "나의 아바타"에 아바타를 저장합니다.
+* 장면(Scene) 변경하기.
+* 사용자 정의(Customized) 씬(scene) 업로드하기.
+* 방에 물체를 고정하기.
+* 방 조정 도구 사용하기.
+* 방을 즐겨찾기에 저장합니다.
 
-To set up an account, the only information we require is an email address.
+계정을 설정하기 위해 필요한 정보는 이메일 주소뿐입니다.

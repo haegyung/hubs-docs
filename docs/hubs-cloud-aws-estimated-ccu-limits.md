@@ -4,32 +4,32 @@ title: AWS Estimated CCU Limits
 sidebar_label: Estimating CCU Limits
 ---
 
-This document explains how to estimate what your Hubs Cloud server's CCU (concurrent users) limit is based on the instance type used, for both the entire server and individual rooms.
+이 문서에서는 전체 서버와 개별 룸에 대해 사용된 인스턴스 유형에 따라 허브 클라우드 서버의 CCU(동시 사용자) 제한을 계산하는 방법에 대해 설명합니다.
 
-## Disclaimer for Estimating CCU Limits
+## CCU 한계 추정에 대한 거부권
 
-There are several factors that currently limit how many users can be on a server or in a room in a Hubs Cloud server: 
+현재 허브 클라우드 서버의 서버 또는 룸에 있을 수 있는 사용자 수를 제한하는 몇 가지 요소가 있습니다.
 
-* Generally speaking, the more **vCPU**'s your instance type has (Please consult [Amazon EC2 Instance Types](https://aws.amazon.com/ec2/instance-types/)), the more overall CCU it can support.
+* 일반적으로 **vCPU*의 인스턴스 유형이 많을수록([Amazon EC2 인스턴스 유형](https://aws.amazon.com/ec2/instance-types/)), 참조) 전체 CCU를 더 많이 지원할 수 있습니다.
 
-* The device used by a user may affect their ability to successfully connect to a room. Webkit based browsers (anything on iOS), for example, will hit their own limits past 24 CCU in a room. A lower-end computer may struggle loading/rendering a large number of avatars + additional media in a room in general. This document does not factor in client-side factors, and only concerns itself with server-side limitations.  
+* 사용자가 사용하는 장치가 룸에 성공적으로 연결하는 기능에 영향을 미칠 수 있습니다. 예를 들어, 웹킷 기반 브라우저(iOS의 모든 브라우저)는 룸의 24개 CCU를 초과하여 자체 제한에 도달합니다. 보급형 컴퓨터는 일반적으로 많은 수의 아바타 + 추가 미디어를 로드/렌더하는 데 어려움을 겪을 수 있습니다. 이 문서는 클라이언트측 요소를 고려하지 않으며 서버측 제한만 고려합니다.
 
-* The **more users actively moving around**, and **the more users using devices with head/hand tracking**, the **fewer total users a room can support**. 
- * Inactive users (in-room but otherwise not speaking/moving) can be considered similar to users in-lobby for the purposes of determining ccu. 
+* **사용자가 **적극적으로 이동할수록** 헤드/핸드 트래킹 장치*를 사용하는 사용자가 많아질수록 **룸에서 지원할 수 있는 총 사용자 수는 ** 줄어듭니다.
+* 비활동 사용자(실내에서는 말하거나 움직이지 않는 사용자)는 ccu를 결정하기 위해 로비에 있는 사용자와 유사한 것으로 간주할 수 있습니다.
 
-* Various features such as (but not limited to) media uploading, photo/video capture (via the camera tool), and link thumbnail generation, use varying degrees of server resources that may effect CCU limits. 
+* 미디어 업로드, (카메라 도구를 통한) 사진/비디오 캡처, 링크 썸네일 생성과 같은 다양한 기능은 CCU 제한에 영향을 미칠 수 있는 다양한 수준의 서버 리소스를 사용합니다.
 
 
-Please see [AWS Estimating Costs and Cost Charts (Alpha)](./hubs-cloud-aws-estimated-cost-charts.md) for cost estimations.
+비용 추정은 [AWS 비용 및 비용 차트(Alpha)](hubs-cloud-aws-estimated-cost-charts-ko.md)를 참조하십시오.
 
-## Estimated CCU Table (1 App / 1 Stream server)
+## 예상 CCU 테이블(앱 1개 / 스트림 서버 1개)
 
-The following table lists measured and estimated CCU for different instance types:
+다음 표에는 여러 인스턴스 유형에 대해 측정 및 예상 CCU가 나열되어 있습니다.
 
-* **Active** indicates "worst case scenario" where use is in-room and talking and moving with tracked head and hands.
+* **Active**는 실내에서 추적된 머리와 손으로 말하고 이동하는 "최악의 시나리오"를 나타냅니다.
 
-* **Inactive** indicates user who is either in-lobby or is otherwise not speaking or moving at all while in-room.
- * Inactive in-room users are slightly more expensive than in-lobby users both due to WebRTC handshaking required to establish 2-way communication and "heartbeat" messages that are infrequently sent by the client.
+* **Inactivity**은(는) 로비에 있거나 룸에 있는 동안 전혀 말을 하거나 움직이지 않는 사용자를 나타냅니다.
+* 비 활동적인 실내 사용자는 양방향 통신을 구축하는 데 필요한 WebRTC 핸드셰이크와 클라이언트가 자주 보내지 않는 "하트비트(heartbeat)" 메시지 때문에 로비 사용자보다 약간 더 비쌉니다.
 
 | AWS Instance Type | vCPUs | Max **Active** CCU, single-room | Max **Inactive** CCU (w/ 25 active CCU), single-room | Max **Inactive** CCU (w/ 10 active CCU), single-room | Max **Rooms** w/25 active CCU |
 |-------------------|------:|--------------------------------:|-----------------------------------------------------:|-----------------------------------------------------:|------------------------------:|
@@ -65,20 +65,20 @@ where C = # of vCPU's
 
 ## FAQ
 
-### Can I use a t3.micro or a t3.small?
-t3.micro only has 1GB of memory, and is not recommended. t3.small has 2GB of memory, and may be sufficient for small gatherings or casual testing. 
+### t3.micro 또는 t3.small에서 사용할 수 있습니까?
+t3.micro는 메모리가 1GB뿐이므로 권장되지 않습니다. t3.small은 메모리가 2GB이므로 소규모 모임이나 일상적인 테스트에 충분할 수 있습니다.
 
-### What's the difference between a t3.medium and a t3.large?
-t3.medium and t3.large only differ in memory, which will benefit the server during high-memory usage situations.
+### 3.medium과 3.large의 차이는 무엇입니까?
+t3.medium과 t3.large는 메모리만 다르므로 메모리 사용량이 많은 상황에서 서버에 도움이 됩니다.
 
-### What's the difference between a c4.large and c5.large?
-While the c4.large and c5.large have similar vCPU and memory, the c4.large has only a fraction of the networking performance/bandwidth of the c5.large.
+### C4.Large와 C5.Large의 차이점은 무엇입니까?
+c4.large와 c5.large는 vCPU 및 메모리가 유사하지만 c4.large는 c5.large의 네트워킹 성능/대역폭의 일부에 불과합니다.
 
-### What if I use more than 1 app/stream server?
-Using more servers, or "scaling horizontally", will increase overall server CCU but not per-room CCU.
+### 두 개 이상의 앱/스트림 서버를 사용할 경우 어떻게 해야 합니까?
+더 많은 서버를 사용하거나 "수평으로 확장"하면 전체 서버 CCU가 증가하지만 룸별 CCU는 증가하지 않습니다.
 
-### Can I use different instance types for app/stream servers?
-At the time of writing this document, app servers are more resource demanding than stream servers (except possibly in cases of high video/screen sharing usage). You may be able to use a smaller instance type for stream servers and maintain relative similar CCU numbers.
+### 앱/스트림 서버에 대해 다른 인스턴스 유형을 사용할 수 있습니까?
+이 문서를 작성할 때 앱 서버는 스트림 서버보다 리소스가 더 많이 필요합니다(비디오/화면 공유 사용량이 많은 경우는 제외). 스트림 서버에 대해 더 작은 인스턴스 유형을 사용하고 상대적으로 유사한 CCU 번호를 유지할 수 있습니다.
 
-### How do I increase the max user cap in a room?
-From the admin panel, server admins can adjust **Default room size** and **Maximum room size** under "Setup-> App Settings-> Rooms". Room admins may adjust **Room Size** under "Room Settings" to within that range. This only affects the maximum number of users allowed "in-room" and does not currently limit "in-lobby" users. 
+### 룸의 최대 사용자 한도를 높이려면 어떻게 해야 합니까?
+서버 관리자는 관리자 패널에서 "설정-> 앱 설정-> 룸"에서 **기본 룸 크기** 및 **최대 룸 크기**를 조정할 수 있습니다. 룸 관리자는 "룸 설정"에서 **룸 크기**를 해당 범위 내로 조정할 수 있습니다. 이는 "룸 내"에서 허용되는 최대 사용자 수에만 영향을 미치며 현재 "로비 내" 사용자를 제한하지 않습니다.

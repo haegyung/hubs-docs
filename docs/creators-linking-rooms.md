@@ -2,30 +2,33 @@
 id: creators-linking-rooms
 title: Linking Hubs Rooms 
 ---
-It is possible to link Hubs rooms together using Spoke, or from directly in Hubs. To do this, you will want to first create your rooms, then build scenes for the rooms that use the 'Link' element to reference to other rooms.  
+스포크를 사용하거나 허브에서 직접 허브 룸을 함께 연결할 수 있습니다. 이렇게 하려면 먼저 룸을 작성한 후 '연결' 요소를 사용하여 다른 룸을 참조하는 룸의 장면을 작성해야 합니다.
 
-## Create rooms
+## 방 생성하기
 
-The first thing that you want to do is create your rooms. While you have the ability to create rooms directly from a scene URL, this will generate a new room each time. In order to link multiple rooms together, we recommend generating the rooms first, then updating the rooms to use a scene that contains links to the other room. 
+여러분이 제일 먼저 하고 싶은 것은 룸을 만드는 것 일겁니다. Scene URL 에서 직접 방을 만들 순 있지만, 매번 새로운 룸이 생성됩니다.
+여러 룸을 함께 연결하려면 먼저 룸을 생성한 후 다른 룸에 대한 링크가 포함된 장면을 사용하도록 룸을 업데이트하는 것이 좋습니다.
 
-1. Go to [https://hubs.mozilla.com/](https://hubs.mozilla.com/) and use the 'Create Room' button to create a new room. You can use the 'Favorite' button to keep the room pinned to your home page to find it easily, or copy the link somewhere.
-2. Do this for each room that you want to have available
+1. [https://hubs.mozilla.com/](https://hubs.mozilla.com/) 로 이동하여 '룸 만들기' 버튼을 사용하여 새 룸을 만듭니다.
+   '즐겨찾기' 버튼을 사용하여 룸을 홈 페이지에 고정하거나 링크를 복사할 수 있습니다.
+2. 사용 가능한 각 룸에 대해 이 작업을 수행합니다.
 
-## Option 1: Linking rooms from inside Hubs
-It is possible to link rooms together directly from inside of another Hubs room without having to create new scenes. To do this: 
-1. Visit the room that you want to add other room links to
-2. Copy the URL to another Hubs room
-3. Paste the URL anywhere in the first room. This will generate a screenshot of the room, and add a 'Visit Room' link 
+## 옵션 1: 허브 내부에서 룸 연결하기
+새로운 Scene 을 만들지 않고도 다른 허브 룸 내부에서 룸을 직접 연결할 수 있습니다. 이렇게 하려면:
+1. 다른 룸 링크를 추가할 룸을 방문합니다.
+2. URL을 다른 허브 룸에 복사합니다.
+3. 첫 번째 룸의 아무 곳에나 URL을 붙여 넣습니다. 그러면 룸의 스크린샷이 생성되고 '룸 방문' 링크가 추가됩니다.
 
-## Option 2: Linking rooms inside Spoke scenes
-You can also link Hubs rooms together from inside of a Spoke scene. To do this:
+## 옵션 2: Spoke Scene 내부에서 룸 연결하기
+또한 Spoke 씬(scene) 내부에서 허브 룸을 함께 연결할 수도 있습니다. 이렇게 하려면:
 
-1. Create a scene 
-2. Use the Spoke 'Link' element to create a new link in your scene
-3. Place the link element where you want your portal to the other room to be
-4. Copy the room link that you want to link to into the link element 'URL' property
-5. Publish your scene
-6. In the original room, change the scene link to the one that contains your new scene that links to the other room
-7. Repeat steps 1-6, publishing a second scene that links to the first room, and use that for your second room
+1. 장면 만들기
+2. Spoke '링크' 요소를 사용하여 씬(scene)에 새 링크를 만듭니다.
+3. 포털을 다른 룸에 연결할 링크 요소를 배치합니다.
+4. 링크할 룸 링크를 링크 요소 'URL' 속성에 복사합니다.
+5. 장면을 게시합니다.
+6. 원래 룸에서 씬(scene) 링크를 다른 룸으로 연결하는 새 씬(scene)이 포함된 씬(scene) 링크로 변경합니다.
+7. 첫 번째 룸으로 연결되는 두 번째 Scene 을 게시하여 1-6단계를 반복하고 두 번째 룸에 사용합니다.
 
-Note that you can use the same project in Spoke as a base by using the 'Save As' feature to create a copy of your project. If you use the same project, it will update the original scene, which will result in the first room updating to link back to itself.
+`다른 이름으로 저장` 기능을 사용하여 프로젝트의 복사본을 만들면 Spoke 의 동일한 프로젝트를 기준으로 사용할 수 있습니다. 동일한 프로젝트를 사용하면 원본 Scene 이 업데이트되어 첫 번째 룸이 다시 링크되도록 업데이트됩니다.
+

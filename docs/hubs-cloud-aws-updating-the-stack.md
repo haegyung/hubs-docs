@@ -4,56 +4,56 @@ title: Updating the Stack
 sidebar_label: Updating the Stack
 ---
 
-You can change various settings of your hub's stack by performing a stack Update. You will not experience any downtime when making these changes. To Update your stack:
+스택 업데이트를 수행하여 허브 스택의 다양한 설정을 변경할 수 있습니다. 이러한 변경 작업을 수행할 때 다운타임이 발생하지 않습니다. 스택을 업데이트하려면:
 
-- Select the stack in the CloudFormation console
-- Go to Stack Actions -> Update Stack
-- Choose "Use current template"
-- Review the parameter selections and choose 'Update'
+- CloudFormation 콘솔에서 스택 선택
+- 스택 작업 -> 스택 업데이트로 이동합니다.
+- "현재 템플릿 사용"을 선택합니다.
+- 선택한 매개 변수를 검토하고 '업데이트'를 선택합니다.
 
-Some of the things you can do via a stack update:
+스택 업데이트를 통해 수행할 수 있는 몇 가지 작업:
 
-- Change the number and type of servers
-- Switch your hub into Offline Mode to save costs (and redirect to a URL)
-- Add or change a monthly database budget or adjust storage limits
-- Add or remove an Application Load Balancer
-- Disable or enable database auto-pausing
-- Change the database max ACU capacity
-- Change the SSH keypair used by your servers
+- 서버 수 및 유형 변경
+- 비용을 절약하려면 허브를 오프라인 모드로 전환합니다(URL로 리디렉션).
+- 월별 데이터베이스 예산 추가 또는 변경 또는 스토리지 제한 조정
+- 애플리케이션 로드 밸런서 추가 또는 제거
+- 데이터베이스 자동 일시 중지 사용 안 함 또는 사용 안 함
+- 데이터베이스 최대 ACU 용량 변경
+- 서버에서 사용하는 SSH 키 쌍 변경
 
-Some things you should **not** update or change after the stack is created, and should leave as-is:
+스택이 생성된 후 ** 업데이트 또는 변경해서는 안 되며 그대로 두어야 하는 사항:
 
-- Your domains or mail settings
-- Everything under **Restore from Backup** section (to restore from a backup, see [Backup and Restore](./hubs-cloud-aws-backup-and-restore.md))
-- Everything under **Advanced**
+- 도메인 또는 메일 설정
+- **백업에서 복원** 섹션의 모든 내용(백업에서 복원하려면 [백업 및 복원](hubs-cloud-aws-backup-and-restore-ko.md) 참조)
+- **고급**의 모든 내용
 
-## ✨📝 Upgrade your Hubs Cloud template to the latest
+## ✨📝 허브 클라우드 템플릿을 최신 버전으로 업그레이드하기
 
-Infrequently, we'll need to update the Hubs Cloud template which follows this manual update workflow.
+간혹 이 수동 업데이트 워크플로우를 따르는 허브 클라우드 템플릿을 업데이트해야 합니다.
 
-Updating the template changes the underlying aws infrastructure or services such as: machine images, lambdas, autoscaling groups, or machine startup scripts.
+템플릿을 업데이트하면 시스템 이미지, 람다, 자동 확장 그룹 또는 시스템 시작 스크립트와 같은 기본 AWS 인프라 또는 서비스가 변경됩니다.
 
-💾 Before following the steps below, make sure you've backed up your stack just in case: [💾 Backup and Restore](./hubs-cloud-aws-backup-and-restore.md)
+💾 아래 단계를 수행하기 전에, [💾 Backup and Restore](hubs-cloud-aws-backup-and-restore-ko.md)를 위해 스택을 백업했는지 확인하십시오.
 
-1. 🔎 **Determine whether your stack is Hubs Cloud Personal, Enterprise single server, or Enterprise multi-server**
-   1. Cloudformation > Stacks > Select your stack > Parameters tab
-   1. Does your stack have # of App Servers or # of Streaming Servers listed?
-      1. If yes, you have Enterprise multi-server
-      1. If no, you have Personal or Enterprise single server
-1. 💤 **Update your stack to Offline Mode see [⬆️ Updating the stack](./hubs-cloud-aws-updating-the-stack.md)**
-1. ⌛ **Wait for the Offline Mode update to complete**
-1. 📎 **Next, get the latest Template URL from the AWS Marketplace flow (_DO NOT CREATE A NEW STACK_)**
-   1. Open new tab and go to [hubs.mozilla.com/cloud](https://hubs.mozilla.com/cloud)
-   1. Select Personal or Enterprise (depending on step 1) then go through the AWS Marketplace flow, **but do not create the stack**
-   1. Go to "Create stack" page: Step 1 Specify template page
-   1. Copy **"Amazon S3 URL"** from Specify template section
-1. 📝 **Replace the current template of your live stack**
-   1. Cloudformation > Stacks > Select your stack
-   1. Click Update
-   1. Select "Replace current template"
-   1. Paste previously copied **"Amazon S3 URL"** from step 4 in Amazon S3 URL section
-   1. Click Next
-   1. ✅ Do all filled in values look correct? If they do **NOT** look correct, then you may have copied the wrong Personal/Enterprise template! Go back to replace template step. Then copy and paste the correct template from step 4 again.
-1. ⌛ **Finish the stack update with the new template stay in Offline Mode**
-1. 🌅 **After the update is complete, [⬆️ update the stack](./hubs-cloud-aws-updating-the-stack.md) to Online Mode (out of Offline Mode)**
-1. 🎉 **Finished! Congrats!** 🎉
+1. 🔎 **스택이 허브 클라우드 개인 서버(Personal)인지, 엔터프라이즈 단일 서버(Single-Server)인지, 엔터프라이즈 다중 서버(Multi-Server)인지 확인**
+1. 클라우드 구성 > 스택 > 매개변수 탭 선택
+1. 스택에 앱 서버 수 또는 스트리밍 서버 수가 나열되어 있습니까?
+1. 있는 경우 Enterprise 다중 서버가 있어야 합니다.
+1. "아니오"인 경우 개인 또는 엔터프라이즈 단일 서버가 있습니다.
+1. 💤 **오프라인 모드로 스택 업데이트 [⬆문서 스택 업데이트](hubs-cloud-aws-updating-the-stack-ko.md)** 참조
+1. ⌛ **오프라인 모드 업데이트가 완료될 때까지 기다립니다**
+1. 📎 **다음, AWS Marketplace 흐름에서 최신 템플릿 URL을 가져옵니다(_DO NOT CREATE A NEW STACK_).**
+1. 새 탭을 열고 [hubs.mozilla.com/cloud](https://hubs.mozilla.com/cloud) 로 이동합니다.
+1. (1단계에 따라) Personal 또는 Enterprise를 선택한 다음 AWS Marketplace 흐름을 살펴봅니다. ** 스택은 만들지 마십시오.**
+1. "스택 만들기" 페이지로 이동합니다. 1단계 템플릿 페이지 지정
+1. 템플릿 지정 섹션에서 **"Amazon S3 URL"** 복사
+1. 📝 **실시간 스택의 현재 템플릿 교체**
+1. 클라우드 구성 > 스택 > 스택 선택
+1. [업데이트]를 클릭합니다.
+1. "현재 템플릿 바꾸기"를 선택합니다.
+1. Amazon S3 URL 섹션의 4단계에서 이전에 복사한 **"Amazon S3 URL"** 을 붙여넣습니다.
+1. 다음을 클릭합니다.
+1. ✅ 입력된 모든 값이 올바르게 표시됩니까? ***이(가) 올바르게 표시되지 않으면 잘못된 개인/엔터프라이즈 템플릿을 복사한 것일 수 있습니다! 템플릿 교체 단계로 돌아갑니다. 그런 다음 4단계에서 올바른 템플릿을 복사하여 붙여넣습니다.
+1. ⌛ **새 템플릿이 오프라인 모드로 유지되도록 스택 업데이트를 완료합니다**
+1. 🌅 **업데이트가 완료된 후 [⬆는 스택 업데이트를 온라인 모드](hubs-cloud-aws-updating-the-stack-ko.md) 로 전환합니다(오프라인 모드 해제).**
+1. 🎉 **완료! 축하드려요.** 🎉

@@ -4,12 +4,12 @@ title: Recipe: Custom SMTP
 sidebar_label: Recipe: Custom SMTP
 ---
 
-When you set up your server on some cloud providers like AWS, SMTP is automatically set up for you on your cloud provider's email service. You can set your own custom SMTP settings if you are using a different mail provider.
+AWS와 같은 일부 클라우드 제공자(Provider)에 서버를 설정하면 클라우드 제공자의 전자 메일 서비스에서 SMTP가 자동으로 설정됩니다. 다른 메일 공급자를 사용하는 경우 사용자 정의 SMTP 설정을 설정할 수 있습니다.
 
-In the [Admin Console](./hubs-cloud-getting-started.md) choose **Server Settings**:
+[관리 콘솔(Admin Console)](hubs-cloud-getting-started-ko.md)에서 **서버 설정** 을 선택합니다.
 
-![Hubs Cloud ](img/hubs-cloud-server-settings.jpeg)
+![Hubs Cloud](../website/static/img/hubs-cloud-server-settings.jpeg)
 
-Then, under **Email** you can find the various SMTP server settings:
+그런 다음 **Email** 에서 다양한 SMTP 서버 설정을 찾을 수 있습니다.
 
-![Hubs Cloud SMTP Settings](img/hubs-cloud-smtp-settings.jpeg)
+![허브 클라우드 SMTP 설정](../website/static/img/hubs-cloud-smtp-settings.jpeg)

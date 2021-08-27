@@ -4,6 +4,6 @@ title: Content CDN
 sidebar_label: Advanced: Content CDN
 ---
 
-If you are using a provider which meters bandwidth like AWS, you can greatly reduce data transfer costs by using Cloudflare's CDN. If you are running on a single server like DigitalOcean, using Cloudflare's CDN will also reduce latency when users download assets from your hub.
+AWS와 같이 대역폭을 미터링하는 공급업체를 사용하는 경우 Cloudflare의 CDN을 사용하면 데이터 전송 비용을 크게 절감할 수 있으며, Digital Ocean과 같은 단일 서버에서 실행되는 경우 Cloudflare의 CDN을 사용하면 사용자가 허브에서 자산을 다운로드할 때 대기 시간도 단축됩니다.
 
-To do so, in the [Admin Console](./hubs-cloud-getting-started.md) choose **Content CDN** and follow the instructions.
+이렇게 하려면 [관리 콘솔](hubs-cloud-getting-started-ko.md) 에서 **콘텐츠 CDN**을(를) 선택하고 지침을 따르십시오.
