@@ -24,7 +24,7 @@ sidebar_label: Updating the Stack
 스택이 생성된 후 ** 업데이트 또는 변경해서는 안 되며 그대로 두어야 하는 사항:
 
 - 도메인 또는 메일 설정
-- **백업에서 복원** 섹션의 모든 내용(백업에서 복원하려면 [백업 및 복원](hubs-cloud-aws-backup-and-restore-ko.md) 참조)
+- **백업에서 복원** 섹션의 모든 내용(백업에서 복원하려면 [백업 및 복원](hubs-cloud-aws-backup-and-restore.md) 참조)
 - **고급**의 모든 내용
 
 ## ✨📝 허브 클라우드 템플릿을 최신 버전으로 업그레이드하기
@@ -33,14 +33,14 @@ sidebar_label: Updating the Stack
 
 템플릿을 업데이트하면 시스템 이미지, 람다, 자동 확장 그룹 또는 시스템 시작 스크립트와 같은 기본 AWS 인프라 또는 서비스가 변경됩니다.
 
-💾 아래 단계를 수행하기 전에, [💾 Backup and Restore](hubs-cloud-aws-backup-and-restore-ko.md)를 위해 스택을 백업했는지 확인하십시오.
+💾 아래 단계를 수행하기 전에, [💾 Backup and Restore](hubs-cloud-aws-backup-and-restore.md)를 위해 스택을 백업했는지 확인하십시오.
 
 1. 🔎 **스택이 허브 클라우드 개인 서버(Personal)인지, 엔터프라이즈 단일 서버(Single-Server)인지, 엔터프라이즈 다중 서버(Multi-Server)인지 확인**
 1. 클라우드 구성 > 스택 > 매개변수 탭 선택
 1. 스택에 앱 서버 수 또는 스트리밍 서버 수가 나열되어 있습니까?
 1. 있는 경우 Enterprise 다중 서버가 있어야 합니다.
 1. "아니오"인 경우 개인 또는 엔터프라이즈 단일 서버가 있습니다.
-1. 💤 **오프라인 모드로 스택 업데이트 [⬆문서 스택 업데이트](hubs-cloud-aws-updating-the-stack-ko.md)** 참조
+1. 💤 **오프라인 모드로 스택 업데이트 [⬆문서 스택 업데이트](hubs-cloud-aws-updating-the-stack.md)** 참조
 1. ⌛ **오프라인 모드 업데이트가 완료될 때까지 기다립니다**
 1. 📎 **다음, AWS Marketplace 흐름에서 최신 템플릿 URL을 가져옵니다(_DO NOT CREATE A NEW STACK_).**
 1. 새 탭을 열고 [hubs.mozilla.com/cloud](https://hubs.mozilla.com/cloud) 로 이동합니다.
@@ -55,5 +55,5 @@ sidebar_label: Updating the Stack
 1. 다음을 클릭합니다.
 1. ✅ 입력된 모든 값이 올바르게 표시됩니까? ***이(가) 올바르게 표시되지 않으면 잘못된 개인/엔터프라이즈 템플릿을 복사한 것일 수 있습니다! 템플릿 교체 단계로 돌아갑니다. 그런 다음 4단계에서 올바른 템플릿을 복사하여 붙여넣습니다.
 1. ⌛ **새 템플릿이 오프라인 모드로 유지되도록 스택 업데이트를 완료합니다**
-1. 🌅 **업데이트가 완료된 후 [⬆는 스택 업데이트를 온라인 모드](hubs-cloud-aws-updating-the-stack-ko.md) 로 전환합니다(오프라인 모드 해제).**
+1. 🌅 **업데이트가 완료된 후 [⬆는 스택 업데이트를 온라인 모드](hubs-cloud-aws-updating-the-stack.md) 로 전환합니다(오프라인 모드 해제).**
 1. 🎉 **완료! 축하드려요.** 🎉

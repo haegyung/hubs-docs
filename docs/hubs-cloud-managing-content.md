@@ -12,7 +12,7 @@ sidebar_label: Managing Content
 
 방문자가 사용자 정의 아바타 또는 장면을 만들 때 *remixable* 및/또는 *promotionable*로 표시하는 옵션이 제공됩니다. *Remixable* 콘텐츠는 크리에이티브 커먼즈 3 라이센스를 제공하여 다른 사용자가 자유롭게 사용하거나 수정할 수 있도록 하며, *promotionable* 콘텐츠는 검토 대기열에 추가되어 허브의 콘텐츠 라이브러리에 추가됩니다. 승인되면 사용자는 미디어 브라우저와 같은 도구를 통해 라이브러리의 컨텐츠를 검색할 수 있습니다.
 
-*Promotable*로 표시된 모든 콘텐츠는 생성되거나 업데이트될 때 **보류 중인 장면/아바타 큐*에 추가됩니다. [관리 콘솔(Admin Console)](hubs-cloud-getting-started-ko.md)에서 다음 대기열을 찾을 수 있습니다.
+*Promotable*로 표시된 모든 콘텐츠는 생성되거나 업데이트될 때 **보류 중인 장면/아바타 큐*에 추가됩니다. [관리 콘솔(Admin Console)](hubs-cloud-getting-started.md)에서 다음 대기열을 찾을 수 있습니다.
 
 ![허브 클라우드 대기열 메뉴](../website/static/img/hubs-cloud-pending-queue-menu.jpeg)
 

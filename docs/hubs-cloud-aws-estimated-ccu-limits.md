@@ -20,7 +20,7 @@ sidebar_label: Estimating CCU Limits
 * 미디어 업로드, (카메라 도구를 통한) 사진/비디오 캡처, 링크 썸네일 생성과 같은 다양한 기능은 CCU 제한에 영향을 미칠 수 있는 다양한 수준의 서버 리소스를 사용합니다.
 
 
-비용 추정은 [AWS 비용 및 비용 차트(Alpha)](hubs-cloud-aws-estimated-cost-charts-ko.md)를 참조하십시오.
+비용 추정은 [AWS 비용 및 비용 차트(Alpha)](hubs-cloud-aws-estimated-cost-charts.md)를 참조하십시오.
 
 ## 예상 CCU 테이블(앱 1개 / 스트림 서버 1개)
 

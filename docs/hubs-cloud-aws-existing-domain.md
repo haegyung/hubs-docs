@@ -6,13 +6,13 @@ sidebar_label: Using an Existing Domain
 
 **기존 도메인 또는 서브 도메인을 허브에 사용하시겠습니까?**
 
-레시피 3을 따르는 경우 아래 지침을 따르십시오. [레시피 3는 언제 사용해야 합니까?](hubs-cloud-aws-domain-recipes-ko.md#when-should-i-use-recipe-3)
+레시피 3을 따르는 경우 아래 지침을 따르십시오. [레시피 3는 언제 사용해야 합니까?](hubs-cloud-aws-domain-recipes.md#when-should-i-use-recipe-3)
 
 도메인을 다른 용도로 사용하지 않는 경우 AWS Route 53 Hosted Zone 을 가리키도록 도메인을 설정하는 것이 좋습니다.
-[지침](hubs-cloud-aws-domain-recipes-ko.md#setup-external-domains-to-use-route-53-as-the-hostingdns-provider)
+[지침](hubs-cloud-aws-domain-recipes.md#setup-external-domains-to-use-route-53-as-the-hostingdns-provider)
 
 
-**기존 전자 메일을 사용하려면 [기존 전자 메일 공급자 가이드 사용](hubs-cloud-aws-existing-email-provider-ko.md)** 을 참조하십시오.
+**기존 전자 메일을 사용하려면 [기존 전자 메일 공급자 가이드 사용](hubs-cloud-aws-existing-email-provider.md)** 을 참조하십시오.
 그렇지 않으면 스택 생성을 통해 AWS SES 전자 메일을 구성하는 도메인 레시피 #3 안내서를 참조하십시오.
 
 ### 스택 만들기 전: SSL 인증서

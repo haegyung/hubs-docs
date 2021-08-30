@@ -44,7 +44,7 @@ HC를 더 쉽게 설정하려면 AWS Route 53을 호스팅/DNS 공급자(AWS Rou
 
 도메인을 사용하지 않는 경우에는 그럴 필요가 없지만(단, CAN) 위의 **Route 53**에서 설정하는 방법을 따르십시오.
 
-예를 들어, mozilla.com을 사용하고 기존 사이트를 중단하지 않으려면 [Recipe3](hubs-cloud-aws-domain-recipes-ko.md#recipe-3-domain-can-not-be-on-route-53) 및 _NOT_ 네임 변경 서버를 따라 hubs.mozilla.com이 하위 도메인으로 작동하도록 AWS를 가리켜야 했습니다.
+예를 들어, mozilla.com을 사용하고 기존 사이트를 중단하지 않으려면 [Recipe3](hubs-cloud-aws-domain-recipes.md#recipe-3-domain-can-not-be-on-route-53) 및 _NOT_ 네임 변경 서버를 따라 hubs.mozilla.com이 하위 도메인으로 작동하도록 AWS를 가리켜야 했습니다.
 
 ### 두 번째 도메인(.co.uk, .com.fr 등)을 사용하고 있나요?
 
@@ -54,12 +54,12 @@ Route 53 (알려진 버그가 있음)에서 도메인을 구입했는지 여부�
 
 - `myhub.com` **OR subdomain** `hub.myhub.com` connects to your hub - _Warning! Do not create a new Hosted Zone for `hub.myhub.com` on Route 53! The Cloudformation template will manage the connections on your root domain, `myhub.com`, hosted zone._
 - `myhub.com` is **_NOT_** used for any other purpose or sites
-- `mysite.com` set up on on Route 53 [(?)](hubs-cloud-aws-domain-recipes-ko.md#setup-external-domains-to-use-route-53-as-the-hostingdns-provider)
+- `mysite.com` set up on on Route 53 [(?)](hubs-cloud-aws-domain-recipes.md#setup-external-domains-to-use-route-53-as-the-hostingdns-provider)
 - `anothersubdomain.myhub.com` **_could be_** used for any other purposes or sites
 
 ### Instructions:
 
-**[Set up or purchase 2 domains on Route 53](hubs-cloud-aws-domain-recipes-ko.md#setup-external-domains-to-use-route-53-as-the-hostingdns-provider)**
+**[Set up or purchase 2 domains on Route 53](hubs-cloud-aws-domain-recipes.md#setup-external-domains-to-use-route-53-as-the-hostingdns-provider)**
 
 1. `myhub.com` - Houses Hub site domain name + internal server domain
 2. `myhub.link` - Short link domain name
@@ -81,14 +81,14 @@ Route 53 (알려진 버그가 있음)에서 도메인을 구입했는지 여부�
 
 - `hub.mysite.com` connects to your hub. - _Warning! Do not create a new Hosted Zone for `hub.mysite.com` on Route 53! The Cloudformation template will manage the connections on your root domain, `mysite.com`, hosted zone._
 - `mysite.com` **_IS_** used for other sites or purposes
-- `mysite.com` set up on on Route 53 [(?)](hubs-cloud-aws-domain-recipes-ko.md#setup-external-domains-to-use-route-53-as-the-hostingdns-provider)
+- `mysite.com` set up on on Route 53 [(?)](hubs-cloud-aws-domain-recipes.md#setup-external-domains-to-use-route-53-as-the-hostingdns-provider)
 - `anothersubdomain.myhub.com` **_could be_** used for any other purposes or sites
 
 [Known bug + fix: Using a second level domain (.co.uk, .com.fr, etc)?](,/hubs-cloud-aws-domain-recipes.md#using-a-second-level-domain-couk-comfr-etc) Use Recipe 3.
 
 ### Instructions:
 
-**[Set up or purchase 3 domains on Route 53](hubs-cloud-aws-domain-recipes-ko.md#setup-external-domains-to-use-route-53-as-the-hostingdns-provider)**
+**[Set up or purchase 3 domains on Route 53](hubs-cloud-aws-domain-recipes.md#setup-external-domains-to-use-route-53-as-the-hostingdns-provider)**
 
 1. `mysite.com` - Houses subdomain as Hub site domain name + the other sites or purposes at the root
 2. `myhub.link` - Short link domain name
@@ -109,40 +109,40 @@ Route 53 (알려진 버그가 있음)에서 도메인을 구입했는지 여부�
 
 ## Recipe 3: Domain CAN NOT be on Route 53
 
-- [When should I use Recipe 3?](hubs-cloud-aws-domain-recipes-ko.md#when-should-i-use-recipe-3)
-- `mysite.com` **_CAN NOT_** be set up on Route 53 [(?)](hubs-cloud-aws-domain-recipes-ko.md#setup-external-domains-to-use-route-53-as-the-hostingdns-provider)
+- [When should I use Recipe 3?](hubs-cloud-aws-domain-recipes.md#when-should-i-use-recipe-3)
+- `mysite.com` **_CAN NOT_** be set up on Route 53 [(?)](hubs-cloud-aws-domain-recipes.md#setup-external-domains-to-use-route-53-as-the-hostingdns-provider)
 - `mysite.com` connects to your hub **OR** `hub.mysite.com` connects to your hub
 
 ### Instructions:
 
-**[Set up or purchase 2 domains on Route 53 (optional 3 domains)](hubs-cloud-aws-domain-recipes-ko.md#setup-external-domains-to-use-route-53-as-the-hostingdns-provider)**
+**[Set up or purchase 2 domains on Route 53 (optional 3 domains)](hubs-cloud-aws-domain-recipes.md#setup-external-domains-to-use-route-53-as-the-hostingdns-provider)**
 
 1. `myhub.link` - Short link domain name
 2. `mysite-internal.com` - Internal server domain + email domain. 여러분이 원하는 어느 이름으로도 될 수 있지만 유저가 볼 수 없도록만 설정해주세요.
 3. _(optional)_ `mysite-mail.com` - Email domain, 이메일에 `mysite-internal.com` 을 사용하는 것이 원하는 것이 아닌 경우.
 
 
-존재하는 이메일 provider 를 사용하기 위해 [Using an Existing Email Provider Guide](hubs-cloud-aws-existing-email-provider-ko.md) 를 읽어주세요.
+존재하는 이메일 provider 를 사용하기 위해 [Using an Existing Email Provider Guide](hubs-cloud-aws-existing-email-provider.md) 를 읽어주세요.
 
-**먼저, [Using an Existing Domain: SSL Certificates instructions](hubs-cloud-aws-existing-domain-ko.md)** 를 따라주세요.
+**먼저, [Using an Existing Domain: SSL Certificates instructions](hubs-cloud-aws-existing-domain.md)** 를 따라주세요.
 
 **다음으로 스택을 생성할 때 아래 나오는 표를 참고해서 생성해주세요:**
 
 | STACK OPTIONS                       | RECIPE 3                                                                                       |
 | ----------------------------------- | ---------------------------------------------------------------------------------------------- |
-| **Site Domain Name**                | `mysite.com` **OR** `hub.mysite.com` + [SSL certificates](hubs-cloud-aws-existing-domain-ko.md) |
+| **Site Domain Name**                | `mysite.com` **OR** `hub.mysite.com` + [SSL certificates](hubs-cloud-aws-existing-domain.md) |
 | **Site is Set Up On Route 53**      | `No`                                                                                           |
 | **Internal Domain**                 | `mysite-internal.com`                                                                          |
 | **Short Link Domain**               | `myhub.link`                                                                                   |
 | **Outgoing Email Domain**           | `mysite-internal.com` **OR** `mysite-mail.com`                                                 |
 | **Outgoing Email Subdomain Prefix** | `mail`                                                                                         |
 
-**마지막으로 스택을 성공적으로 배포한 후 [기존 도메인 사용: DNS 설정 지침](hubs-cloud-aws-existing-domain-ko.md)** 을(를) 따르십시오.
+**마지막으로 스택을 성공적으로 배포한 후 [기존 도메인 사용: DNS 설정 지침](hubs-cloud-aws-existing-domain.md)** 을(를) 따르십시오.
 
 ### 문제가 발생할 경우:
 
 1. **사이트 도메인 이름**이(가) 오타 없이 올바르게 입력되었는지 확인합니다.
 2. AWS Console > Route 53 > [Hosted Zones](https://console.aws.amazon.com/route53/home#hosted-zones:) 에서 위에 나열된 모든 도메인이 [등록](https://console.aws.amazon.com/route53/home#DomainListing:) 인지 확인하거나 도메인에서 AWS Route 53을 DNS 호스트로 가리키도록 이름 서버를 업데이트했습니다.
-3. 해당 지역의 스택 출력에서 롤백 오류를 찾습니다 [AWS 문제 해결: 첫 번째 스택 오류 이벤트 참조](hubs-cloud-aws-troubleshooting-ko.md#my-aws-stack-says-rollback-complete-after-deploying-what-went-wrong)
-4. [AWS 문제 해결 설명서](hubs-cloud-aws-troubleshooting-ko.md)를 통해 일반적인 오류 해결
+3. 해당 지역의 스택 출력에서 롤백 오류를 찾습니다 [AWS 문제 해결: 첫 번째 스택 오류 이벤트 참조](hubs-cloud-aws-troubleshooting.md#my-aws-stack-says-rollback-complete-after-deploying-what-went-wrong)
+4. [AWS 문제 해결 설명서](hubs-cloud-aws-troubleshooting.md)를 통해 일반적인 오류 해결
 5. 나머지 문서에서 필요한 내용을 찾을 수 없는 경우 [도움말 페이지](.help.html)에서 연락 방법을 참조하십시오.

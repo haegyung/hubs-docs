@@ -8,7 +8,7 @@ sidebar_label: Asset Packs
 이 콘텐츠는 [Creative Commons3](https://creativecommons.org/licenses/by/3.0/us/) 라이센스를 받았습니다.
 속성에 대한 라이센스 준수는 콘텐츠가 사용자에게 노출될 때 허브 클라우드에 의해 자동으로 처리됩니다.
 
-이러한 팩(Packs)을 가져오려면 [관리 콘솔](hubs-cloud-getting-started-ko.md) 의 [콘텐츠 가져오기](hubs-cloud-importing-content-ko.md) 도구에서
+이러한 팩(Packs)을 가져오려면 [관리 콘솔](hubs-cloud-getting-started.md) 의 [콘텐츠 가져오기](hubs-cloud-importing-content.md) 도구에서
 아래 지정된 팩의 URL을 지정하기만 하면 됩니다.
 URL을 입력하면 팩의 내용을 미리 보고 가져올 항목을 선택할 수 있습니다.
 

@@ -18,7 +18,7 @@ title: Create Project
 
 ![Spoke Templates](../website/static/img/spoke-template.jpeg)
 
-여기서부터는 원하는 대로 장면을 커스터마이징할 수 있습니다. [콘텐츠 추가](spoke-adding-scene-content-ko.md)를 현장에 사용하거나 [아키텍처 키트](spoke-architecture-kit-ko.md)로 집을 지어 보십시오.
+여기서부터는 원하는 대로 장면을 커스터마이징할 수 있습니다. [콘텐츠 추가](spoke-adding-scene-content.md)를 현장에 사용하거나 [아키텍처 키트](spoke-architecture-kit.md)로 집을 지어 보십시오.
 
  <video autoplay loop muted controls >
   <source src="../website/static/img/spoke-rock-kit.mp4" type="video/mp4">

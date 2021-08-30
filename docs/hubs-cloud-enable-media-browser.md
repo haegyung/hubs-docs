@@ -9,7 +9,7 @@ sidebar_label: Recipe: 3rd Party Integrations
 
 그러나 허브에 대해 이러한 다양한 컨텐츠 탭을 활성화하기 전에 통합을 활성화하는 데 필요한 API 키를 추가해야 합니다.
 
-[관리 콘솔(Admin Console)](hubs-cloud-getting-started-ko.md)에서 **서버 설정** 을 선택합니다.
+[관리 콘솔(Admin Console)](hubs-cloud-getting-started.md)에서 **서버 설정** 을 선택합니다.
 
 ![Hubs Cloud](img/hubs-cloud-server-settings.jpeg)
 

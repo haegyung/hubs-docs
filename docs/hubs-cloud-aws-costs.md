@@ -12,25 +12,25 @@ sidebar_label: Costs and Minimizing Costs Information
 - 이벤트 비용을 계산하고 추정합니다.
 - 권장 서버 유형을 사용해주세요.
 
-[비용 및 차트(Alpha)](hubs-cloud-aws-estimated-cost-charts-ko.md) 페이지를 참조해주세요.
+[비용 및 차트(Alpha)](hubs-cloud-aws-estimated-cost-charts.md) 페이지를 참조해주세요.
 
 **Minimizing Costs Primer**
 
-- [Hubs Cloud의 비용은 어떻게 계산될까요?](hubs-cloud-aws-costs-ko.md#how-do-costs-work-for-hubs-cloud)
-- [비용 최소화 - 권장 사용자 사례](hubs-cloud-aws-costs-ko.md)
-- [비용 최소화 - 스택 템플릿의 설정](hubs-cloud-aws-costs-ko.md)
+- [Hubs Cloud의 비용은 어떻게 계산될까요?](hubs-cloud-aws-costs.md#how-do-costs-work-for-hubs-cloud)
+- [비용 최소화 - 권장 사용자 사례](hubs-cloud-aws-costs.md)
+- [비용 최소화 - 스택 템플릿의 설정](hubs-cloud-aws-costs.md)
 
 ## How do costs work for Hubs Cloud?
 
 우리는 템플릿의 비용을 최대한 줄이기 위해 최선을 다했습니다. 시간별로 사용하는 EC2 AWS 서버 유형, 서버 없는 시간별 데이터베이스 비용, EFS 스토리지 및 Cloudflare로 전환하지 않는 경우 데이터 전송 비용이 주된 비용입니다.
 
-EC2 인스턴스는 "온라인"(Online)인 반면 인스턴스 AWS 서버 유형(hubs-cloud-aws-estimated-cost-charts-ko.md#aws-server-type-recommendations)의 경우 서버당 시간당 비용이 발생합니다. 이 최소 비용은 한 번에 접속하는 사람의 수에 관계없이 시간당입니다. 아무도 서버에 연결할 수 없는 [**오프라인 모드**](hubs-cloud-aws-costs-ko.md#offline-mode---manual)를 설정하여 EC2 인스턴스 + 데이터베이스를 수동으로 끌 수 있습니다.
+EC2 인스턴스는 "온라인"(Online)인 반면 인스턴스 AWS 서버 유형(hubs-cloud-aws-estimated-cost-charts-ko.md#aws-server-type-recommendations)의 경우 서버당 시간당 비용이 발생합니다. 이 최소 비용은 한 번에 접속하는 사람의 수에 관계없이 시간당입니다. 아무도 서버에 연결할 수 없는 [**오프라인 모드**](hubs-cloud-aws-costs.md#offline-mode---manual)를 설정하여 EC2 인스턴스 + 데이터베이스를 수동으로 끌 수 있습니다.
 
-데이터베이스 비용은 EC2 인스턴스 다음으로 가장 큰 요인입니다. [**pausepause**](hubs-cloud-aws-costs-ko.md)를 켜서 아무도 연결되지 않았을 때 발생하는 비용을 중지할 수 있습니다.
+데이터베이스 비용은 EC2 인스턴스 다음으로 가장 큰 요인입니다. [**pausepause**](hubs-cloud-aws-costs.md)를 켜서 아무도 연결되지 않았을 때 발생하는 비용을 중지할 수 있습니다.
 
-[AWS 서버 유형 및 최소 EC2 비용에 대한 자세한 내용은 (Alpha) 비용 차트를 참조하십시오.](hubs-cloud-aws-estimated-cost-charts-ko.md)
+[AWS 서버 유형 및 최소 EC2 비용에 대한 자세한 내용은 (Alpha) 비용 차트를 참조하십시오.](hubs-cloud-aws-estimated-cost-charts.md)
 
-[비용을 최소화하려면 허브 클라우드 비용 최소화 - 사용자 사례를 참조하십시오.](hubs-cloud-aws-costs-ko.md)
+[비용을 최소화하려면 허브 클라우드 비용 최소화 - 사용자 사례를 참조하십시오.](hubs-cloud-aws-costs.md)
 
 ## AWS 비용 추정치를 생성하는 요인
 
@@ -58,27 +58,27 @@ CDN을 Cloudflare로 전환하면 데이터 전송 비용을 크게 절감할 �
 
 비용 절감을 극대화하려면 스택 업데이트를 수행하여 스택을 사용하지 않을 때 "오프라인" 모드로 전환할 수 있습니다. 단, 기본값보다 더 큰 용량 설정으로 실행 중인 경우를 제외하고는 필요하지 않을 수 있습니다.
 
-비용을 대략적으로 추정하려면 [추정 비용 차트(alpha)](hubs-cloud-aws-estimated-cost-charts-ko.md)를 확인하십시오.
+비용을 대략적으로 추정하려면 [추정 비용 차트(alpha)](hubs-cloud-aws-estimated-cost-charts.md)를 확인하십시오.
 
 미래의 비용을 보다 정확하게 예측하려면 [AWS Cost Explorer for your Instance](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-what-is.html)를 사용하십시오.
 
 ## 비용 최소화 - 사용자 사례
 
-자동 설정에 대한 비용을 최소화하기 위한 권장사항은 [**일시 중지**](hubs-cloud-aws-costs-ko.md#database-pausing---automatic)를 기본적으로 설정하는 것입니다. 허브를 사용하는 사람이 없으면 허브를 [**오프라인 모드**](hubs-cloud-aws-costs-ko.md#offline-mode---manual) 또는 **t3.medium**과 같은 소형 인스턴스 유형으로 전환합니다. 또한 Cloudflare 작업자를 컨텐츠 CDN으로 사용하십시오.
+자동 설정에 대한 비용을 최소화하기 위한 권장사항은 [**일시 중지**](hubs-cloud-aws-costs.md#database-pausing---automatic)를 기본적으로 설정하는 것입니다. 허브를 사용하는 사람이 없으면 허브를 [**오프라인 모드**](hubs-cloud-aws-costs.md#offline-mode---manual) 또는 **t3.medium**과 같은 소형 인스턴스 유형으로 전환합니다. 또한 Cloudflare 작업자를 컨텐츠 CDN으로 사용하십시오.
 
 ## 이벤트 전: 개발
 
-소수의 사용자만 연결하여 룸 + 씬(scene)을 설정하려면 **t3.medium** 인스턴스[(?)](hubs-cloud-aws-estimated-cost-charts-ko.md#aws-server-type-recommendations) 이상을 사용하는 것이 좋습니다. 사용하지 않는 경우 인스턴스를 [**오프라인 모드**](hubs-cloud-aws-costs-ko.md#offline-mode---manual)로 설정합니다. 그런 다음 개발을 다시 시작하면 다시 온라인으로 전환하십시오.
+소수의 사용자만 연결하여 룸 + 씬(scene)을 설정하려면 **t3.medium** 인스턴스[(?)](hubs-cloud-aws-estimated-cost-charts.md#aws-server-type-recommendations) 이상을 사용하는 것이 좋습니다. 사용하지 않는 경우 인스턴스를 [**오프라인 모드**](hubs-cloud-aws-costs.md#offline-mode---manual)로 설정합니다. 그런 다음 개발을 다시 시작하면 다시 온라인으로 전환하십시오.
 
 ## 이벤트 전: 1.5시간
 
 인스턴스가 [**오프라인 모드**]인 경우(hubs-cloud-aws-costs-ko.md#offline-mode---manual),에서 수동으로 스택을 **Online**으로 업데이트하고 10분간 기다립니다.
 
-이벤트 최소 1시간 전에 스택을 수동으로 업데이트하여 AWS 서버 유형을 확장합니다. 예를 들어 이벤트 1시간 전에 [stack 업데이트](hubs-cloud-aws-updating-the-stack-ko.md)를 a **t3.medium**에서 **c4.large*(?)(hubs-cloud-aws-estimated-cost-charts-ko.md#aws-server-type-recommendations)로 설정합니다.
+이벤트 최소 1시간 전에 스택을 수동으로 업데이트하여 AWS 서버 유형을 확장합니다. 예를 들어 이벤트 1시간 전에 [stack 업데이트](hubs-cloud-aws-updating-the-stack.md)를 a **t3.medium**에서 **c4.large*(?)(hubs-cloud-aws-estimated-cost-charts-ko.md#aws-server-type-recommendations)로 설정합니다.
 
 ## 이벤트 도중
 
-성능 문제가 발견되면 **c4.large**에서 **c5.2xlarge**(?)(./hubs-cloud-aws-estimated-cost-charts-ko.md) 로 [스택 업데이트](hubs-cloud-aws-estimated-cost-charts-ko.md#aws-server-type-recommendations)를 임시로 늘릴 수 있습니다. 룸에 있는 사용자는 새 서버로 롤링하는 동안 잠시 정지/음성이 울립니다.
+성능 문제가 발견되면 **c4.large**에서 **c5.2xlarge**(?)(./hubs-cloud-aws-estimated-cost-charts-ko.md) 로 [스택 업데이트](hubs-cloud-aws-estimated-cost-charts.md#aws-server-type-recommendations)를 임시로 늘릴 수 있습니다. 룸에 있는 사용자는 새 서버로 롤링하는 동안 잠시 정지/음성이 울립니다.
 
 ## 이벤트가 끝난 후
 
@@ -86,7 +86,7 @@ AWS Server Type을 **c5.2xlarge**에서 **t3.medium*(?)(hubs-cloud-aws-estimated
 
 ### 오랫동안 아무도 인스턴스에 연결하지 않을 때
 
-지정된 경우 허브를 [**오프라인 모드**](hubs-cloud-aws-costs-ko.md#offline-mode---manual) 로 전환할 수 있습니다. 여기서 아무도 허브 또는 리디렉션 URL에 연결할 수 없습니다. **오프라인 모드**를 통해 백업, 장면 및 아바타와 같은 자산 스토리지를 제외한 모든 비용은 0달러입니다.
+지정된 경우 허브를 [**오프라인 모드**](hubs-cloud-aws-costs.md#offline-mode---manual) 로 전환할 수 있습니다. 여기서 아무도 허브 또는 리디렉션 URL에 연결할 수 없습니다. **오프라인 모드**를 통해 백업, 장면 및 아바타와 같은 자산 스토리지를 제외한 모든 비용은 0달러입니다.
 
 ## 스택 비용 관리 옵션
 

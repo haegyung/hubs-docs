@@ -4,7 +4,7 @@ title: SSH Access
 sidebar_label: Advanced: SSH Access
 ---
 
-SSH를 통해 서버에 액세스하려면 [Admin Console](hubs-cloud-getting-started-ko.md) 에서 **Server Access**를 선택하고 안내에 따라주세요.
+SSH를 통해 서버에 액세스하려면 [Admin Console](hubs-cloud-getting-started.md) 에서 **Server Access**를 선택하고 안내에 따라주세요.
 2-factor 인증은 기본적으로 설정되어 있으므로 `Google Authenticator` 와 같은 응용 프로그램이 설치된 2FA 장치가 있어야 서버에 연결할 수 있습니다.
 
 

@@ -14,12 +14,12 @@ title: Advanced Avatar Customization
   [로봇 OBJ/MAT 파일](https://github.com/j-conrad/hubs-avatar-pipelines/tree/master/Other%20model%20formats) 을 사용한 3D Photoshop 툴을 사용할 수도 있습니다.
 * [Substance Painter Project](https://github.com/MozillaReality/hubs-avatar-pipelines/blob/master/Substance) - 조금 더 세련된 맞춤형 스킨을 위한 Full Substance Painter 프로젝트입니다. 텍스처 set 예제를 다운로드하거나 수정할 수 있습니다.
 
-![UV 레이아웃 예제](../../website/static/img/UVLayout.jpg)
+![UV 레이아웃 예제](../website/static/img/UVLayout.jpg)
 
 
 기본 로봇 아바타의 UV 레이아웃은 X(수평) 축을 따라 의도적으로 대칭입니다. 이렇게 하면 텍스처의 절반을 칠하고 다른 쪽으로 뒤집기가 비교적 쉽습니다. Photoshop 과 같은 일부 이미지 편집 응용 프로그램에는 두 부분을 동시에 그릴 수 있는 미러링 도구가 내장되어 있습니다.
 
-![Panda Bot 예제](../../website/static/img/PandaBot.jpg)
+![Panda Bot 예제](../website/static/img/PandaBot.jpg)
 
 
 ### Types of Texture Maps
@@ -35,7 +35,7 @@ __참고: 'ORM' Texture 는 Ambient Occlusion(검은색 = 광택, 흰색 = 러�
 
 __텍스처 해상도를 1024x1024 이하로 유지하는 것이 좋아요.__ 이는 대부분 허브가 대용량 파일을 다운로드하는 시간이 길어지면 특히 모바일 장치의 성능이 저하될 수 있는 웹 기반 애플리케이션이기 때문입니다. 모든 텍스처는 2의 거듭제곱(64, 128, 256, 512 등)이어야 해요.
 
-![Hubs Avatar 커스터마이징](../../website/static/img/avatar-customization.jpeg) 
+![Hubs Avatar 커스터마이징](../website/static/img/avatar-customization.jpeg) 
 
 When you upload textures into Hubs The preview will be updated.
 You do not need to include all textures - any combination of maps are supported.
@@ -69,7 +69,7 @@ You can learn more about different types of maps here.
 허브 아바타는 VR용이기 때문에 실제 단위에서 작업해야 합니다. 일반적인 아바타의 키는 대략 1.7m 이며, 참고로 이 높이는 일반적으로 '스탠딩 높이' 입니다.
 여기에 표시된 다리가 없는 아바타의 경우 전체 키의 일부분만 나타냅니다.
 
-![avatar height diagram](../../website/static/img/avatarHeight.jpg)
+![avatar height diagram](../website/static/img/avatarHeight.jpg)
 
 파일 중 접미사가 *_base* 인 파일들은 대게 새 아바타 모델을 만들때 참고용으로 사용할 수 있는 가장 기본적인 골격(barebone) 인 기본 로봇 아바타 템플릿(basic robot avatar template) 을 나타냅니다.
 일반적으로 블렌더 워크플로우는 [AvatarBot_base_for_export.blend](https://github.com/MozillaReality/hubs-avatar-pipelines/tree/master/Blender/AvatarBot)

@@ -26,7 +26,7 @@ title: Discord Bot
    채팅을 브리지하고 허브 상태 업데이트를 보내기 위해 연결합니다.
 4. 봇을 사용해보세요! 봇이 있는 채널에 !hubs를 입력하면 몇 가지 작업을 볼 수 있습니다.
 
-허브 클라우드를 사용하십니까? [Hubs Cloud 서버에 봇 추가](hubs-cloud-discord-bot-ko.md) 할 수 있습니다.
+허브 클라우드를 사용하십니까? [Hubs Cloud 서버에 봇 추가](hubs-cloud-discord-bot.md) 할 수 있습니다.
 
 ### User Permission
 

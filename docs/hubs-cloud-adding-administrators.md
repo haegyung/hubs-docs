@@ -6,9 +6,9 @@ sidebar_label: Adding Administrators
 
 허브의 관리자에게는 모든 액세스 권한이 있습니다. 다음 작업을 수행할 수 있습니다.
 
-- [Admin Console](hubs-cloud-getting-started-ko.md) 에 액세스하여 시스템 설정 및 앱 구성을 업데이트합니다.
-- [콘텐츠 라이브러리 관리](hubs-cloud-managing-content-ko.md) 및 [콘텐츠 가져오기](hubs-cloud-importing-content-ko.md) 를 수행합니다.
-- [Scene Editor](spoke-creating-projects-ko.md) 에 액세스하여 설정에 상관없이 새 장면(Scene) 을 만들고 게시할 수 있습니다.
+- [Admin Console](hubs-cloud-getting-started.md) 에 액세스하여 시스템 설정 및 앱 구성을 업데이트합니다.
+- [콘텐츠 라이브러리 관리](hubs-cloud-managing-content.md) 및 [콘텐츠 가져오기](hubs-cloud-importing-content.md) 를 수행합니다.
+- [Scene Editor](spoke-creating-projects.md) 에 액세스하여 설정에 상관없이 새 장면(Scene) 을 만들고 게시할 수 있습니다.
 
 다른 계정 관리 권한을 할당하려면 해당 계정 ID를 얻은 다음 관리 콘솔에서 관리자 권한을 할당해야 합니다.
 
