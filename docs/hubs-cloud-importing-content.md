@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-importing-content
 title: 콘텐트(Content) 임포트하기
-sidebar_label: Importing Content
+sidebar_label: 콘텐트(Content) 임포트하기
 ---
 
 허브 클라우드로 가져올 수 있는 콘텐츠의 두 가지 형태는 **avatars** 및 **scene**입니다. 아바타는 관람객이 직접 입을 수 있는 로봇, 인간, 오리 등 3D 형상이고, 장면은 실내와 조경 등 3D 환경으로 방의 시각적인 기반을 제공한다.

@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-getting-started
 title: 허브 클라우드로 시작하기
-sidebar_label: Getting Started
+sidebar_label: 허브 클라우드로 시작하기
 ---
 
 AWS 또는 Digital Ocean에 Hubs Cloud를 성공적으로 배포한 후 허브의 호스트 도메인 이름(예: myhub.com 또는 hub.mydomain.com)으로 이동합니다.

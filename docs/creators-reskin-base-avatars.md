@@ -19,7 +19,9 @@ Hubs 에서 사용자 지정 아바타를 빠르고 쉽게 만드는 방법은 �
 
 ![UV 레이아웃 예제](docs/UVLayout.jpg)
 
-The UV layout for the base robot avatar is purposefully symmetrical along the X (horizontal) axis. This makes it relatively easy to paint one half of the texture(s) and flip it to the other side. Some image editing applications such as Photoshop have built-in mirroring tools that allow you to paint both halves in real time.
+기본 로봇 아바타의 UV 레이아웃은 의도적으로 X(수평) 축을 따라 대칭입니다.
+이렇게 하면 텍스처의 절반을 페인팅하고 반대쪽으로 뒤집기가 비교적 쉽습니다.
+Photoshop과 같은 일부 이미지 편집 응용 프로그램에는 실시간으로 양쪽 절반을 칠할 수 있는 미러링 도구가 내장되어 있습니다.
 
 ![Panda Bot 예제](docs/PandaBot.jpg)
 

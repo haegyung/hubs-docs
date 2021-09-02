@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-aws-domain-recipes
 title: 도메인 레시피(Domain Recipes)
-sidebar_label: Domain Recipes
+sidebar_label: 도메인 레시피(Domain Recipes)
 ---
 이 안내서에서는 허브 클라우드 스택을 만들기 전에 필요한 도메인을 등록하고 구입하는 몇 가지 방법을 제공합니다.
 

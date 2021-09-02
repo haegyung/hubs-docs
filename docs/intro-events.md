@@ -1,7 +1,7 @@
 ---
 id: intro-events
 title: Hubs에 이벤트 호스팅하기
-sidebar_label: Hosting Events in Hubs
+sidebar_label: Hubs에 이벤트 호스팅하기
 ---
 
 이 가이드에서는 [Mozilla Hubs](https://hubs.mozilla.com) 에서 이벤트에 허브를 사용하는 과정을 안내합니다. 이 가이드는 룸 만들기 및 구성, 사용자 지정 장면 선택, 초대 및 이벤트 진행을 시작하는 데 도움이 되는 여러 섹션으로 나눠져 있습니다.

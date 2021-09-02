@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-aws-backup-and-restore
 title: 백업(Backup) 과 복구(Restore)
-sidebar_label: Backup and Restore
+sidebar_label: 백업(Backup) 과 복구(Restore)
 ---
 
 만약에 어떤 문제가 발생하여 백업을 해야하는 경우 또는 기존 허브의 동일한 데이터를 사용하여 두 번째 허브를 만들고자 하는 경우

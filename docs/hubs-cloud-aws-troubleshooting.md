@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-aws-troubleshooting
 title: AWS 트러블슈팅(Trouble Shooting)
-sidebar_label: AWS Troubleshooting
+sidebar_label: AWS 트러블슈팅(Trouble Shooting)
 ---
 
 ## 배포

@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-permissive-rooms
 title: 레시피: 룸에 접근 허용 권한 설정하기
-sidebar_label: Recipe: Permissive Rooms
+sidebar_label: 레시피: 룸에 접근 허용 권한 설정하기
 ---
 
 즉시 룸에 설정된 기본 권한은 매우 제한적입니다. 즉, 룸을 작성할 경우, 승격하도록 선택한 사용자와 방문자만 모든 기능에 액세스할 수 있습니다. 객실을 방문하는 다른 방문객은 아바타 출연 및 말하기 이외의 대부분의 기능을 사용할 수 없습니다.

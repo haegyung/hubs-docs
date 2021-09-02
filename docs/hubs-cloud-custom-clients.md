@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-custom-clients
 title: 커스텀 클라이언트 생성하고 배포하기
-sidebar_label: Custom Clients
+sidebar_label: 커스텀 클라이언트 생성하고 배포하기
 ---
 
 이제 작동하는 Hubs Cloud 인스턴스가 있으므로 [Hubs Client](https://hubs.mozilla.com) 의 사용자 지정 버전을 직접 만들고 배포할 수 있습니다! [포크 저장소](https://github.com/mozilla/hubs) 에 코드를 변경한 다음 라이브 인스턴스에 배포합니다.
@@ -34,13 +34,13 @@ cd hubs
 git checkout hubs-cloud # to move to the hubs-cloud branch
 ```
 
-The "hubs-cloud" branch should function as the "master" branch. Since Hubs Cloud clients are compatible with the hubs-cloud branch. For code changes, branch off this branch.
+"hubs-cloud" 분기는 "마스터" 분기로 작동해야 합니다. Hubs Cloud 클라이언트는 hubs-cloud 분기와 호환되기 때문입니다. 코드 변경의 경우 이 분기를 분기합니다.
 
 ### Setup upstream remotes
 
-Upstream remote repository points to the original hubs repo, so when the hubs repo get updated, your fork can pull in those changes and stay up to date.
+업스트림 원격 리포지토리는 원래 허브 리포지토리를 가리키므로 허브 리포지토리가 업데이트되면 포크가 이러한 변경 사항을 가져와 최신 상태로 유지할 수 있습니다.
 
-Next, setup the original hubs repo as a remote upstream repository to keep your branches up to date.
+다음으로 원본 허브 리포지토리를 원격 업스트림 리포지토리로 설정하여 분기를 최신 상태로 유지합니다.
 
 ```bash
 # Connect to the mozilla managed hubs repository
@@ -49,7 +49,7 @@ git remote add upstream https://github.com/mozilla/hubs.git
 git remote -v # now should see both origin + upstreams
 ```
 
-You should see this printed:
+다음과 같이 인쇄된 것을 볼 수 있습니다.
 
 ```
 origin <The url copied in Step 6>
@@ -58,40 +58,40 @@ upstream https://github.com/mozilla/hubs.git (fetch)
 upstream https://github.com/mozilla/hubs.git (push)
 ```
 
-Success! You've set up your fork and upstream repositories on your machine.
+성공했어요! 머신에 포크 및 업스트림 리포지토리를 설정했습니다.
 
 ## Run your custom client
 
-Now that you have the Hubs repository forked and cloned on your machine, you'll need to install some dependencies. You'll need [Node JS](https://nodejs.org/en/) installed first. Then you'll install the hubs dependencies. We recommend using `npm ci` instead of `npm install` so that you always use the versions of modules in the `package-lock.json` file.
+이제 머신에 Hubs 리포지토리가 분기되고 복제되었으므로 일부 종속성을 설치해야 합니다. 먼저 [Node JS](https://nodejs.org/en/)가 설치되어 있어야 합니다. 그런 다음 허브 종속성을 설치합니다. 항상 `package-lock.json` 파일에 있는 모듈 버전을 사용하려면 `npm install` 대신 `npm ci`를 사용하는 것이 좋습니다.
 
 ```bash
 npm ci
 ```
 
-To run the client against your Hubs Cloud stack and deploy code to it, you'll need to be authenticated. Run `npm run login` and follow the instructions to authenticate (Warning: NOT `npm login`).
+Hubs Cloud 스택에 대해 클라이언트를 실행하고 여기에 코드를 배포하려면 인증을 받아야 합니다. `npm run login`을 실행하고 지침에 따라 인증하세요(경고: `npm login`이 아님).
 
 ```bash
 npm run login
 ```
 
-Once you are logged in you can start up the local development server with `npm start`. Your local development server will automatically rebuild your javascript project and refresh the page when you make changes. It will also connect to your Hubs Cloud server for all API requests, game/voice networking, and fetching configurations set in your admin panel.
+로그인하면 `npm start`로 로컬 개발 서버를 시작할 수 있습니다. 로컬 개발 서버는 자동으로 자바스크립트 프로젝트를 다시 빌드하고 변경 시 페이지를 새로 고칩니다. 또한 모든 API 요청, 게임/음성 네트워킹 및 관리자 패널에서 설정한 구성 가져오기를 위해 Hubs Cloud 서버에 연결합니다.
 
 ```bash
 npm start
 ```
 
-After you've made changes to your client's code you can deploy the changes to your Hubs Cloud stack with the `npm run deploy` command. Once that has finished you should see the changes live on your site! Please expect the `npm run deploy` command to take a while.
+클라이언트 코드를 변경한 후 `npm run deploy` 명령을 사용하여 변경 사항을 Hubs Cloud 스택에 배포할 수 있습니다. 완료되면 사이트에서 변경 사항을 실시간으로 볼 수 있습니다! `npm run deploy` 명령을 실행하는 데 시간이 걸릴 것으로 예상하십시오.
 
 ```bash
 npm run deploy
 ```
 
-> Note: When running a deploy, ensure webpack-dev-server (`npm start`) is **not** running. This may cause conflicts in the build process.
+> 참고: 배포를 실행할 때 webpack-dev-server(`npm start`)가 실행되고 있지 **않습니다**. 이로 인해 빌드 프로세스에서 충돌이 발생할 수 있습니다.
 
-If `npm run deploy` hangs on "Building Admin Console" for more than 20 minutes:
+`npm run deploy`가 "관리 콘솔 구축"에서 20분 이상 중단되는 경우:
 
-1. Stop then restart `npm run deploy` (sometimes it takes 2 tries to deploy)
-1. If it still hangs on "Building Admin Console" you may have a problem building the Admin Console
+1. 중지하고 `npm run deploy`를 다시 시작합니다(때로는 배포에 2번의 시도가 필요함). 
+1. 여전히 "관리 콘솔 구축"에서 중단되는 경우 관리 콘솔 구축에 문제가 있을 수 있습니다.
 
 To test that your admin panel build is working, in your hubs repo root, try:
 
@@ -101,36 +101,36 @@ To test that your admin panel build is working, in your hubs repo root, try:
 1. If these commands succeed, try the `npm run deploy` command again.
 1. If these commands fail, try `npm ci` and the `build` commands one more time, then fix the error in your code, then try these commands again.
 
-If at any point you want to revert your Hubs client back to using the Mozilla upstream version of the client, run `npm run undeploy`.
+언제든지 Hubs 클라이언트를 Mozilla 업스트림 버전의 클라이언트를 사용하도록 되돌리려면 `npm run undeploy`를 실행하세요.
 
 ```bash
 npm run undeploy
 ```
 
-## Update your Custom Client to the latest
+## 사용자 지정 클라이언트를 최신으로 업데이트
 
-You need to pull in the latest changes to the hubs-cloud branch into your fork + code.
+hubs-cloud 분기에 대한 최신 변경 사항을 포크 + 코드로 가져와야 합니다.
 
-Hubs Cloud is updated every month, to ensure your Hubs Cloud custom client is up to date, you should do this regularly in case of changes. See [Hubs Cloud Changelog](https://github.com/mozilla/hubs-cloud/blob/master/CHANGELOG.md) for details.
-
-Check your remotes for the upstream mozilla hubs repository. If not, follow "Setup remotes" steps above.
+Hubs Cloud는 매월 업데이트되므로 Hubs Cloud 사용자 지정 클라이언트가 최신 상태인지 확인하려면 변경 사항이 있는 경우 정기적으로 업데이트해야 합니다.
+자세한 내용은 [허브 클라우드 변경 로그](https://github.com/mozilla/hubs-cloud/blob/master/CHANGELOG.md) 를 참조하세요.
+업스트림 mozilla 허브 저장소에 대한 원격을 확인하십시오. 그렇지 않은 경우 위의 "리모컨 설정" 단계를 따르십시오.
 
 ```bash
 git remote -v # should see origin AND upstream fetch/push .git urls
 ```
 
-Fetch and merge the upstream Mozilla hubs-cloud branch into your branch. Especially important after a Hubs Cloud update.
+업스트림 Mozilla 허브 클라우드 분기를 가져와 분기에 병합합니다. Hubs Cloud 업데이트 이후에 특히 중요합니다.
 
 ```bash
 git fetch upstream # Gets all updates for your mozilla/hubs repo
-git checkout <your current hubs-cloud branch>
+git checkout <your current hubs-clod branch>
 git merge upstream/hubs-cloud # Merges updates from the hubs-cloud branch into your current branch
 ```
 
-Resolve conflicts. Then, deploy the updates.
+충돌을 해결합니다. 그런 다음 업데이트를 배포합니다.
 
 ```bash
 npm run deploy
 ```
 
-Congrats! Your client is now updated to the latest and live!
+축하 해요! 이제 클라이언트가 최신 상태로 업데이트되었습니다.

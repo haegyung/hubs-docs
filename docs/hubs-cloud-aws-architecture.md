@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-aws-architecture
 title: AWS 시스템 아키텍처
-sidebar_label: System Architecture
+sidebar_label: AWS 시스템 아키텍처
 ---
 
 ![AWS Architecture](img/hubs-cloud-aws-architecture.jpeg)

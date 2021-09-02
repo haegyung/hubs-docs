@@ -62,9 +62,11 @@ Internet Explorer를 사용하는 경우 다른 브라우저에서 웹 사이트
 
 개체를 가져오려고 할 때 개체가 끊어진 링크로 로드되는 경우 지원되지 않는 파일 형식이거나 파일이 너무 클 수 있습니다. 허브는 최대 150MB의 파일 업로드를 지원합니다.
 
-## Images aren't displaying 
+##Images aren't displaying 
 
-Some older systems have trouble rendering 2D objects in the scene. If you suspect this is happening, try reloading the page with the following flag at the end of the URL: __?disablebatching__. For example:
+몇몇 오래된 시스템은 장면(Scene) 에서 2D 오브젝트들을 렌더링하는데 이슈가 발생할 수 있습니다.
+만약 여러분이 이런 현상이 지속된다면 URL 끝 부분에 `URL:__?disablebatching__` 플래그를 넣고 페이지를 리로딩 시켜주세요.
+예를 들면 아래와 같이 말이죠:
 
     https://hubs.mozilla.com/sgKNM3h/smart-magnificent-gala?disablebatching
 

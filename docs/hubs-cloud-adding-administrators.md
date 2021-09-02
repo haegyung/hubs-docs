@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-adding-administrators
 title: 관리자 권한 추가하기
-sidebar_label: Adding Administrators
+sidebar_label: 관리자 권한 추가하기
 ---
 
 허브의 관리자에게는 모든 액세스 권한이 있습니다. 다음 작업을 수행할 수 있습니다.

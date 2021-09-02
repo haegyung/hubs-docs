@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-aws-updating-the-stack
 title: 스택에 업데이트하기
-sidebar_label: Updating the Stack
+sidebar_label: 스택(Stack)에 업데이트하기
 ---
 
 스택 업데이트를 수행하여 허브 스택의 다양한 설정을 변경할 수 있습니다. 이러한 변경 작업을 수행할 때 다운타임이 발생하지 않습니다. 스택을 업데이트하려면:

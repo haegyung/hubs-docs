@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-aws-estimated-cost-charts
 title: AWS 추정 비용 및 비용 차트(Alpha)
-sidebar_label: Estimating Cost Charts (Alpha)
+sidebar_label: AWS 추정 비용 및 비용 차트(Alpha)
 ---
 
 이 문서에서는 비용을 계산하는 방법에 대해 설명합니다. 전체적으로 설명을 하기위해:

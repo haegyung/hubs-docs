@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-intro
 title: 허브 클라우드란?
-sidebar_label: Introduction
+sidebar_label: 허브 클라우드란?
 ---
 
 ![Hubs Cloud](../website/static/img/hubs-cloud-logo.jpeg)

@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-discord-bot
 title: 레시피: 디스코드 봇(Discord bot)
-sidebar_label: Recipe: Discord Bot
+sidebar_label: 레시피: 디스코드 봇(Discord bot)
 ---
 
 > Discord bot for Hubs Cloud is under **construction**!

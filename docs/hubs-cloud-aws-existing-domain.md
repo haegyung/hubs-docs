@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-aws-existing-domain
 title: 현재 존재하는 도메인(Domain) 사용하기
-sidebar_label: Using an Existing Domain
+sidebar_label: 현재 존재하는 도메인(Domain) 사용하기
 ---
 
 **기존 도메인 또는 서브 도메인을 허브에 사용하시겠습니까?**

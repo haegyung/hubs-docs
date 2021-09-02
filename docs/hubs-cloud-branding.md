@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-branding
 title: 허브 클라우드 브랜드 가이드라인
-sidebar_label: Advanced: Brand Guidelines
+sidebar_label: 허브 클라우드 브랜드 가이드라인
 ---
 
 __주의해야 할 중요한 사항__

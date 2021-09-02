@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-limiting-user-access
 title: 허브에 유저 엑세스 권한 제한하기
-sidebar_label: Limiting Access
+sidebar_label: 허브에 유저 엑세스 권한 제한하기
 ---
 
 이 안내서에서는 **계정만 액세스**(관리자가 전자 메일 목록에서 만든 계정) 또는 **허브 불일치 봇**을 사용하여 허브와 룸을 잠그는 방법을 설명합니다.

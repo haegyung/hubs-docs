@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-aws-quick-start
 title: AWS 퀵 스타트(Quick Start)
-sidebar_label: AWS Quick Start
+sidebar_label: AWS 퀵 스타트(Quick Start)
 ---
 
 ## 허브 클라우드 스택을 만들기 전

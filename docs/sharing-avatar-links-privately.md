@@ -1,7 +1,7 @@
 ---
 id: sharing-avatar-links-privately
 title: 개인 링크(Privately Links)로 아바타 공유하기
-sidebar_label: Sharing Avatar Links Privately
+sidebar_label: 개인 링크(Privately Links)로 아바타 공유하기
 ---
 
 **특정 사람이 사용할 수 있는 아바타를 원하는 허브 룸이 있습니까?

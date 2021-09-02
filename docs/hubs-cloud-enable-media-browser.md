@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-enable-media-browser
 title: 레시피: 써드파티(3rd party) 통합
-sidebar_label: Recipe: 3rd Party Integrations
+sidebar_label: 레시피: 써드파티(3rd party) 통합
 ---
 허브에는 방문자가 Media Browser를 사용하여 룸에 생성할 수 있는 유용한 콘텐츠를 검색하는 통합 기능이 포함되어 있습니다. [Sketchfab](https://www.sketchfab.com), [Google Poly](https://poly.google.com) 등 다양한 사이트와 검색 엔진을 기본적으로 지원합니다. 또한 트윗을 통해 허브에서 직접 컨텐츠를 공유할 수도 있습니다.
 

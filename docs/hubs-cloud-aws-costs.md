@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-aws-costs
 title: AWS 비용 정보
-sidebar_label: Costs and Minimizing Costs Information
+sidebar_label: AWS 비용 정보
 ---
 
 이 문서에서는 허브 클라우드 비용의 작동 방식을 설명합니다. 허브는 AWS 비용을 최대한 최소화하도록 설계되었지만, 스택을 위해 AWS 비용을 최소화하는 방법에 대해 자세히 알아봅니다.

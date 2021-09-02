@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-accessing-servers
 title: SSH 접근하기
-sidebar_label: Advanced: SSH Access
+sidebar_label: Advanced: SSH 접근하기
 ---
 
 SSH를 통해 서버에 액세스하려면 [Admin Console](hubs-cloud-getting-started.md) 에서 **Server Access**를 선택하고 안내에 따라주세요.

@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-faq
 title: 허브 클라우드 FAQ
-sidebar_label: FAQ
+sidebar_label: 허브 클라우드 FAQ
 ---
 
 ## hubs.mozilla.com과 비교한 허브 클라우드를 사용하는 이유

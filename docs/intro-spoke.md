@@ -1,7 +1,7 @@
 ---
 id: intro-spoke
 title: 스포크(Spoke)로 장면(Scene) 빌드하기
-sidebar_label: Building Scenes with Spoke
+sidebar_label: 스포크(Spoke)로 장면(Scene) 빌드하기
 ---
 
 허브용 사용자 지정 VR 월드를 구축하시겠습니까? [Spoke](https://hubs.mozilla.com/spoke)! 를 참조하십시오. 👋

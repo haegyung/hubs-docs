@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-aws-estimated-ccu-limits
 title: AWS 추산된 CCU Limits
-sidebar_label: Estimating CCU Limits
+sidebar_label: AWS 추산된 CCU Limits
 ---
 
 이 문서에서는 전체 서버와 개별 룸에 대해 사용된 인스턴스 유형에 따라 허브 클라우드 서버의 CCU(동시 사용자) 제한을 계산하는 방법에 대해 설명합니다.

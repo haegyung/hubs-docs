@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-customizing-look-and-feel
 title: 룩앤필(Look and feel) 커스터마이징 하기
-sidebar_label: Customizing Look & Feel
+sidebar_label: 룩앤필(Look and feel) 커스터마이징 하기
 ---
 
 # 허브 사용자 인터페이스에 대한 공지사항

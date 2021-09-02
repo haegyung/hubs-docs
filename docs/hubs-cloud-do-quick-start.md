@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-do-quick-start
 title: 디지털 오션(DigitalOcean) 퀵 스타트
-sidebar_label: DigitalOcean Quick Start
+sidebar_label: 디지털 오션(DigitalOcean) 퀵 스타트
 ---
 
 > **경고! 디지털 오션용 허브 클라우드는 알파(Alpha) 형태로 제공되고 있습니다.**

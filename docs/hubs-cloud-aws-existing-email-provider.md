@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-aws-existing-email-provider
 title: 존재하는 이메일 제공자(Email Provider) 사용하기
-sidebar_label: Using an Existing Email Provider
+sidebar_label: 존재하는 이메일 제공자(Email Provider) 사용하기
 ---
 
 기본적으로 허브는 지정한 Route 53 도메인의 이메일에 대해 Amazon Simple Email Service로 설정됩니다. 이메일을 보내기 위해 여러분이 가지고있는 SMTP 설정을 사용할 수도 있습니다. 

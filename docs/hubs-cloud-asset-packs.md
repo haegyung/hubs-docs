@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-asset-packs
 title: 권장하는 Asset Packs
-sidebar_label: Asset Packs
+sidebar_label: 권장하는 Asset Packs
 ---
 
 여러분의 허브에 쉽게 가져올 수 있는 아바타(Avatar) 및 장면(Scene) 컬렉션(Collections) 을 모아놨어요.

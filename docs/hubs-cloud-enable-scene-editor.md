@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-enable-scene-editor
 title: 레시피: 장면 에디터(Scene editor) 활성화
-sidebar_label: Recipe: Enable Scene Editor
+sidebar_label: 레시피: 장면 에디터(Scene editor) 활성화
 ---
 
 허브 클라우드에는 **Scene Editor**라는 브랜드되지 않은 버전의 [Spoke](http://hubs.local:3000/docs/spoke-creating-projects.html) 이 포함되어 있습니다.

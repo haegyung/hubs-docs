@@ -1,7 +1,7 @@
 ---
 id: hubs-cloud-managing-content
 title: 콘텐트 관리하기
-sidebar_label: Managing Content
+sidebar_label: 콘텐트 관리하기
 ---
 
 허브와 스포크에서는 방문객이 직접 아바타와 장면을 만들 수 있습니다. 그런 다음 해당 컨텐츠를 다른 사용자와 공유하도록 제안할 수 있으며, 이를 통해 방문자는 미디어 브라우저와 같은 도구를 통해 컨텐츠를 검색할 수 있습니다.

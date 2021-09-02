@@ -104,9 +104,6 @@ Unlight Material 은 모든 장치에서 렌더링하고 동일하게 보이는 
   Your browser does not support HTML5 video.
 </video>
 
-Once you have the Background node, you can plug your texture into it, and send that to the Material Output.
-When you export to glb and bring the object into Spoke or Hubs, it will be 'unlit' (or fully lit, depending how you think of it.)
-
 백그라운드 노드가 있으면 이 노드에 텍스처를 연결하고 재료 출력으로 전송할 수 있습니다.
 glb로 내보내고 개체를 Spoke 또는 Hubs 로 가져오면 'unlit'(또는 생각하는 방식에 따라 완전히 켜짐)이 됩니다.
 
