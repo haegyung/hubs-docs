@@ -4,7 +4,7 @@ title: 디스코드 봇(Discord Bot)
 ---
 
 ## About
-[Hubs Discord Bot](https://hubs.mozilla.com/discord)을 사용하면 허브 룸을 Discord 대화 서버에 쉽게 연결할 수 있습니다. 허브 룸이 디스코드 채널과 연결된 경우 사용자에게 불협화음 역할에 따라 허브 룸에서 기능이 할당됩니다. 예를 들어, 불화 소유자 및 진행자는 허브 룸의 설정을 변경하고 룸의 사용자를 조정할 수 있습니다.
+[Hubs Discord Bot](https://hubs.mozilla.com/discord) 을 사용하면 허브 룸을 Discord 대화 서버에 쉽게 연결할 수 있습니다. 허브 룸이 디스코드 채널과 연결된 경우 사용자에게 디스코드 역할에 따라 허브 룸에서 기능이 할당됩니다. 예를 들어, 불화 소유자 및 진행자는 허브 룸의 설정을 변경하고 룸의 사용자를 조정할 수 있습니다.
 
 ![Hubs Discord bot](img/discord-bot.jpeg)
 
@@ -19,18 +19,18 @@ title: 디스코드 봇(Discord Bot)
 
 여러분의 룸이 hubs.mozilla.com에서 호스팅되는 경우:
 
-1. [여기를 클릭](https://discordapp.com/oauth2/authorize?client_id=509129921826914304&permissions=536890368&scope=bot) 을 클릭하여 허브 불협화음 봇을 불협화음 서버로 초대합니다.
+1. [여기를 클릭](https://discordapp.com/oauth2/authorize?client_id=509129921826914304&permissions=536890368&scope=bot) 을 클릭하여 허브 디스코드 봇을 디스코드 서버로 초대합니다.
 2. 허브를 실행할 채널을 선택하거나 새 채널을 만듭니다.
 3. 이러한 채널에 대해 로봇에게 적절한 권한(아래 참조)을 부여합니다.
 3. 실행할 채널에 "허브"라는 이름의 웹 후크를 만듭니다. (채널의 설정-->통합으로 이동) 이것을 사용할 것이다.
    채팅을 브리지하고 허브 상태 업데이트를 보내기 위해 연결합니다.
 4. 봇을 사용해보세요! 봇이 있는 채널에 !hubs를 입력하면 몇 가지 작업을 볼 수 있습니다.
 
-허브 클라우드를 사용하십니까? [Hubs Cloud 서버에 봇 추가](hubs-cloud-discord-bot.md) 할 수 있습니다.
+허브 클라우드를 사용하십니까? [Hubs Cloud 서버에 봇을 추가](hubs-cloud-discord-bot.md) 할 수 있습니다.
 
 ### User Permission
 
-룸의 사용자 권한은 봇이 바인딩된 채널에서 자신의 불협화음 역할이 가진 권한을 상속합니다. 구체적으로
+룸의 사용자 권한은 봇이 바인딩된 채널에서 자신의 디스코드 역할이 가진 권한을 상속합니다. 구체적으로
 
 - 룸에 들어가려면 "채널 보기" 권한이 있어야 합니다.
 - 진행자가 되려면 "Kick Members" 권한(및 "채널 보기")이 있어야 합니다.
