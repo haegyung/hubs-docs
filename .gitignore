@@ -2,6 +2,8 @@
 
 node_modules
 
+./docs-translate/.idea
+
 package-lock.json
 
 lib/core/metadata.js

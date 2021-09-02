@@ -1,70 +1,69 @@
 ---
 id: hubs-room-settings
-title: Room Settings
+title: 룸(Room) Settings
 ---
 
 ## Change the Scene
 
-There are lots of scenes to choose from in our featured scenes browser. You can also upload your own using our scene editor, [Spoke](./intro-spoke.html). If you are a room moderator, find the scene browser by opening the dropdown menu and selecting "Choose a Scene". 
+저희의 추천 장면 브라우저에는 선택할 수 있는 장면들이 많이 있습니다. 장면 편집기(Scene Editor) [Spoke](.intro-spoke.html) 를 사용하여 직접 업로드할 수도 있습니다. 룸 진행자인 경우 드롭다운 메뉴를 열고 "장면 선택(Select a scene)"을 선택하여 장면 브라우저를 찾습니다.
 
-Note that only featured scenes have been tested for performance across devices. For more information on how featured scenes are selected take a look at our [Featured Content Guidelines](./creators-content-guidelines.html). 
+주요 장면만 여러 장치에서 성능을 테스트했습니다. 피쳐링 장면을 선택하는 방법에 대한 자세한 내용은 [Featured Content Guidelines](./creators-content-guidelines.html) 을 참조하십시오.
 
 <video autoplay loop muted controls >
-  <source src="img/change-the-scene.mp4" type="video/mp4">
-  <img src="img/intro-hubs-scene-browser-min.jpeg" alt="Screenshot of the Scene Browser">
+  <source src="../website/static/img/change-the-scene.mp4" type="video/mp4">
+  <img src="../website/static/img/intro-hubs-scene-browser-min.jpeg" alt="Screenshot of the Scene Browser">
   Your browser does not support HTML5 video.
 </video>
 
 ## Change Room Name
 
-To change the name of a room, room moderators can select "Room Settings" from the dropdown menu and enter a new name.
+룸 이름을 변경하려면, 룸 진행자는 드롭다운 메뉴에서 "룸 설정"을 선택하고 새 이름을 입력할 수 있습니다.
 
 ## Room Access
 
 
 ## Room Permissions
 
-By default, rooms are set to "Shared link" mode, where room links contain unique, random identifiers. Sharing this link will give anyone access to the room. You can also set the room to "Invite only" mode, which allows you to generate a link with an additional unique, random identifier. Visitors must then use this invite link to access the room, and the invite link can be revoked to deny future access to the room. When an invite link is revoked, a new one is generated in its place. Users who are already in the room will not be removed from it.
+기본적으로 룸은 "공유 링크" 모드로 설정되며, 여기서 룸 링크는 고유한 임의 식별자를 포함합니다. 이 링크를 공유하면 모든 사용자가 룸에 액세스할 수 있습니다. 또한 룸을 "초대 전용" 모드로 설정하여 고유한 임의의 추가 식별자를 사용하여 링크를 생성할 수 있습니다. 그런 다음, 방문자는 이 초대 링크를 사용하여 룸에 액세스해야 하며, 이후 룸에 대한 접근을 거부하기 위해 초대 링크를 취소할 수 있습니다. 초대 링크를 취소하면 새 초대 링크가 생성됩니다. 이미 룸에 있는 사용자는 룸에서 제거되지 않습니다.
 
-Note: You can also switch from "Invite only" mode back to "Shared link" mode. Since "Shared link" mode is less restrictive, it will allow users with previously revoked invite links to access the room. If you want to prevent this, keep the room in "Invite only" mode.
+참고: "초대 전용" 모드에서 "공유 링크" 모드로 다시 전환할 수도 있습니다. "공유 링크" 모드는 제한성이 낮으므로 이전에 취소된 초대 링크를 가진 사용자가 룸에 접근할 수 있습니다. 이를 방지하려면 룸을 "초대 전용" 모드로 유지하십시오.
 
-
-You can specify whether users in the room are able to create and move objects, create cameras, pin content, draw with the pen, create emojii, and fly. By default, all these features are enabled. To toggle them select "Room Settings" from the dropdown menu and set the permissions you want.
+룸의 사용자가 객체를 작성 및 이동하고, 카메라를 작성하거나, 내용을 고정하고, 펜으로 그림을 그리거나, 이모지를 작성하거나, 이동할 수 있는지 여부를 지정할 수 있습니다. 기본적으로 이러한 기능은 모두 활성화되어 있습니다. 설정을 전환하려면 드롭다운 메뉴에서 "룸 설정"을 선택하고 원하는 권한을 설정합니다.
 
 ## Promoting Room Moderators
 
-When in a room with other trusted users, the room owner can promote other users to also have moderation permissions. Promoted moderators have all of the same permissions as a room owner. It is important to ensure that users who are promoted to moderator are trusted parties, as they will have abilities to rename, change scenes, and close the room.
+다른 신뢰할 수 있는 사용자가 있는 룸에서 룸 소유자는 다른 사용자에게 중재 권한을 부여할 수 있습니다. 승격된 진행자는 회의실 소유자와 동일한 권한을 모두 가집니다. 진행자로 승격된 사용자는 회의실 이름 변경, 장면 변경 및 회의실 폐쇄 기능을 가지므로 신뢰할 수 있는 당사자인지 확인하는 것이 중요합니다.
 
-To promote a user to moderator, select the user from the user list and click the "Promote" button. Users need to be signed in to be promoted.
+사용자를 진행자로 승격하려면, 사용자 목록에서 사용자를 선택한 후 "승격" 단추를 누릅니다. 사용자가 로그인해야 승진할 수 있습니다.
 
 ## Maximum Capacity
 
-Hubs rooms have a maximum capacity of 25 people in-room to ensure performance across devices. However, many more can watch from the lobby, even when the room is full.
+허브 룸은 기기 전반의 성능을 보장하기 위해 객실 내 최대 25명까지 수용할 수 있습니다. 하지만 방이 꽉 찬 상태에서도 로비에서 더 많은 사람들이 관람할 수 있다.
 
-Users in the lobby can see and hear what's going on inside the room, and can interact with others through chat. If a room is full, we recommend turning on "Camera Mode" to broadcast a moderator's view to the lobby. 
+로비에 있는 사용자는 실내의 상황을 보고 들을 수 있으며 채팅으로 다른 사람과 상호작용할 수 있습니다. 객실이 꽉 찬 경우, "카메라 모드"를 켜서 진행자의 보기를 로비로 브로드캐스트하는 것이 좋습니다.
 
 ## Camera Mode
 
-Camera mode broadcasts a moderator's view to the lobby. This allows users who haven't entered the room to see what's going on in the virtual space from the moderator's point of view. To turn on "Camera Mode" select it from the dropdown menu.
+카메라 모드는 진행자의 보기를 로비로 브로드캐스트합니다. 이렇게 하면 룸에 들어가지 않은 사용자가 진행자의 관점에서 가상 공간의 진행 상황을 볼 수 있습니다. "카메라 모드"를 켜려면 드롭다운 메뉴에서 선택합니다.
 
-Entering camera mode also reveals a button to hide the user interface. This can be helpful when doing screen recordings of an event. Press Esc to show the user interface again.
+카메라 모드로 전환하면 사용자 인터페이스를 숨기는 버튼도 표시됩니다. 이것은 이벤트를 화면 녹화할 때 도움이 될 수 있습니다. Esc 키를 눌러 사용자 인터페이스를 다시 표시합니다.
 
 ## Kick Users
 
-To temporarily kick a user from the room, open the avatar menu and select "Kick." 
+룸에서 사용자를 일시적으로 킥하려면 아바타 메뉴를 열고 "Kick"을 선택합니다.
 
 ## Discord Authentication 
 
-When you create a room in Hubs, it is private by default. Sharing the link or access code with other people allows them to enter that specific room, so generally, you want to be careful with who has the link.  
+허브에 룸을 만들면 기본적으로 개인 룸입니다. 링크 또는 액세스 코드를 다른 사용자와 공유하면 특정 룸에 들어갈 수 있으므로 일반적으로 누가 링크를 가지고 있는지 주의해야 합니다.
 
-You can link a Hubs room to a channel in a Discord server and have your server members join with their Discord accounts. Banning a user from your server or removing them from the Discord channel will prevent them from being able to re-join the linked Hubs room, even if that user still has the link to the room. You can learn more about the Hubs Discord bot [here](./hubs-discord-bot.html). 
+허브 룸을 디스코드 서버의 채널에 연결하고 서버 구성원이 디스코드 계정에 가입하도록 할 수 있습니다. 사용자를 서버에서 금지하거나 디스코드 채널에서 제거하면 해당 사용자가 룸에 대한 링크를 아직 가지고 있더라도 연결된 허브 룸에 다시 가입할 수 없습니다. 허브 디스코드 Vote 에 대한 자세한 내용은 [여기](.hubs-discord-bot.html) 를 참조하십시오.
 
 ## Favorite Rooms
 
-Add a room to your list of favorites by opening up the 'More' menu and clicking 'Favorite Room'. Adding a room to your favorites makes it easier to find again by adding it to your home Hubs screen.
+'추가' 메뉴를 열고 '즐겨찾는 방'을 클릭하여 즐겨찾기 목록에 룸을 추가합니다. 즐겨찾기에 룸을 추가하면 홈 허브 화면에 룸을 추가하여 룸을 다시 쉽게 찾을 수 있습니다.
 
-To remove the room from your favorites, open the room, open the 'More' menu, and click 'Unfavorite Room'. 
+즐겨찾기에서 룸을 제거하려면 룸을 열고 '추가' 메뉴를 연 다음 '즐겨찾지 않는 룸'을 클릭합니다.
 
 ## Close a Room
 
-When you leave a Hubs room, it remains accessible via its URL. You can choose to permanently close the room by selecting "Close Room" from the dropdown menu. Links and codes for the room will no longer work for anyone, including the room owner.
+허브 룸을 나갈 때 URL을 통해 해당 룸에 액세스할 수 있습니다. 드롭다운 메뉴에서 "룸 닫기"를 선택하여 룸을 영구적으로 닫도록 선택할 수 있습니다. 방 링크 및 코드는 방 소유자를 포함한 그 누구에게도 더 이상 적용되지 않습니다.

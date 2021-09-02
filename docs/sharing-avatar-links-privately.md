@@ -1,28 +1,28 @@
 ---
 id: sharing-avatar-links-privately
-title: Sharing Avatar Links Privately
-sidebar_label: Sharing Avatar Links Privately
+title: 개인 링크(Privately Links)로 아바타 공유하기
+sidebar_label: 개인 링크(Privately Links)로 아바타 공유하기
 ---
 
-**Do you have a hubs room where you want specific avatars to be available for specific people but not others?
-For example, an event where the performer has an exclusive avatar or moderators wear a custom moderator shirt, unavailable to attendees?** If so, read on...
+**특정 사람이 사용할 수 있는 아바타를 원하는 허브 룸이 있습니까?
+예를 들어, 공연자가 독점 아바타 또는 진행자가 참석자가 사용할 수 없는 사용자 정의 진행자 셔츠를 입는 이벤트?** 그렇다면 계속 읽어보세요...
 
-If you [create a custom avatar](./intro-avatars.md), you can send the 2D texture set or the 3D GLB model file to the event organizes to upload.
+[커스텀 아바타 만들기](intro-avatars.md) 인 경우 2D 텍스처 세트 또는 3D GLB 모델 파일을 이벤트 조직에 전송하여 업로드할 수 있습니다.
 
-Alternatively, if you want to make it easier on the event organizers, you can create a "dressing room" for special avatars. This is a room, where the different avatars are on display for people to wear.
+또는 이벤트 주최자에게 보다 쉽게 제공하려는 경우, 특수 아바타를 위한 "드레스룸"을 작성할 수 있습니다. 이곳은 다양한 아바타가 전시되어 사람들이 입을 수 있는 방입니다.
 
-### Creating a dressing room
+### 탈의실 만들기
 
-1. Create a new Hubs room to be the "dressing room".
-2. Upload a special avatar you want to share, and then find it in your list of "my avatars".
-3. Right click on it and select "copy link location".
+1. "탈의실"이 될 새로운 허브 룸을 만듭니다.
+2. 공유할 특수 아바타를 업로드한 다음 "my avatars" 목록에서 찾습니다.
+3. 마우스 오른쪽 단추를 클릭하고 "연결 위치 복사"를 선택합니다.
 
-![Example get avatar link screenshot](img/hubs-exclusive-avatars.png)
+![예: 아바타 링크 스크린샷 가져오기](../website/static/img/hubs-exclusive-avatars.png)
 
-4. Go back to the dressing room, then press CTRL+V (CMD+V on Mac). A 2D representation of the avatar is added to the room as an object.
-5. Pin this object so that it doesn't disappear when you leave the room. (Hover cursor on it, press the space bar, and select "pin".)
-6. Share the URL to this dressing room with the organizing team. To wear an avatar, users just have to point at the one they want and select "use avatar".
+4. 탈의실로 돌아가서 CTRL+V(Mac의 경우 CMD+V)를 누릅니다. 아바타의 2D 표현이 객체로 방에 추가됩니다.
+5. 방을 나갈 때 물체가 사라지지 않도록 고정합니다. (커서로 스페이스바를 누르고 "핀"을 선택합니다.)
+6. 이 탈의실의 URL을 조직 팀과 공유합니다. 아바타를 착용하기 위해서는 사용자가 원하는 아바타를 가리키고 "아바타 사용"을 선택하면 됩니다.
 
-Here's a screenshot of an example "dressing room":
+다음은 "탈의실"의 스크린샷입니다.
 
-![Example dressing room with custom avatars](img/hubs-dressing-room.png)
+![맞춤형 아바타가 있는 탈의실 예시](../../website/static/img/hubs-dressingroom.png)

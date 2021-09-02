@@ -1,57 +1,55 @@
 ---
 id: spoke-optimization
-title: Optimizing Scenes
+title: 장면(Scenes) 최적화하기
 ---
 
-## Improving Performance
+## 성능 향상시키기
+허브 씬(scene)을 작성할 때, 광범위한 디바이스에서 우수한 성능을 발휘하기를 가장 원할 것입니다. 고출력 유선 입력 VR 헤드셋에서 저전력 휴대 전화에 이르기까지, 방문자(visitor)의 장치 유형과 연결 속도에 따라 Scene(장면) 의 성능이 달라질 수 있습니다.
 
-When building Hubs scenes, you'll most likely want them to perform well across a wide-range of devices. From high-powered wired-in VR headsets, to low-powered mobile phones; performance of a scene may vary based on the type of device and connection speed of a your visitors. 
+모두의 성능을 향상시키는 한 가지 방법은 장면의 복잡성을 줄이는 것입니다. 여기에는 씬(scene)의 개체 수를 줄이거나 사용 중인 자산을 최적화하는 작업이 포함될 수 있습니다. 다음 섹션에서는 자산을 최적화하기 위해 취할 수 있는 단계에 대해 간략히 설명합니다.
 
-One way to improve performance for everyone is to reduce the complexity of a scene. This could involve reducing the number of objects in a scene or optimizing the assets you are using. In the following section we will briefly cover steps you can take to optimize your assets.
+### 성능 측정하기
+
+씬(scene)의 성능을 자세히 살펴보기 위해 VR Status(VR 상태) 메뉴를 열 수 있습니다. 바탕 화면의 오른쪽 하단 모서리에 있는 FPS 미터를 클릭합니다(또는 VR에서 대화 상자에 /vrstats를 입력합니다). 로드 시간, 삼각형 수 및 씬(scene)의 텍스처에 대한 추가 정보가 표시됩니다.
+
+<!-- 열기 수행 도구 비디오 삽입 -->
+
+### 이미지와 비디오 최적화
+
+매우 크고 디테일한 이미지와 동영상은 웹에서 성능을 저하시킬 수 있습니다. 이러한 유형의 미디어를 씬(scene)에 많이 포함할 경우 다음과 같은 작업을 수행하여 양호한 성능을 유지할 수 있습니다.
+
+* 대용량 이미지/비디오의 치수 축소
+* 파일을 압축하거나, Photoshop의 "웹에 저장" 기능을 사용하여 이미지를 저장하거나, 온라인 이미지 또는 비디오 압축 도구를 사용하여 파일 크기를 줄입니다.
+* .png 이미지를 .jpeg로 변환해 보십시오. 파일 크기가 더 작은 경우가 많습니다.
+* 허브에서 GIF를 보다 효율적으로 실행할 수 있도록 비디오 형식으로 변환합니다.
+
+### 3D 모델 최적화
+
+복잡한 3D 모델은 장면에서 성능 문제를 일으킬 수 있습니다. 두 가지 주요 요인이 개체의 복잡성에 영향을 줍니다. 첫째, 모델의 텍스처 자산, 둘째, 모델 자체의 삼각형 수입니다. 일반적으로 모형이 더 사실적으로 나타날수록 모형은 더 복잡해집니다(항상 그렇지만은 않음).
+
+Sketchfab 및 Google Poly 브라우저를 사용하여 스포크 및 허브에서 찾을 수 있는 3D 모델은 이미 개체의 크기/복잡성에 따라 필터링되어 있습니다. 그러나 다운로드 가능한 다른 모델의 성능을 향상시키려면 개체 텍스처 크기를 줄이거나 삼각형 수를 줄일 수 있습니다. [Blender]()와 같은 도구를 사용하여 이 작업을 수행할 수 있습니다.
+
+#### 텍스쳐 사이즈 줄이기
+
+glb 모델의 이미지 텍스처 크기를 줄이려면 [gltf 파일로 변환]()을 사용하여 모든 텍스처 파일을 포함하는 폴더를 만들고 포토샵과 같은 도구를 사용하여 이미지 텍스처 크기를 1/4로 줄일 수 있습니다.
+
+또한 [Blender에서 텍스처 크기를 최적화하기 위해 할 수 있는 다른 작업 비디오](https://www.youtube.com/watch?v=6uhAp1m1SXQ)를 만들었습니다.
 
 
-### Measuring performance
+#### number of triangles 줄이기
 
-To take a closer look at your scene's performance, you can open up the VR Status menu. Click on the FPS meter in the lower right hand corner on desktop (or in VR, type /vrstats into the chat box). This will show you additional information on the load time, number of triangles, and textures in your scene. 
+이상적 삼각형의 개수에 대한 황금칙은 없지만, 수십만 개의 삼각형이 아닌 수만 개의 삼각형이 있는 모형을 사용하는 것이 좋습니다. 많은 복잡한 3D 모델은 모델 모양에 큰 영향을 미치지 않고 삼각형 개수를 줄일 수 있습니다. 블렌더의 그물 소멸 도구를 사용하여 이 작업을 수행할 수 있습니다. 자세한 내용은 [이 비디오](https://www.youtube.com/watch?v=IIQNj-6_tQE_)를 참조하십시오.
 
-<!-- Insert video of opening performance tools -->
+## Oculus Quest & Mobile 노트
 
-### Optimizing Images & Videos
-
-Very large, detailed images and videos can reduce performance on the web. If you are including a lot of this type of media in your scene, you can do the following to maintain good performance.
-
-* Reduce the dimensions of large images/video
-* Compress the files, use the "save for web" feature in Photoshop for images, or use an online image or video compression tool to reduce the file size
-* Try converting .png images to .jpeg, as these often have smaller file sizes.
-* Convert GIFs to video format, as they run more efficiently in Hubs.
-
-### Optimizing 3D Models
-
-Complex 3D models can cause performance challenges in your scenes. Two main factors contribute to an object's complexity, firstly, the texture assets in a model, secondly, the number of triangles in the model itself. Typically the more realistic a model appears, the more complex the model is (although this is not always the case). 
-
-3D models found using the Sketchfab and Google Poly browser in Spoke and Hubs are already filtered based on objects' sizes/complexity. However, if you want to improve the performance of another downloadable model, you can either reduce the objects texture size, or you can reduce the number of triangles. You can use a tool like [Blender]() to do this. 
-
-#### Reduce texture size
-
-To reduce the image texture size of a glb model, you can either [covert to a gltf file](), so that there is a folder with all the texture files and reduce the size of the image textures using a tool like photoshop (reduce the size of the images by half, or by a quarter for example). 
-
-We've also made a [video of other things you can do to optimize the size of your textures in Blender](https://www.youtube.com/watch?v=6uhAp1m1SXQ).
-
-#### Reduce number of triangles
-
-There is no golden rule of thumb for what number of triangles in a model is ideal, however, we recommend using models with only tens of thousands, rather than hundreds of thousands of triangles. Many complex 3D models can have their triangle count reduced without greatly impacting the way that the model looks. You can do this using the Mesh Decimation tool in Blender. For instructions, check out [this video](https://www.youtube.com/watch?v=IIQNj-6_tQE_)
-
-## Oculus Quest & Mobile Notes
-
-Note that some scenes might look different 
-
+일부 씬(scene)이 다르게 보일 수 있습니다.
 
 
 <!-- 
-## Developing for Mobile Devices & Quest
-
+## 모바일 기기 & 퀘스트용 개발
 
 ### AO
 
 
-gifs can be hard on your scene -->
+gifs는 여러분의 Scene 에서는 힘들 수 있습니다. 
+-->

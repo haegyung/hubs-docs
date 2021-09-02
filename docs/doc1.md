@@ -6,7 +6,7 @@ sidebar_label: Example Page
 
 Testing 1-2-3-4
 
-Check the [documentation](https://docusaurus.io) for how to use Docusaurus.
+Docusaurus 사용법을 위해 [documentation](https://docusaurus.io) 를 참조해주세요.
 
 ## Lorem 1-2-3
 

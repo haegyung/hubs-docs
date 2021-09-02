@@ -1,13 +1,13 @@
 ---
 id: spoke-skyboxes
-title: Skyboxes
+title: 스카이박스(Skyboxes)
 ---
 
-Skyboxes can significantly impact the ambience of your scene. Unless you have started from a template that removed the default elements, you should have a skybox in your scene when you begin. 
+스카이박스는 장면 분위기에 큰 영향을 미칠 수 있습니다. 기본 요소를 제거한 템플릿에서 시작하지 않은 경우 시작할 때 씬(scene)에 스카이박스가 있어야 합니다.
 
-![Screenshot of Spoke](img/spoke-skybox.png)
+![Screenshot of Spoke](../website/static/img/spoke-skybox.png)
 
-The skybox properties panel lets you fine tune the existing skybox. You can change the following qualities: 
+스카이박스 속성 패널을 통해 기존 스카이박스를 미세 조정할 수 있습니다. 다음과 같은 품질을 변경할 수 있습니다.
 
 * Time of Day
 * Latitude
@@ -18,12 +18,12 @@ The skybox properties panel lets you fine tune the existing skybox. You can chan
 * Horizon End
 
 
-![Screenshot of the skybox property panel](img/spoke-skybox-properties.png)
+![Screenshot of the skybox property panel](../website/static/img/spoke-skybox-properties.png)
 
-## Adding a custom skybox
+## 커스텀 스카이 박스(Sky Box) 추가하기 
 
-It is not possible to add a custom Skybox to a scene. However, one workaround is to insert a 360 image inside of your scene to obscure the existing Skybox. 
+씬(scene)에 사용자 지정 Skybox를 추가할 수 없습니다. 그러나 한 가지 해결 방법은 360 이미지를 장면 내부에 삽입하여 기존 Skybox를 가리는 것입니다.
 
-For an example of this, check out the [Rolling Hills](https://hubs.mozilla.com/scenes/iu2htZZ/rolling-hills) scene. To see how it's assembled in Spoke, click the "Remix in Spoke" button.
+예를 들어 [롤링힐즈](https://hubs.mozilla.com/scenes/iu2htZZ/rolling-hills) 장면을 확인하십시오. Speak에서 조립 방법을 보려면 "Remix in Speak" 버튼을 클릭하십시오.
 
-![Screenshot of the skybox property panel](img/spoke-skybox-360.png)
+![Screenshot of the skybox property panel](../website/static/img/spoke-skybox-360.png)

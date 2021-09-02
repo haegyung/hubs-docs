@@ -1,69 +1,73 @@
 ---
 id: hubs-cloud-aws-quick-start
-title: AWS Quick Start
-sidebar_label: AWS Quick Start
+title: AWS 퀵 스타트(Quick Start)
+sidebar_label: AWS 퀵 스타트(Quick Start)
 ---
 
-## Before creating the Hubs Cloud Stack
+## 허브 클라우드 스택을 만들기 전
 
-**Follow along:** [Video Tutorial: How to Deploy Hubs Cloud Part 1](https://www.youtube.com/watch?v=2K7P8jFyHNc)
+**따라하기:** [비디오 튜토리얼: 허브 클라우드 배포 방법 Part1](https://www.youtube.com/watch?v=2K7P8jFyHNc)
 
-1. Create an account on AWS and log into the console.
-2. Register or setup any domains in AWS Route 53, you'll need at least 2 domains. For example: `myhub.com` and `myhub.link`. See [Domain Recipes](./hubs-cloud-aws-domain-recipes.md) for more info.
-3. Review relevant docs:
-   - [Why use Hubs Cloud vs. hubs.mozilla.com?](./hubs-cloud-faq.md#why-use-hubs-cloud-vs-hubsmozillacom)
-   - [Personal vs. Enterprise](./hubs-cloud-faq.md#personal-vs-enterprise)
-   - [Cost Information](./hubs-cloud-aws-costs.md)
-4. Create an SSH keypair to access your servers
-   - [Follow AWS guide to create the SSH keypair in your deployment region](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair)
-   - Deployment region is in the upper right corner with your username and support
-   - Save the private key using preferred format
+1. AWS에 계정을 만들고 콘솔에 로그인합니다.
+2. AWS Route 53에서 도메인을 등록하거나 설정합니다. 최소 2개의 도메인이 필요합니다. 예를 들어 'myhub.com' 및 'myhub.link'입니다. 
+   자세한 내용은 [도메인 레시피](hubs-cloud-aws-domain-recipes.md)를 참조하십시오.
+3. 관련 문서를 검토합니다.
+- [hubs.mozilla.com과 비교한 허브 클라우드를 사용하는 이유는 무엇입니까?](hubs-cloud-faq.md#why-use-hubs-cloud-vs-hubsmozillacom)
+- [개인 vs. 엔터프라이즈](hubs-cloud-faq.md#personal-vs-enterprise)
+- [비용 정보](hubs-cloud-aws-costs.md)
+4. SSH 키 쌍을 만들어 서버에 액세스합니다.
+- [AWS 안내에 따라 배포 영역에서 SSH 키 쌍을 만듭니다.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair)
+- 배포 영역은 사용자 이름과 지원이 포함된 오른쪽 상단에 있습니다.
+- 기본 포맷으로 개인 키 저장
 
-## Deploy your Hubs Cloud Stack
+## 허브 클라우드 스택 구축
 
-**Follow along:** [Video Tutorial: How to Deploy Hubs Cloud Part 2](https://www.youtube.com/watch?v=W0erzlDpo0U)
+**따라하기:** [비디오 튜토리얼: 허브 클라우드 2부 배포 방법](https://www.youtube.com/watch?v=W0erzlDpo0U)
 
-1. Go to https://hubs.mozilla.com/cloud and choose which Hubs Cloud product to deploy
-2. Click **"Continue to Subscribe"** on Hubs Cloud Personal AWS Marketplace page
-3. Click **"Continue to Configuration"**
-4. Select your desired **"Region"**
-   - For Enterprise select your desired **"Delivery Method"**:
-     - **"Multi-server"**
-     - **"Single Server"**
-   - Then your desired **"Region"**
-5. Click **"Continue to Launch"**
-6. Change **"Select a launch action"** dropdown to **"Launch CloudFormation"** then click **"Launch"**
-7. Select **"Next"** in bottom right corner of the **"Create stack"** or **"Specify template"** page
-8. In specify stack details:
-   - Name your stack, something like: **"your-hub-name-1"**
-   - Account Configuration Administrator Email Address
-     - NO CAPITALIZED LETTERS
-     - The admin for your hub
-   - For these parameters use [Domain Recipes](./hubs-cloud-aws-domain-recipes.md) for guidance: `Site Domain Name`, `Site is Set Up On Route 53`, `Internal Domain`, `Short Link Domain`, `Outgoing Email Domain`, and `Outgoing Email Subdomain Prefix`
-     - Double check for no typos!
-   - Choose your `KeyPair` from Before Creating the Stack: Step 4
-   - If you are using an existing domain not on AWS Route 53, you'll need to perform a few extra steps - See [Using an existing domain](./hubs-cloud-aws-existing-domain.md)
-   - Choose a setting for `Restrict SSH Access`
-   - Review the other options, or keep the defaults. You can update most of these later via a [Stack Update](./hubs-cloud-aws-updating-the-stack.md)
-9. Select **"Next"**
-10. Agree to Terms of Service checkboxes
-11. Wait 20-30 minutes for the stack to complete deploying
-    - Any issues? Check out [AWS Troubleshooting](./hubs-cloud-aws-troubleshooting.md) for solutions to common problems.
-12. Confirm your `Administrator Email Address` in your inbox, it will be confirming your email in **N. Virginia**
-13. After stack is created, hit your site at your primary domain, wait 20 to 30 seconds
-14. Login with your `Administrator Email Address`
+1. https://hubs.mozilla.com/cloud에서 배포할 허브 클라우드 제품을 선택합니다.
+2. 허브 클라우드 Personal AWS Marketplace 페이지에서 **"계속 구독(Continue to Subscribe)"** 을 클릭합니다.
+3. **"구성 계속(Continue to Configuration)" 을 클릭합니다**
+4. 원하는 **"지역(Region)"** 을(를) 선택합니다.
+- 엔터프라이즈의 경우 원하는 **"Delivery Method"* 선택:
+- **"다중 서버(Multi-Server)"**
+- **"단일 서버(Single Server)"**
+- 원하는 **"Region"**
+5. **"계속 실행(Continue to Launch)"** 을 클릭합니다.
+6. **"Select a launch action(액션 실행 선택하기)"** 드롭다운을 **"CloudFormation 시작(Launch CloudFormtaion)"** 으로 변경한 다음 **"Launch(시작)"** 을 클릭합니다.
+7. **"스택 만들기(Create stack)"** 또는 **"템플릿 지정(Specify template)"** 페이지의 오른쪽 하단 모서리에서 **"다음(Next)"** 을 선택합니다.
+8. 스택 세부 정보 지정:
+    - 스택 이름을 지정합니다. **"your-hub-name-1"**
+    - 계정 구성 관리자 이메일 주소
+        - 대문자로 된 문자 금지
+        - 허브의 관리자
+    - '사이트 도메인 이름', '로 53에 사이트 설정', '내부 도메인', '단거리 링크 도메인', '발신 이메일 도메인', '발신 이메일 서브 도메인 접두사' 등의 지침에 [도메인 레시피](hubs-cloud-aws-domain-recipes.md)를 사용합니다.
+    - 오타가 없는지 다시 확인합니다!
+    - 스택을 만들기 전에 '키 페어' 선택: 4단계
+    - AWS Route 53에 없는 기존 도메인을 사용하는 경우 몇 가지 단계를 추가로 수행해야 합니다.
+      [기존 도메인 사용](hubs-cloud-aws-existing-domain.md)을 참조하십시오.
+    - 'SSH 액세스 제한' 설정을 선택합니다.
+    - 다른 옵션을 검토하거나 기본값을 유지합니다.
+      이러한 업데이트의 대부분은 나중에 [Stack Update](hubs-cloud-aws-updating-the-stack.md)를 통해 업데이트할 수 있습니다.
+9. **"다음(Next)"** 을 선택합니다.
+10. 서비스 약관에 대한 체크박스에 동의합니다.
+11. 스택 배포가 완료될 때까지 20~30분 정도 기다립니다.
+    - 이 단계에서 문제가 발생한다면, 일반적인 문제에 대한 해결 방법은 [AWS 문제 해결](hubs-cloud-aws-troubleshooting.md)을 참조해주세요.
+12. 받은 편지함에서 '관리자 전자 메일 주소' 를 확인합니다. **N에서 전자 메일이 확인됩니다. 버지니아**
+13. 스택이 생성된 후 기본 도메인의 사이트를 누르고 20~30초 정도 기다립니다.
+14. '관리자 이메일 주소' 로 로그인합니다.
 
-## After Deployment Admin Setup
+## 배포 관리 설정 후
 
-**Follow along:** [Video Tutorial: How to Deploy Hubs Cloud Part 3](https://www.youtube.com/watch?v=nQ85L_EeJOk)
+**따라하기:** [비디오 튜토리얼: 허브 클라우드 3부 구축 방법](https://www.youtube.com/watch?v=nQ85L_EeJOk)
 
-1. Set up AWS Simple Email Service (SES) in **N. Virginia (us-east-1)** for **_all_** deploy regions to get out of the SES Sandbox [Follow #2 Send request to AWS for limit increase](./hubs-cloud-aws-troubleshooting.md#youre-in-the-aws-sandbox-and-people-dont-receive-magic-link-emails)
-   - For immediate entry to your HC instance, verify individual email addresses [Follow #1 Verify individual email addresses for administrators](./hubs-cloud-aws-troubleshooting.md#youre-in-the-aws-sandbox-and-people-dont-receive-magic-link-emails)
-2. Follow guide in **Admin Panel** > **Content CDN** menu to setup Cloudflare workers to decrease costs
-3. Proceed with process to add scenes and avatars in the [Getting Started with Hubs Cloud](./hubs-cloud-getting-started.md) guide!
+1. **N에서 AWS SES(Simple Email Service)를 설정합니다. Virginia(us-east-1)** for **_all_** 지역을 배포하여 SES Sandbox를 종료합니다.
+   [#2 제한 증가를 위해 AWS로 요청 보내기](hubs-cloud-aws-troubleshooting.md#youre-in-the-aws-sandbox-and-people-dont-receive-magic-link-emails)
+- HC 인스턴스에 즉시 입력하려면 개별 전자 메일 주소를 확인합니다[#1 관리자의 개별 전자 메일 주소 확인](hubs-cloud-aws-troubleshooting.md#youre-in-the-aws-sandbox-and-people-dont-receive-magic-link-emails)
+2. **관리 패널** > **콘텐츠 CDN** 메뉴의 안내에 따라 비용 절감을 위한 Cloudflare 작업자를 설정합니다.
+3. [허브 클라우드 시작하기](hubs-cloud-getting-started.md) 가이드에서 장면과 아바타를 추가하는 프로세스를 진행합니다!
 
-**Congrats you've successfully set everything up!**
+**축하합니다. 모든 것을 성공적으로 설정하셨습니다!**
 
-#### Any issues deploying?
+### 배포에 이슈가 있나요?
 
-Check out [AWS Troubleshooting](./hubs-cloud-aws-troubleshooting.md) for solutions to common problems.
+일반적인 문제에 대한 해결 방법은 [AWS 문제 해결](hubs-cloud-aws-troubleshooting.md)을 참조해주세요.

@@ -1,9 +1,10 @@
 ---
 id: hubs-cloud-aws-known-issues
-title: AWS Known Issues
-sidebar_label: Known Issues
+title: AWS에 알려진 이슈
+sidebar_label: AWS에 알려진 이슈
 ---
 
 #### I get the error "Value for parameter availabilityZone is invalid. Subnets can currently only be created in the following availability zones: X, Y
 
-This is a known issue with AWS. See: https://github.com/widdix/aws-cf-templates/issues/36. To fix it, you will need to adjust the "Subnet Availability Zones" values in the 'Advanced' section to select an alternative Subnet configuration that matches X, Y and try again.
+이것은 AWS에서 알려진 문제입니다. https://github.com/widdix/aws-cf-templates/issues/36을 참조하십시오.
+이 문제를 해결하려면 '고급' 섹션에서 "서브넷 가용성 영역" 값을 조정하여 X, Y와 일치하는 대체 서브넷 구성을 선택하고 다시 시도하십시오.
