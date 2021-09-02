@@ -1,6 +1,6 @@
 ---
 id: creators-using-the-blender-gltf-exporter
-title: Using the Blender glTF Exporter
+title: the Blender glTF Exporter 사용하기
 ---
 참고: 다음 가이드에서는 최신 버전의 안정적인 Blender release 를 사용하고 있다고 가정합니다. 이전 버전의 블렌더 또는 실험용 빌드를 사용하는 것은 효과적일 수 있지만 보장되지는 않습니다.
 

@@ -1,6 +1,6 @@
 ---
 id: hubs-cloud-accessing-servers
-title: SSH Access
+title: SSH 접근하기
 sidebar_label: Advanced: SSH Access
 ---
 

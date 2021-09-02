@@ -1,6 +1,6 @@
 ---
 id: hubs-cloud-permissive-rooms
-title: Recipe: Permissive Rooms
+title: 레시피: 룸에 접근 허용 권한 설정하기
 sidebar_label: Recipe: Permissive Rooms
 ---
 

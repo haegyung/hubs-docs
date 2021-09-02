@@ -1,6 +1,6 @@
 11---
 id: system-overview
-title: System Overview
+title: 전반적인 시스템의 개요(Overview)
 ---
 
 # [The Client](https://github.com/mozilla/hubs) 

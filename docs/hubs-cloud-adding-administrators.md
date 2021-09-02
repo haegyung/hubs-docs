@@ -1,6 +1,6 @@
 ---
 id: hubs-cloud-adding-administrators
-title: Adding Administrators
+title: 관리자 권한 추가하기
 sidebar_label: Adding Administrators
 ---
 

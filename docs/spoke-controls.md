@@ -1,6 +1,6 @@
 ---
 id: spoke-controls
-title: Spoke Controls
+title: 스포크(Spoke) Controls
 ---
 
 일부 기능은 마우스와 키보드 없이는 액세스할 수 없으므로 데스크톱 또는 랩톱 컴퓨터에서 스포크를 사용하는 것이 좋습니다.

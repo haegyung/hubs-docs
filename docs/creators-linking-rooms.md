@@ -1,6 +1,6 @@
 ---
 id: creators-linking-rooms
-title: Linking Hubs Rooms 
+title: 허브 룸에 연결하기 
 ---
 스포크를 사용하거나 허브에서 직접 허브 룸을 함께 연결할 수 있습니다. 이렇게 하려면 먼저 룸을 작성한 후 '연결' 요소를 사용하여 다른 룸을 참조하는 룸의 장면을 작성해야 합니다.
 

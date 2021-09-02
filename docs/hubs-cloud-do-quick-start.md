@@ -1,6 +1,6 @@
 ---
 id: hubs-cloud-do-quick-start
-title: DigitalOcean Quick Start
+title: 디지털 오션(DigitalOcean) 퀵 스타트
 sidebar_label: DigitalOcean Quick Start
 ---
 

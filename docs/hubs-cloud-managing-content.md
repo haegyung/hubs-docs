@@ -1,6 +1,6 @@
 ---
 id: hubs-cloud-managing-content
-title: Managing Content
+title: 콘텐트 관리하기
 sidebar_label: Managing Content
 ---
 

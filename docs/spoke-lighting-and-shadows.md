@@ -1,6 +1,6 @@
 ---
 id: lighting-and-shadows
-title: Lighting and Shadows
+title: 빛과 그림자(Lighting and shadow)
 ---
 
 ## Lights

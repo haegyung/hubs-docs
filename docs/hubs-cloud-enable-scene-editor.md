@@ -1,6 +1,6 @@
 ---
 id: hubs-cloud-enable-scene-editor
-title: Recipe: Enable Scene Editor
+title: 레시피: 장면 에디터(Scene editor) 활성화
 sidebar_label: Recipe: Enable Scene Editor
 ---
 

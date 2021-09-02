@@ -1,6 +1,6 @@
 ---
 id: hubs-features
-title: Hubs Features
+title: Hubs 특징들 살펴보기
 ---
 
 ![Hubs User Interface](img/hubs-user-interface.png)

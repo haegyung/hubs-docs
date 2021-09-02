@@ -1,6 +1,6 @@
 ---
 id: spoke-publish-scenes
-title: Publish Scenes
+title: 장면(Scene) 공개(publish)하기
 ---
 
 장면을 허브에 직접 게시하거나 .glb 파일 또는 레거시 스포크(Spoke) 장면(Scene)으로 내보낼 수 있습니다.

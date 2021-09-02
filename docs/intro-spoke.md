@@ -1,6 +1,6 @@
 ---
 id: intro-spoke
-title: Building Scenes with Spoke
+title: 스포크(Spoke)로 장면(Scene) 빌드하기
 sidebar_label: Building Scenes with Spoke
 ---
 

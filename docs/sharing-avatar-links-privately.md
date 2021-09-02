@@ -1,6 +1,6 @@
 ---
 id: sharing-avatar-links-privately
-title: Sharing Avatar Links Privately
+title: 개인 링크(Privately Links)로 아바타 공유하기
 sidebar_label: Sharing Avatar Links Privately
 ---
 

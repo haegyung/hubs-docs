@@ -1,11 +1,12 @@
 ---
 id: physics-and-navigation
-title: Physics and Navigation
+title: 물리학 및 네비게이션(Physics and Navigation)
 ---
 
 # The Floorplan Element
 
-평면도는 걸을 수 있는 위치와 대화형 객체가 장면과 충돌하는 방식을 정의합니다. 탐색 메시(도보 가능한 위치, 평면도를 선택한 경우 파란색 메시)와 충돌 메시(삼진 또는 높이 필드를 사용하는 경우 빨간색 또는 노란색 메시)를 작성합니다.
+평면도는 걸을 수 있는 위치와 대화형 객체가 장면과 충돌하는 방식을 정의합니다. 
+탐색 메시(도보 가능한 위치, 평면도를 선택한 경우 파란색 메시)와 충돌 메시(삼진 또는 높이 필드를 사용하는 경우 빨간색 또는 노란색 메시)를 작성합니다.
 
 ![Description of the Floor Plan Panel's properties](img/FloorPlan.png)
 

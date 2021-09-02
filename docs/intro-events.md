@@ -1,6 +1,6 @@
 ---
 id: intro-events
-title: Hosting Events in Hubs
+title: Hubs에 이벤트 호스팅하기
 sidebar_label: Hosting Events in Hubs
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: hubs-cloud-custom-smtp
-title: Recipe: Custom SMTP
+title: 레시피: 커스텀 SMTP
 sidebar_label: Recipe: Custom SMTP
 ---
 

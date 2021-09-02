@@ -1,6 +1,6 @@
 ---
 id: spoke-architecture-kit
-title: Architecture Kit
+title: 아키텍처 킷(Architecture Kit)
 ---
 
 Architecture Kit의 론칭으로 크리에이터들은 외부 도구를 사용하지 않고도 3D 장면을 위한 맞춤형 콘텐츠를 만들 수 있게 되었습니다. Architecutre Kit는 기존에 VR에 최적화된 기존 구성품을 쉽게 가져와서 기존 모델과 장면을 쉽게 만들 수 있도록 설계됐다.

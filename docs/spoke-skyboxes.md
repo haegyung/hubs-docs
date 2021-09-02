@@ -1,6 +1,6 @@
 ---
 id: spoke-skyboxes
-title: Skyboxes
+title: 스카이박스(Skyboxes)
 ---
 
 스카이박스는 장면 분위기에 큰 영향을 미칠 수 있습니다. 기본 요소를 제거한 템플릿에서 시작하지 않은 경우 시작할 때 씬(scene)에 스카이박스가 있어야 합니다.

@@ -1,6 +1,6 @@
 ---
 id: creators-advanced-avatar-customization
-title: Advanced Avatar Customization
+title: Advanced 아바타 커스터마이징
 ---
 
 ## Advanced Re-skinning 

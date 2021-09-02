@@ -1,6 +1,6 @@
 ---
 id: hubs-cloud-aws-architecture
-title: AWS System Architecture
+title: AWS 시스템 아키텍처
 sidebar_label: System Architecture
 ---
 

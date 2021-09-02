@@ -1,6 +1,6 @@
 ---
 id: hubs-cloud-aws-existing-email-provider
-title: Using an Existing Email Provider
+title: 존재하는 이메일 제공자(Email Provider) 사용하기
 sidebar_label: Using an Existing Email Provider
 ---
 

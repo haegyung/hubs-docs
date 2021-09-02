@@ -1,6 +1,6 @@
 ---
 id: hubs-query-string-parameters
-title: Hubs Query String Parameters
+title: Hubs 쿼리스트링 파라미터(Query String Parameters)
 sidebar_label: Hubs Query String Parameters
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: intro-hubs
-title: Getting Started with Hubs
+title: 허브로 시작하기
 sidebar_label: Getting Started With Hubs 
 ---
 

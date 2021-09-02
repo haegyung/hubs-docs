@@ -1,6 +1,6 @@
 ---
 id: spoke-user-interface
-title: User Interface
+title: 유저 인터페이스(User Interface)
 ---
 
 ![Hubs Image](../website/static/img/spoke-user-interface.jpeg)

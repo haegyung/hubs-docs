@@ -1,6 +1,6 @@
 ---
 id: hubs-room-settings
-title: Room Settings
+title: 룸(Room) Settings
 ---
 
 ## Change the Scene

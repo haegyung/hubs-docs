@@ -1,6 +1,6 @@
 ---
 id: hubs-user-settings
-title: User Settings
+title: 유저(User) Settings
 ---
 
 ## 이름 및 아바타 변경

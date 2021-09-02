@@ -1,6 +1,6 @@
 ---
 id: intro-avatars
-title: Creating Custom Avatars
+title: 커스텀 아바타 생성하기
 ---
 
 허브에서 자신을 나타내는 방법을 선택할 수 있습니다. 피쳐링 또는 최신 아바타 중 하나를 선택하거나 직접 만듭니다.

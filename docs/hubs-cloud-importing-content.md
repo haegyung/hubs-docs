@@ -1,6 +1,6 @@
 ---
 id: hubs-cloud-importing-content
-title: Importing Content
+title: 콘텐트(Content) 임포트하기
 sidebar_label: Importing Content
 ---
 

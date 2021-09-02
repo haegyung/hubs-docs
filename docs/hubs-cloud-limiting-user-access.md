@@ -1,6 +1,6 @@
 ---
 id: hubs-cloud-limiting-user-access
-title: Limiting User Access to your Hub
+title: 허브에 유저 엑세스 권한 제한하기
 sidebar_label: Limiting Access
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: creators-reskin-base-avatars
-title: Reskin Avatars
+title: 아바타 리스키닝(Reskin)하기
 ---
 
 아바타 제작 과정에 투자하고 싶은 정도에 따라 자신만의 텍스처 맵(Texture map)을 그려 기존의 로봇 아바타를 단순히 리모델링(re-skin) 하거나 또는 자신만의 완전한 커스텀 3D 모델을 만들 수 있습니다.

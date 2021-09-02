@@ -1,6 +1,6 @@
 ---
 id: hubs-cloud-aws-estimated-ccu-limits
-title: AWS Estimated CCU Limits
+title: AWS 추산된 CCU Limits
 sidebar_label: Estimating CCU Limits
 ---
 

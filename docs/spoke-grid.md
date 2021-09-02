@@ -1,6 +1,6 @@
 ---
 id: spoke-grid
-title: Grid
+title: 그리드(Grid)
 ---
 
 ![Screenshot of Spoke](../website/static/img/spoke-grid.png)

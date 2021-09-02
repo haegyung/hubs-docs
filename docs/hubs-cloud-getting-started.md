@@ -1,6 +1,6 @@
 ---
 id: hubs-cloud-getting-started
-title: Getting Started With Hubs Cloud
+title: 허브 클라우드로 시작하기
 sidebar_label: Getting Started
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: hubs-cloud-custom-clients
-title: Creating and Deploying Custom Clients
+title: 커스텀 클라이언트 생성하고 배포하기
 sidebar_label: Custom Clients
 ---
 

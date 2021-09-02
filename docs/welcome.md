@@ -1,11 +1,10 @@
 ---
 id: welcome
-title: Welcome to Hubs
+title: 허브에 오신 것을 환영합니다
 sidebar_label: Welcome
 ---
 
 허브는 브라우저에서 실행되는 가상 협업 플랫폼입니다. 허브를 사용하면 클릭 한 번으로 자신만의 3D 공간을 만들 수 있습니다. URL을 사용하여 다른 사용자를 참여하도록 초대합니다. 설치 또는 앱 스토어가 필요하지 않습니다.
-
 ![Screencapture from an event in Hubs](../website/static/img/hubs-business.jpeg)
 
 ## Who is Hubs for?

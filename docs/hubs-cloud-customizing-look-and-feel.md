@@ -1,6 +1,6 @@
 ---
 id: hubs-cloud-customizing-look-and-feel
-title: Customizing Look and Feel
+title: 룩앤필(Look and feel) 커스터마이징 하기
 sidebar_label: Customizing Look & Feel
 ---
 

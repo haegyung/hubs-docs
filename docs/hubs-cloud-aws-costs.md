@@ -1,6 +1,6 @@
 ---
 id: hubs-cloud-aws-costs
-title: AWS Cost Information
+title: AWS 비용 정보
 sidebar_label: Costs and Minimizing Costs Information
 ---
 

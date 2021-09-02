@@ -1,6 +1,6 @@
 ---
 id: hubs-cloud-aws-troubleshooting
-title: AWS Troubleshooting
+title: AWS 트러블슈팅(Trouble Shooting)
 sidebar_label: AWS Troubleshooting
 ---
 

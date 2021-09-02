@@ -1,6 +1,6 @@
 ---
 id: hubs-cloud-aws-known-issues
-title: AWS Known Issues
+title: AWS에 알려진 이슈
 sidebar_label: Known Issues
 ---
 

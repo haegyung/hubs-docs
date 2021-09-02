@@ -1,6 +1,6 @@
 ---
 id: hubs-cloud-aws-updating-the-stack
-title: Updating the Stack
+title: 스택에 업데이트하기
 sidebar_label: Updating the Stack
 ---
 

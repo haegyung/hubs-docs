@@ -1,6 +1,6 @@
 ---
 id: hubs-create-join-rooms
-title: Create and Join Rooms
+title: 방 생성하고 참여하기
 ---
 
 ## 새로운 방 생성하기

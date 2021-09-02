@@ -1,6 +1,6 @@
 ---
 id: contributing
-title: Contributing
+title: 기여하기(Contributing)
 ---
 
 이 페이지에는 허브 프로젝트에 기여하고자 하는 사람들을 위한 기회가 간략히 설명되어 있어요.

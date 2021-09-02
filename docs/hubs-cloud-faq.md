@@ -1,6 +1,6 @@
 ---
 id: hubs-cloud-faq
-title: Hubs Cloud FAQ
+title: 허브 클라우드 FAQ
 sidebar_label: FAQ
 ---
 

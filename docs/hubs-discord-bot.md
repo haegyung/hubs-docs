@@ -1,6 +1,6 @@
 ---
 id: hubs-discord-bot
-title: Discord Bot
+title: 디스코드 봇(Discord Bot)
 ---
 
 ## About

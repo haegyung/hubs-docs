@@ -1,6 +1,6 @@
 ---
 id: hubs-cloud-aws-quick-start
-title: AWS Quick Start
+title: AWS 퀵 스타트(Quick Start)
 sidebar_label: AWS Quick Start
 ---
 

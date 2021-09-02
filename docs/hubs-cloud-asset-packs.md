@@ -1,6 +1,6 @@
 ---
 id: hubs-cloud-asset-packs
-title: Recommended Asset Packs
+title: 권장하는 Asset Packs
 sidebar_label: Asset Packs
 ---
 

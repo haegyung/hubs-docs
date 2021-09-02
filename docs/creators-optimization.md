@@ -1,6 +1,6 @@
 ---
 id: spoke-optimization
-title: Optimizing Scenes
+title: 장면(Scenes) 최적화하기
 ---
 
 ## 성능 향상시키기

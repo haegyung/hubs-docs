@@ -1,6 +1,6 @@
 ---
 id: spoke-adding-scene-content
-title: Adding Content
+title: 콘텐트 추가하기
 ---
 
 씬(scene)을 만든 후에는 컨텐츠를 추가하여 씬(scene) 사용자 정의를 시작할 수 있습니다. 스포크 및 허브는 다양한 미디어를 지원합니다. 허브에 게시하려면 스포크 프로젝트의 크기 제한이 128MB입니다.

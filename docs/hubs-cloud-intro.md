@@ -1,6 +1,6 @@
 ---
 id: hubs-cloud-intro
-title: Introduction to Hubs Cloud
+title: 허브 클라우드란?
 sidebar_label: Introduction
 ---
 
