@@ -62,19 +62,19 @@ glTF를 glb로 변환하거나 그 반대로 변환하는 데 사용할 수 있�
 glTF 내보내기에는 이해해야 할 설정이 꽤 있지만 다행히 섹션별로 구분되어 있어 조금 더 쉽게 이해할 수 있습니다. 대부분의 경우 기본값이 제대로 작동합니다. 그러나 문제 해결 시 몇 가지 주의할 사항이 있습니다.
 
 <ul>
-  <li>(Include) 'Selected Objects' - Checking this allows you to only export the selected items you want. It's easy to forget this is turned on--(and even easier to forget to select things first!)
-  <li>(Include) 'Custom Properties' - This one is necessary if you're using things like the custom Hubs components add-on (more on this later) but in most cases is not necessary.
-  <li>(Geometry) 'Apply Modifiers' - See info above. In most cases you'll want to leave this OFF.
-  <li>(Geometry) 'UVs, Normals, Tangents' - Best left ON. There may be unusual cases where you don't want these but it would be rare.
-  <li>(Geometry) 'Vertex Colors' - If you choose to paint vertex colors on your model, which can be a cheap, fast way of applying basic color instead of a texture, you'll need this ON. Otherwise, you can turn it OFF with no apparent effect.
-  <li>(Geometry) 'Materials' - Pretty much all models require materials to display properly so you will need this ON.
-  <li>(Geometry) 'Compression' - This might seem like a good idea, but as of this writing, Hubs does not support objects with Google Draco mesh compression. Leave this OFF.
-  <li>(Animation) 'Limit to Playback Range' - Make sure your playback range is set properly to see the full animation get exported.
-  <li>(Animation) 'Always Sample Animations' - This one has been found to significantly increase the file size in some cases. Try turning this OFF. If your animation(s) still work without it, leave it OFF.
-  <li>(Animation) 'NLA Strips' - You must have this ON if you've stashed a bunch of animation tracks on your object(s).
-  <li>Shape Keys - You must have this turned ON if you have an object that requires shape keys (also known as morph targets or blend shapes in other software).
-  <li>(Shape Keys) 'Shape Key Normals' - This one can be turned OFF as long as your morphs don't do anything special with the object's normals. If you see odd shading occur when the morphs happen, try toggling this.
-  <li>Skinning - You must have this turned ON if your object is bound to a skeletal armature.
+  <li>(Include) 'Selected Objects' - 체크하면 원하는 선택된 항목만 내보낼 수 있습니다. 이 기능이 켜져 있다는 사실을 잊기가 쉽습니다. (그리고 먼저 항목을 선택하는 것을 잊기가 더 쉽습니다!)
+  <li>(Include) 'Custom Properties' - 이것은 사용자 지정 Hubs 구성 요소 추가 기능(나중에 자세히 설명)과 같은 것을 사용하는 경우 필요하지만 대부분의 경우 필요하지 않습니다.
+  <li>(Geometry) 'Apply Modifiers' - 위의 정보를 참조하십시오. 대부분의 경우 이 기능을 OFF 상태로 두는 것이 좋습니다.
+  <li>(Geometry) 'UVs, Normals, Tangents' - 가장 왼쪽을 ON 하는게 최선입니다. 원하지 않는 경우가 있을 수 있지만 드문 경우입니다.
+  <li>(Geometry) 'Vertex Colors' - 텍스처 대신 기본 색상을 적용하는 저렴하고 빠른 방법이 될 수 있는 모델에 정점 색상을 칠하기로 선택한 경우 이 옵션이 필요합니다. 그렇지 않으면 명백한 효과 없이 끌 수 있습니다.
+  <li>(Geometry) 'Materials' - 거의 모든 모델에는 재료가 제대로 표시되어야 하므로 이 ON이 필요합니다..
+  <li>(Geometry) 'Compression' - 이것은 좋은 생각처럼 보일 수 있지만 이 글을 쓰는 시점에서 Hubs는 Google Draco 메시 압축을 사용하는 개체를 지원하지 않습니다. 이것을 OFF로 둡니다.
+  <li>(Animation) 'Limit to Playback Range' - 전체 애니메이션을 내보내려면 재생 범위가 올바르게 설정되어 있는지 확인하십시오.
+  <li>(Animation) 'Always Sample Animations' - 이것은 경우에 따라 파일 크기를 크게 증가시키는 것으로 나타났습니다. 이 기능을 끄십시오. 애니메이션이 없어도 계속 작동하는 경우 OFF로 두십시오.
+  <li>(Animation) 'NLA Strips' - 개체에 많은 애니메이션 트랙을 숨겼으면 이 옵션을 켜야 합니다.
+  <li>Shape Keys - 모양 키(다른 소프트웨어에서는 모프 대상 또는 블렌드 모양이라고도 함)가 필요한 개체가 있는 경우 이 옵션을 켜야 합니다.
+  <li>(Shape Keys) 'Shape Key Normals' - 모프(morphs)가 개체의 법선에 특별한 작업을 수행하지 않는 한 이 기능을 끌 수 있습니다. 모프가 발생할 때 이상한 음영이 발생하는 경우 이를 토글해 보십시오.
+  <li>Skinning - 오브젝트가 골격 뼈대에 바인딩된 경우 이 옵션을 켜야 합니다.
 </ul>
 
 언급되지 않은 매개 변수는 기본값으로 두는 것이 가장 좋습니다.

@@ -46,7 +46,8 @@ VR 헤드셋에서 브라우저를 열고 [hubs.link](https://hubs.link)로 이�
 
 ### On Cardboard
 
-Using Google Chrome on your mobile device, select "Enter Room" and follow the prompts to select a username/avatar and set up your mic. On the final prompt select "Enter on Google Cardboard". -->
+
+모바일 장치에서 Google 크롬을 사용하여 "방 입장"을 선택하고 프롬프트에 따라 사용자 이름/아바타를 선택하고 마이크를 설정합니다. 마지막 프롬프트에서 "Google Cardboard에 입력"을 선택합니다.-->
 
 ## Supported Devices & Browsers
 

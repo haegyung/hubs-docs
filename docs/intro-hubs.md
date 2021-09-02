@@ -38,7 +38,7 @@ sidebar_label: 허브로 시작하기
 VR 및 모바일 컨트롤은 [허브 컨트로](hubs-controls.html) 목록을 참조하십시오.
 ### User Interface
 
-Take a moment to take a look around the user interface. You can mute your mic, take photos, share your screen, create objects, and more. We'll introduce the basics of some of these controls in this guide. For more detailed information check out the [Hubs Features](hubs-features.html) section of the documentation.
+잠시 시간을 내어 사용자 인터페이스를 살펴보십시오. 마이크를 음소거하고, 사진을 찍고, 화면을 공유하고, 개체를 만드는 등의 작업을 수행할 수 있습니다. 이 가이드에서 이러한 컨트롤 중 일부의 기본 사항을 소개합니다. 자세한 내용은 문서의 [허브 기능](hubs-features.html) 섹션을 확인하십시오.
 
 ![Hubs Image](../website/static/img/hubs-user-interface.png)
 

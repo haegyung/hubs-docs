@@ -71,4 +71,4 @@ Speak에서 온라인 비디오에 연결하여 비디오 콘텐츠용 영구 �
 
 <img src="../website/static/img/audio-zones-example-1.jpg" alt="drawing" width="65%"/>
 
-<center>_If there are two audio-zones in between the listener and the source and the first one has gain == 0.1 and the other has gain == 0.5, gain == 0.1 is applied to the source._</center>
+<center>_청취자와 소스 사이에 두 개의 오디오 영역이 있고 첫 번째 영역의 게인 == 0.1이고 다른 하나의 게인 == 0.5인 경우 소스에 게인 == 0.1이 적용됩니다._</center>

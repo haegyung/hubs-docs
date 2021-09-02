@@ -65,10 +65,10 @@ title: 기여하기(Contributing)
 
 | Priority  | Criteria | Example |
 | ------------- | ------------- | -------------
-| P0 | Needs immediate attention. Affects many users and their ability to use core product functionality of connecting to rooms with other users. | No one can enter any Hubs rooms with any VR headset |
-| P1 | Address as quickly as possible. Affects many users and their ability to use a common product feature. Workaround is difficult or unavailable. | Teleporting doesn't work for users on Quest with the Oculus browser. |
-| P2 | Address when able. Affects some users regularly but mildly, or is a hard-to-repro failure seen rarely that is fixed with an easy workaround. | Lobby camera in Camera mode does not show emojis shared from iOS. <br><br> One user reports getting disconnected after ten minutes in a particular room, but no one else experiences it and they are able to refresh to re-enter.
-| P3 | Address when able after P2 bugs are fixed. Affects a small set of users inconsistently in a non-breaking way with an easy workaround. | Every so often, a standalone VR headset will show up as a mobile phone in the user list. Refreshing fixes it. |
+| P0 | 즉각적인 주의가 필요합니다. 많은 사용자와 다른 사용자와 방에 연결하는 핵심 제품 기능을 사용하는 능력에 영향을 미칩니다.| No one can enter any Hubs rooms with any VR headset |
+| P1 | 가능한 한 빨리 주소를 지정하십시오. 많은 사용자와 공통 제품 기능을 사용하는 능력에 영향을 미칩니다. 해결 방법이 어렵거나 사용할 수 없습니다.| Teleporting doesn't work for users on Quest with the Oculus browser. |
+| P2 | 가능하면 주소. 일부 사용자에게 정기적으로 약간의 영향을 미치거나 쉬운 해결 방법으로 해결되는 드물게 나타나는 재현하기 어려운 오류입니다. | 카메라 모드의 로비 카메라에는 iOS에서 공유된 이모티콘이 표시되지 않습니다. <br><br> 한 사용자가 특정 방에서 10분 후에 연결이 끊겼다고 보고하지만 다른 사용자는 이를 경험하지 않으며 새로고침하여 재입장할 수 있습니다.
+| P3 | P2 버그가 수정된 후 가능한 경우 주소입니다. 쉬운 해결 방법으로 중단되지 않는 방식으로 소규모 사용자 집합에 일관되게 영향을 줍니다. | 종종 독립형 VR 헤드셋이 사용자 목록에 휴대폰으로 표시됩니다. 새로고침하면 해결됩니다. |
 
 ### 🎨 3D 아트
 3D 아티스트로서 Hubs를 사용하는 작업을 지원하려면 Creative Commons 라이센스로 컨텐츠를 만들고 릴리스하거나 [Spoke 웹 에디터](https://hubs.mozilla.com/spoke) 를 사용하여 장면(Scene) 을 만들어 리믹스 가능한 환경으로 릴리스하는 것을 고려해 보세요.
