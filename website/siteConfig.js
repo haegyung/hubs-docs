@@ -42,7 +42,7 @@ const siteConfig = {
     {href: "https://github.com/belivvr/hubs-docs", label: "Github"},
     // {href: "https://github.com/mozilla/hubs", label: "GitHub" },
     {page: 'help', label: 'Help'},
-    {href: "https://hubs.mozilla.com/docs", label: "Mozilla Docs"}
+    {href: "https://hubs.mozilla.com/", label: "Hubs by mozilla"}
   ],
 
   // If you have users set above, you add it here:

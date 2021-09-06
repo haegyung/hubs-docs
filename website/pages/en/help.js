@@ -24,39 +24,39 @@ function Help(props) {
       <Container className="mainContainer documentContainer postContainer">
         <div className="post">
           <header className="postHeader">
-            <h1>Can't find what you're looking for?</h1>
+            <h1>여러분이 찾는 키워드가 없으신가요?</h1>
           </header>
 
           <p>
-            If our <a href="/docs/">documentation</a> doesn't answer your questions,{" "}
-            here are a few options for contacting us:
+            만약 저희의 <a href="/docs/">문서</a>가 여러분의 질문에 답변을 드리지 못한다면,{" "}
+            여기서 저희에게 연락할 수 있는 몇가지 옵션이 있어요:
           </p>
 
-          <strong>Bug Reports and Feature Requests</strong>
+          <strong>버그 리포트(Bug report)와 기능 추가(add a new feature)</strong>
           <p>
-            We track bugs and features on GitHub.
-            You can <a href="https://github.com/mozilla/hubs/issues">view existing tickets,</a>{" "}
-            or open a <a href="https://github.com/mozilla/hubs/issues/new/choose">new issue or feature request</a>.
+            저희는 깃허브에서 기능 추가와 버그 추적을 하고 있습니다.
+            이미 열려 있는 <a href="https://github.com/mozilla/hubs/issues">티켓들</a>을 확인해주시거나,{" "}
+            <a href="https://github.com/mozilla/hubs/issues/new/choose">새로운 이슈나 기능 추가</a> 를 요청해주세요.
           </p>
 
-          <strong>Discussions</strong>
+          <strong>토론(Discussion)</strong>
           <p>
-            If you want to discuss a topic with the Hubs team or the community, or you need help with{" "}
-            troubleshooting, you can browse our GitHub{" "}
-            <a href="https://github.com/mozilla/hubs/discussions">discussion board</a>, or{" "}
-            <a href="https://github.com/mozilla/hubs/discussions/new">start a new discussion</a>.
+            만약 여러분이 허브 팀 또는 커뮤니티 팀과 토픽(Topic)을 토론하고 싶으시다면 여러분의 브라우저에서 저희의 깃허브{" "}
+            <a href="https://github.com/mozilla/hubs/discussions">토론장(discussion board)</a>, 또는{" "}
+            <a href="https://github.com/mozilla/hubs/discussions/new">새로운 토론장(new discussion)을 열어주세요</a>.
           </p>
 
-          <strong>Community Chat</strong>
+          <strong>커뮤니티 방(Community Chat)</strong>
           <p>
-            Prefer to chat in real time? Visit our{" "}
-            <a href="https://discord.gg/wHmY4nd">Discord chat server</a>.
+            실시간으로 대화하고 싶으시다면, 저희의 {" "}
+            <a href="https://discord.gg/wHmY4nd">디스코드 채팅 서버</a>에 합류해주세요.
           </p>
 
-          <strong>Email</strong>
+          <strong>이메일(Email)</strong>
           <p>
             If you need to share sensitive information in order to get help, you can email us at{" "}
-            <a href="mailto:hubs@mozilla.com">hubs@mozilla.com</a>.
+            만약 여러분이 도움을 요청하기에 민감한 정보를 공유해야 할 것 같다면,
+            <a href="mailto:hubs@mozilla.com">hubs@mozilla.com</a>  이메일을 이용해주세요.
           </p>
         </div>
       </Container>
