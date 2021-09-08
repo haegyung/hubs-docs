@@ -1,24 +1,21 @@
 # Mozilla Hubs Docs
-
-This repo is for the documentation for [Mozilla Hubs](http://hubs.mozilla.com), and related products such as Hubs Cloud and Spoke. 
-
-The documentation is under active development. If there are any changes or updates you recommend, feel free to submit a pull request or let us know in our [Discord Server](http://discord.gg/wHmY4nd).
-
-This website was created with [Docusaurus](https://docusaurus.io/). 
-
+ 
+이 저장소는 [Mozilla Hubs](http://hubs.mozilla.com) 를 위한 저장소이며, Hubs Cloud, Spoke 와 관련이 있는 저장소입니다.
+문서는 현재 개발 및 업데이트 중에 있으며, 만약 어떤 변경점이나 여러분이 추천할만한 업데이트 사항이 있다면, 편하게 Pull Request 또는 저희에게 [Discord Server](http://discord.gg/wHmY4nd) 으로 DM(Direct Message) 를 주시면 감사하겠습니다. 
+현재 이 문서는 [Docusaurus](https://docusaurus.io/) 로 개발되었습니다.
 
 # Docusaurus information 
-## What's In This Document
+## 문서(Documents) 에 포함된 내용
 
-* [Get Started in 5 Minutes](#get-started-in-5-minutes)
-* [Directory Structure](#directory-structure)
-* [Editing Content](#editing-content)
-* [Adding Content](#adding-content)
+* [5분만에 시작하기](#get-started-in-5-minutes)
+* [폴더(Directory) 구조](#directory-structure)
+* [컨텐츠 수정하기](#editing-content)
+* [컨텐츠 추가하기](#adding-content)
 * [Full Documentation](#full-documentation)
 
 ## Get Started in 5 Minutes
 
-1. Make sure all the dependencies for the website are installed:
+1. 웹 사이트에 대한 모든 종속성이 설치되어 있는지 확인합니다.:
 
 ```sh
 # Navigate to the website directory
@@ -27,16 +24,16 @@ $ cd website
 # Install dependencies
 $ npm ci
 ```
-2. Run your dev server:
+2. 여러분의 dev server 를 실행합니다:
 
 ```sh
 # Start the site
 $ npm start
 ```
 
-### Directory Structure
+### 폴더 구조(Directory Structure)
 
-Your project file structure should look something like this
+프로젝트 파일 구조는 다음과 같아야 합니다.
 
 ```
 my-docusaurus/
@@ -56,11 +53,11 @@ my-docusaurus/
     siteConfig.js
 ```
 
-## Editing Content
+## 콘텐츠 수정하기
 
-### Editing an existing docs page
+### 기존 문서를 수정하기
 
-Edit docs by navigating to `docs/` and editing the corresponding document:
+`docs/` 로 이동하여 해당 문서를 수정하여 문서를 수정합니다.
 
 `docs/doc-to-be-edited.md`
 
@@ -70,14 +67,14 @@ id: page-needs-edit
 title: This Doc Needs To Be Edited
 ---
 
-Edit me...
+수정해주세요..
 ```
 
-For more information about docs, click [here](https://docusaurus.io/docs/en/navigation)
+문서에 대한 자세한 정보는 [here](https://docusaurus.io/docs/en/navigation) 를 클릭바랍니다.
 
-### Editing an existing blog post
+### 기존 포스트를 수정하기
 
-Edit blog posts by navigating to `website/blog` and editing the corresponding post:
+`웹사이트/블로그` 로 이동하여 해당 게시물을 수정하여 블로그 게시물을 수정합니다.
 
 `website/blog/post-to-be-edited.md`
 ```markdown
@@ -89,13 +86,13 @@ title: This Blog Post Needs To Be Edited
 Edit me...
 ```
 
-For more information about blog posts, click [here](https://docusaurus.io/docs/en/adding-blog)
+문서에 대한 자세한 정보는 [here](https://docusaurus.io/docs/en/adding-blog) 를 클릭바랍니다.
 
-## Adding Content
+## 콘텐츠 추가하기
 
-### Adding a new docs page to an existing sidebar
+### 기존에 있던 사이드바(Side bar) 에 콘텐츠 추가하기
 
-1. Create the doc as a new markdown file in `/docs`, example `docs/newly-created-doc.md`:
+1. 문서를 `/docs`에 새 마크다운 파일로 생성합니다(예: `docs/newly-created-doc.md`):
 
 ```md
 ---
@@ -106,7 +103,7 @@ title: This Doc Needs To Be Edited
 My new content here..
 ```
 
-1. Refer to that doc's ID in an existing sidebar in `website/sidebar.json`:
+1. `website/sidebar.json`의 기존 사이드바에서 해당 문서의 ID를 참조하세요.
 
 ```javascript
 // Add newly-created-doc to the Getting Started category of docs
@@ -121,10 +118,9 @@ My new content here..
   ...
 }
 ```
-
-For more information about adding new docs, click [here](https://docusaurus.io/docs/en/navigation)
+ 
+새로운 문서를 추가하는 것에 대한 자세한 정보를 원하시면 [이 곳](https://docusaurus.io/docs/en/navigation) 을 클릭해주세요.
 
 ## Full Documentation
-
-Full documentation can be found on the [website](https://docusaurus.io/).
-
+.
+도큐사우르스(Docusaurus) 에 대한 조금 더 자세한 정보는 [웹 사이트](https://docusaurus.io/) 에서 확인하실 수 있습니다.

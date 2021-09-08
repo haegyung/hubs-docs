@@ -21,7 +21,7 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Hubs by Mozilla', // Title for your website.
+  title: '모질라 허브 한국어 문서 by BELIVVR Developers', // Title for your website.
   tagline: 'Hold tight as we get our docs in a row 🦆🦆🦆',
   url: 'https://hubs.mozilla.com', // Your website URL
   baseUrl: '/docs/', // Base URL for your project */

@@ -1,7 +1,8 @@
-\---
+---
 id: spoke-creating-projects
 title: 프로젝트 생성하기
 ---
+
 스포크에서 Scratch에서 새 프로젝트를 만들거나, 기존 허브 장면을 리믹스하거나, 다른 사용자가 보낸 스포크 프로젝트를 가져올 수 있습니다.
 
 ## Start a new project
