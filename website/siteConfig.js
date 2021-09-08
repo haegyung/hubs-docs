@@ -21,7 +21,7 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Hubs by Mozilla', // Title for your website.
+  title: '모질라 허브 한국어 문서 by BELIVVR Developers', // Title for your website.
   tagline: 'Hold tight as we get our docs in a row 🦆🦆🦆',
   url: 'https://hubs.mozilla.com', // Your website URL
   baseUrl: '/docs/', // Base URL for your project */
@@ -39,8 +39,10 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'welcome', label: 'Docs'},
-    {href: "https://github.com/mozilla/hubs", label: "GitHub" },
+    {href: "https://github.com/belivvr/hubs-docs", label: "Github"},
+    // {href: "https://github.com/mozilla/hubs", label: "GitHub" },
     {page: 'help', label: 'Help'},
+    {href: "https://hubs.mozilla.com/", label: "Hubs by mozilla"}
   ],
 
   // If you have users set above, you add it here:
@@ -96,7 +98,7 @@ const siteConfig = {
   // remove 'docs' folder from the URL
   docsUrl: '',
 
-  editUrl: 'https://github.com/MozillaReality/hubs-docs/edit/master/docs/',
+  editUrl: 'https://github.com/belivvr/hubs-docs/blob/master/docs/',
 
   // Open Graph and Twitter card images.
   ogImage: 'img/undraw_online.svg',
