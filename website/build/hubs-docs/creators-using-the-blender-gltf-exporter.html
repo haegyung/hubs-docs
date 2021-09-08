@@ -1,0 +1,160 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>the Blender glTF Exporter 사용하기 · 모질라 허브 한국어 문서 by BELIVVR Developers</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;참고: 다음 가이드에서는 최신 버전의 안정적인 Blender release 를 사용하고 있다고 가정합니다. 이전 버전의 블렌더 또는 실험용 빌드를 사용하는 것은 효과적일 수 있지만 보장되지는 않습니다.&lt;/p&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="the Blender glTF Exporter 사용하기 · 모질라 허브 한국어 문서 by BELIVVR Developers"/><meta property="og:type" content="website"/><meta property="og:url" content="https://hubs.mozilla.com/docs/index.html"/><meta property="og:description" content="&lt;p&gt;참고: 다음 가이드에서는 최신 버전의 안정적인 Blender release 를 사용하고 있다고 가정합니다. 이전 버전의 블렌더 또는 실험용 빌드를 사용하는 것은 효과적일 수 있지만 보장되지는 않습니다.&lt;/p&gt;
+"/><meta property="og:image" content="https://hubs.mozilla.com/docs/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://hubs.mozilla.com/docs/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/docs/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/docs/js/scrollSpy.js"></script><link rel="stylesheet" href="/docs/css/main.css"/><script src="/docs/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docs/"><img class="logo" src="/docs/img/favicon.ico" alt="모질라 허브 한국어 문서 by BELIVVR Developers"/><h2 class="headerTitleWithLogo">모질라 허브 한국어 문서 by BELIVVR Developers</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/welcome.html" target="_self">Docs</a></li><li class=""><a href="https://github.com/belivvr/hubs-docs" target="_self">Github</a></li><li class=""><a href="/docs/help.html" target="_self">Help</a></li><li class=""><a href="https://hubs.mozilla.com/" target="_self">Hubs by mozilla</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>For Creators</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Introduction<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/welcome.html">허브에 오신 것을 환영합니다</a></li><li class="navListItem"><a class="navItem" href="/docs/intro-hubs.html">허브로 시작하기</a></li><li class="navListItem"><a class="navItem" href="/docs/intro-spoke.html">스포크(Spoke)로 장면(Scene) 빌드하기</a></li><li class="navListItem"><a class="navItem" href="/docs/intro-avatars.html">커스텀 아바타 생성하기</a></li><li class="navListItem"><a class="navItem" href="/docs/intro-events.html">Hubs에 이벤트 호스팅하기</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Hubs Documentation<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/hubs-create-join-rooms.html">방 생성하고 참여하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-features.html">Hubs 특징들 살펴보기</a></li><li class="navListItem"><a class="navItem" href="/docs/sharing-avatar-links-privately.html">개인 링크(Privately Links)로 아바타 공유하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-user-settings.html">유저(User) Settings</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-room-settings.html">룸(Room) Settings</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-controls.html">Controls</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-discord-bot.html">디스코드 봇(Discord Bot)</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-troubleshooting.html">Troubleshooting</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-faq.html">FAQ</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Spoke Documentation<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/spoke-creating-projects.html">프로젝트 생성하기</a></li><li class="navListItem"><a class="navItem" href="/docs/spoke-user-interface.html">유저 인터페이스(User Interface)</a></li><li class="navListItem"><a class="navItem" href="/docs/spoke-controls.html">스포크(Spoke) Controls</a></li><li class="navListItem"><a class="navItem" href="/docs/spoke-adding-scene-content.html">콘텐트 추가하기</a></li><li class="navListItem"><a class="navItem" href="/docs/spoke-architecture-kit.html">아키텍처 킷(Architecture Kit)</a></li><li class="navListItem"><a class="navItem" href="/docs/spoke-grid.html">그리드(Grid)</a></li><li class="navListItem"><a class="navItem" href="/docs/spoke-skyboxes.html">스카이박스(Skyboxes)</a></li><li class="navListItem"><a class="navItem" href="/docs/lighting-and-shadows.html">빛과 그림자(Lighting and shadow)</a></li><li class="navListItem"><a class="navItem" href="/docs/physics-and-navigation.html">물리학 및 네비게이션(Physics and Navigation)</a></li><li class="navListItem"><a class="navItem" href="/docs/spoke-publish-scenes.html">장면(Scene) 공개(publish)하기</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">For Creators<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/creators-advanced-avatar-customization.html">Advanced 아바타 커스터마이징</a></li><li class="navListItem"><a class="navItem" href="/docs/creators-linking-rooms.html">허브 룸에 연결하기</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/creators-using-the-blender-gltf-exporter.html">the Blender glTF Exporter 사용하기</a></li><li class="navListItem"><a class="navItem" href="/docs/spoke-optimization.html">장면(Scenes) 최적화하기</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">For Developers<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/build-custom-client.html">커스텀 클라이언트 빌드하기</a></li><li class="navListItem"><a class="navItem" href="/docs/contributing.html">기여하기(Contributing)</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-query-string-parameters.html">Hubs 쿼리스트링 파라미터(Query String Parameters)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Hubs Cloud<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-intro.html">허브 클라우드란?</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-getting-started.html">허브 클라우드로 시작하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-faq.html">허브 클라우드 FAQ</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-importing-content.html">콘텐트(Content) 임포트하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-asset-packs.html">권장하는 Asset Packs</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-customizing-look-and-feel.html">룩앤필(Look and feel) 커스터마이징 하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-managing-content.html">콘텐트 관리하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-adding-administrators.html">관리자 권한 추가하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-limiting-user-access.html">허브에 유저 엑세스 권한 제한하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-permissive-rooms.html">레시피: 룸에 접근 허용 권한 설정하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-enable-media-browser.html">레시피: 써드파티(3rd party) 통합</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-enable-scene-editor.html">레시피: 장면 에디터(Scene editor) 활성화</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-custom-smtp.html">Recipe: 레시피: 커스텀 SMTP</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-discord-bot.html">레시피: 디스코드 봇(Discord bot)</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-accessing-servers.html">Advanced: SSH 접근하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-content-cdn.html">Advanced: Content CDN</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-custom-clients.html">커스텀 클라이언트 생성하고 배포하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-branding.html">허브 클라우드 브랜드 가이드라인</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Hubs Cloud AWS<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-quick-start.html">AWS 퀵 스타트(Quick Start)</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-domain-recipes.html">도메인 레시피(Domain Recipes)</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-existing-domain.html">현재 존재하는 도메인(Domain) 사용하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-existing-email-provider.html">존재하는 이메일 제공자(Email Provider) 사용하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-updating-the-stack.html">스택(Stack)에 업데이트하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-backup-and-restore.html">백업(Backup) 과 복구(Restore)</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-troubleshooting.html">AWS 트러블슈팅(Trouble Shooting)</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-known-issues.html">AWS에 알려진 이슈</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-architecture.html">AWS 시스템 아키텍처</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-costs.html">AWS 비용 정보</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-estimated-cost-charts.html">AWS 추정 비용 및 비용 차트(Alpha)</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-estimated-ccu-limits.html">AWS 추산된 CCU Limits</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Hubs Cloud DigitalOcean<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-do-quick-start.html">디지털 오션(DigitalOcean) 퀵 스타트</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/belivvr/hubs-docs/blob/master/docs/creators-using-the-blender-gltf-exporter.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">the Blender glTF Exporter 사용하기</h1></header><article><div><span><p>참고: 다음 가이드에서는 최신 버전의 안정적인 Blender release 를 사용하고 있다고 가정합니다. 이전 버전의 블렌더 또는 실험용 빌드를 사용하는 것은 효과적일 수 있지만 보장되지는 않습니다.</p>
+<p>최신 버전의 블렌더를 사용하려면 시작 시 블렌더 시작 화면의 오른쪽 상단을 보고 블렌더 기본 다운로드 페이지 <a href="https://www.blender.org/download/와">https://www.blender.org/download/와</a> 일치하는지 확인하십시오.</p>
+<p><img src="../website/static/img/BlenderSplash.jpg" alt="Blender Splash Screen Image"></p>
+<h3><a class="anchor" aria-hidden="true" id="gltf로-내보낼-내용은-무엇입니까"></a><a href="#gltf로-내보낼-내용은-무엇입니까" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>glTF로 내보낼 내용은 무엇입니까?</h3>
+<p>블렌더에서 만든 모든 것을 glTF(glb) 형식으로 내보낼 수 있는 것은 아니에요.
+이는 Blender glTF import/export 추가 기능에 대한 지속적인 개선과 glTF 파일 형식 자체에 대한 변경으로 인해 지속적으로 변경되고 있죠.
+일반적으로 텍스처(texture)를 가지고 있거나 또는 없거나, 정점(Vertex)) 색상이 있거나 없는 모델, 골격 skeleton(bone armature)가 있는 모델, 모양 키(모핑)가 있는 모델 및 애니메이션을 포함한 모델을 내보낼(export) 수 있습니다.
+(어느 시점에 상황이 바뀌지 않는 한) 올바르게 내보내지 못할 것: 블렌더의 입자 시스템(blender's particle system), 캐시된 정점 애니메이션(cached vertex animation, 유체 또는 천 시뮬레이션 등) 및 특정 유형의 셰이더를 예로 들 수 있어요.</p>
+<p>블렌더 파일의 특정 부분을 내보내는데(export) 질문이나 문제가 있는 경우에, 자세한 내용은 다음을 참조해주시면 될 것 같아요.</p>
+<p><a href="https://www.khronos.org/gltf/">glTF file format overview</a></p>
+<p><a href="https://github.com/KhronosGroup/glTF-Blender-IO">Blender glTF Importer/Exporter Github repository</a></p>
+<h3><a class="anchor" aria-hidden="true" id="블렌더-모델을-올바르게-내보내는export-방법"></a><a href="#블렌더-모델을-올바르게-내보내는export-방법" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>블렌더 모델을 올바르게 내보내는(export) 방법</h3>
+<p>블렌더에 표시되는 정보가 <code>Spoke</code> 및 <code>Hubs</code>에 표시되는지 확인하기 위해 몇 가지 사항을 점검해야 합니다. 이건 완벽한 리스트 항목은 아니지만 예상치 못한 결과를 초래할 수 있는 몇 가지 일반적인 내용을 포함하고 있습니다.</p>
+<p><strong>+ 척도(Scale)는 1, 1, 1이어야 합니다.</strong></p>
+<p>블렌더에서 스케일을 조정하고 <strong>스케일을 적용하는 것을 잊기 쉽습니다(ctrl+a)</strong>. 개체의 척도(Scale)가 1, 1, 1이 아닌 다른 값을 읽는 경우 내보낸 모델이 표시되지 않을 수 있습니다.</p>
+<p><strong>+ 개체(Object)는 월드 오리진(0, 0, 0 / world origin) 또는 그 근처에 있어야 합니다</strong></p>
+<p>Sketchfab이나 Google Poly와 같은 제3자 사이트에서 제공되는 모델(특히 애니메이션인 경우)에서는 개체(Object)가 없는 것이 매우 일반적인 문제입니다.
+따라서, 모델을 허브에 떨어뜨리고(drop down) 로딩 큐브(loading cube) 가 있는 곳과 거리가 멀면 이러한 문제가 발생하는 것을 알 수 있게 됩니다.</p>
+<p><strong>+ 보고 싶은 Modifiers 적용하기</strong></p>
+<p>블렌더 modifier 들이 내보낸 모델에 나타나려면 블렌더 modifier 를 적용해야 합니다.
+예를 들어, 한쪽을 모델링한 후 다른 한쪽을 복제하기 위해 'Mirror' modifier 를 추가하는 문자는 해당 'Mirror' modifier 를 먼저 <em>적용</em>하지 않는 한 모델링된 절반만 내보냅니다.
+설계를 계속 반복하고 있기 때문에 해당 modifier 를 적용하지 않으려면 모델을 먼저 복제하고 미러를 적용한 다음 해당 복제만 내보내면 됩니다.
+<em><strong>참고</strong>: glTF 내보내기 도구에는 내보낼 때 '수정자 적용'으로 설정되어 있습니다. 그러나 이는 바람직하지 않을 수 있는 armature modifier 를 포함한 모든 modifier 를 적용합니다(골격(skeleton)에 대한 스킨 작업).</em></p>
+<p><strong>+ Objects with animation tracks need to have those tracks 'Stashed'</strong></p>
+<p>여러 애니메이션이 포함된 개체를 지원하려면 먼저 모든 애니메이션 트랙을 'Stashed' 또는 'Push Down' 으로 만들어야 glTF로 내보낼 수 있습니다.
+액션 편집기(Action editor) 또는 NLA(비선형 애니메이션) 편집기에서 수행할 수 있습니다.</p>
+<p><img src="img/BlenderAnimationStash.jpg" alt="Blender Animation Windows"></p>
+<p><strong>+ glTF와 glb는 같지만 정확히는 아닙니다.</strong></p>
+<p><strong>TL;DR: 내보낼 때 .glb로 내보내는 것이 좋습니다.</strong>
+<code>Spoke</code> 및 <code>Hubs</code>에서는 .glb 파일을 사용할 수 있습니다. 단일 .glb 파일에는 모든 메쉬 데이터, 이미지 텍스처 및 단일 이진 파일에 패킹된 관련 정보가 포함됩니다.
+Glb 파일은 별도의 .bin 및 텍스처 파일을 이동할 필요가 없기 때문에 일반적으로 처리하기가 더 쉽습니다.
+고급 사용자의 경우 텍스트 편집기(Editor)를 사용하여 파일을 수동으로 편집하려는 경우 glTF로 내보내도록 선택할 수 있습니다.
+glTF를 glb로 변환하거나 그 반대로 변환하는 데 사용할 수 있는 여러 변환기가 있습니다.
+자세한 내용은 <a href="https://www.khronos.org/gltf/">glTF 파일 형식 개요</a> 를 참조해주세요.</p>
+<p><strong>+ Exporter 도구 설정 이해</strong></p>
+<p>glTF 내보내기에는 이해해야 할 설정이 꽤 있지만 다행히 섹션별로 구분되어 있어 조금 더 쉽게 이해할 수 있습니다. 대부분의 경우 기본값이 제대로 작동합니다. 그러나 문제 해결 시 몇 가지 주의할 사항이 있습니다.</p>
+<ul>
+  <li>(Include) 'Selected Objects' - 체크하면 원하는 선택된 항목만 내보낼 수 있습니다. 이 기능이 켜져 있다는 사실을 잊기가 쉽습니다. (그리고 먼저 항목을 선택하는 것을 잊기가 더 쉽습니다!)
+  <li>(Include) 'Custom Properties' - 이것은 사용자 지정 Hubs 구성 요소 추가 기능(나중에 자세히 설명)과 같은 것을 사용하는 경우 필요하지만 대부분의 경우 필요하지 않습니다.
+  <li>(Geometry) 'Apply Modifiers' - 위의 정보를 참조하십시오. 대부분의 경우 이 기능을 OFF 상태로 두는 것이 좋습니다.
+  <li>(Geometry) 'UVs, Normals, Tangents' - 가장 왼쪽을 ON 하는게 최선입니다. 원하지 않는 경우가 있을 수 있지만 드문 경우입니다.
+  <li>(Geometry) 'Vertex Colors' - 텍스처 대신 기본 색상을 적용하는 저렴하고 빠른 방법이 될 수 있는 모델에 정점 색상을 칠하기로 선택한 경우 이 옵션이 필요합니다. 그렇지 않으면 명백한 효과 없이 끌 수 있습니다.
+  <li>(Geometry) 'Materials' - 거의 모든 모델에는 재료가 제대로 표시되어야 하므로 이 ON이 필요합니다..
+  <li>(Geometry) 'Compression' - 이것은 좋은 생각처럼 보일 수 있지만 이 글을 쓰는 시점에서 Hubs는 Google Draco 메시 압축을 사용하는 개체를 지원하지 않습니다. 이것을 OFF로 둡니다.
+  <li>(Animation) 'Limit to Playback Range' - 전체 애니메이션을 내보내려면 재생 범위가 올바르게 설정되어 있는지 확인하십시오.
+  <li>(Animation) 'Always Sample Animations' - 이것은 경우에 따라 파일 크기를 크게 증가시키는 것으로 나타났습니다. 이 기능을 끄십시오. 애니메이션이 없어도 계속 작동하는 경우 OFF로 두십시오.
+  <li>(Animation) 'NLA Strips' - 개체에 많은 애니메이션 트랙을 숨겼으면 이 옵션을 켜야 합니다.
+  <li>Shape Keys - 모양 키(다른 소프트웨어에서는 모프 대상 또는 블렌드 모양이라고도 함)가 필요한 개체가 있는 경우 이 옵션을 켜야 합니다.
+  <li>(Shape Keys) 'Shape Key Normals' - 모프(morphs)가 개체의 법선에 특별한 작업을 수행하지 않는 한 이 기능을 끌 수 있습니다. 모프가 발생할 때 이상한 음영이 발생하는 경우 이를 토글해 보십시오.
+  <li>Skinning - 오브젝트가 골격 뼈대에 바인딩된 경우 이 옵션을 켜야 합니다.
+</ul>
+<p>언급되지 않은 매개 변수는 기본값으로 두는 것이 가장 좋습니다.
+이 내보내기 도구(및 glTF 형식)는 여전히 자체 버그 수정 및 재설계가 적용되므로 일부 설정 및/또는 기본값은 향후 변경될 수 있습니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="spoke-및-hubs-가-올바르게-표시될-재료-설정"></a><a href="#spoke-및-hubs-가-올바르게-표시될-재료-설정" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Spoke 및 Hubs 가 올바르게 표시될 재료 설정</h3>
+<p>Blender의 문서에는 glTF를 위해 재료를 구성하는 방법에 대한 최신 정보가 모두 포함되어 있습니다. 이 정보는 'gl'을 검색하면 쉽게 찾을 수 있습니다.의사록에 'TF'가 있어요 <a href="https://docs.blender.org/manual/en/dev/addons/import_export/scene_gltf2.html?highlight=gltf#gltf-2-0">Blender's glTF 문서 링크</a></p>
+<p>이러한 정보를 반복하는 대신 다음과 같은 몇 가지 유용한 팁이 제공됩니다.</p>
+<p><strong>+ 가능하다면 'unlit' Material 사용해주세요</strong></p>
+<p>'unlit'은 다소 혼동되는 명칭이지만, 장면(Scene) 내의 빛이 물체에 영향을 미치지 않는 Material 를 말합니다.
+다시 말해, 스스로 완전히 빛을 발하는 것처럼 보입니다.
+Unlight Material 은 모든 장치에서 렌더링하고 동일하게 보이는 '가장 저렴한' Material 입니다.
+이런 이유로 사람들은 조명(Lighting) 과 그림자 정보(shadow information) 를 먼저 베이스 컬러 텍스처(Base color texture) 에 'bake' 한 다음, unlit material 에 적용합니다.
+블렌더 매뉴얼에는 unit shader graph 를 만드는 방법이 나와 있지만, 특별히 명확하게 설명해주는 것은 아닙니다.</p>
+<p>부분적으로 이 부분이 힘든 이유는, 셰이더 그래프에서 'Background' 노드를 반드시 사용해야 하지만 기본적으로 'Background' 노드가 다른 노드들과 함께 나열되지 않기 때문이에요.
+대신 여러분은 Shader 편집기를 'World' 모드로 전환하여 해당 노드를 찾은 다음 개체(Object) 의 Shader 그래프에 copy/paste 를 하셔서 붙여넣으셔야 합니다.
+나중에 이것들을 Quick Favorites 메뉴에 추가하여 쉽게 찾을 수 있도록 할 수 있습니다.</p>
+<video autoplay loop muted controls >
+  <source src="../website/static/img/BlenderShaderBackground.mp4" type="video/mp4">
+  <img src="../website/static/img/intro-custom-avatar.jpeg" alt="Blender - Finding Background Node">
+  Your browser does not support HTML5 video.
+</video>
+<p>백그라운드 노드가 있으면 이 노드에 텍스처를 연결하고 재료 출력으로 전송할 수 있습니다.
+glb로 내보내고 개체를 Spoke 또는 Hubs 로 가져오면 'unlit'(또는 생각하는 방식에 따라 완전히 켜짐)이 됩니다.</p>
+<video autoplay loop muted controls >
+  <source src="../website/static/img/BlenderShaderBackground2.mp4" type="video/mp4">
+  <img src="../website/static/img/intro-custom-avatar.jpeg" alt="Blender - Using Background Node">
+  Your browser does not support HTML5 video.
+</video>
+<p>Unlit Material 은 어떠한 장면 조명에도 영향을 받지 않기 때문에 'Sky dome' 에 사용하기에 가장 좋은 Material 입니다.
+일반적으로, 개체(Object) 가 조명에 따라 외관을 바꾸는 반사광이나 표면이 필요하지 않으면, unlit material 을 사용하면 됩니다.</p>
+<p><img src="../website/static/img/HelloWebXRscene.jpg" alt="A Hubs scene with baked lighting"></p>
+<p>위의 장면(Scene)에서는 모든 조명(lighting)을 블렌더에 bake 한 다음, unlit meterial 와 함께 export 했습니다.
+이 장면(Scene)에서 조명(light) 을 설치하는 것은 방 자체에는 영향을 미치지 않지만 모든 장치에서 훌륭해 보입니다(그리고 같습니다).</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/creators-linking-rooms.html"><span class="arrow-prev">← </span><span>허브 룸에 연결하기</span></a><a class="docs-next button" href="/docs/spoke-optimization.html"><span>장면(Scenes) 최적화하기</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docs/" class="nav-home"><img src="/docs/img/favicon.ico" alt="모질라 허브 한국어 문서 by BELIVVR Developers" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/welcome.html">Introduction</a><a href="/docs/hubs-create-join-rooms.html">Hubs Documentation</a><a href="/docs/spoke-creating-projects.html">Spoke Documentation</a><a href="/docs/creators-advanced-avatar-customization.html">For Creators</a><a href="/docs/system-overview.html">For Developers</a><a href="/docs/hubs-cloud-intro.html">Hubs Cloud</a></div><div><h5>Community</h5><a href="http://discord.gg/wHmY4nd">Discord Chat</a><a href="https://twitter.com/mozillahubs" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="https://hubs.mozilla.com/">Hubs</a><a href="https://hubs.mozilla.com/spoke/">Spoke</a><a href="https://github.com/mozilla/hubs/">GitHub</a></div></section><section class="copyright">Copyright © 2021 Mozilla</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '227afb429135813e4d9d2339ea8a18c7',
+                indexName: 'mozilla_hub',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>

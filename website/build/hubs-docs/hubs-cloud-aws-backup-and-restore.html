@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>백업(Backup) 과 복구(Restore) · 모질라 허브 한국어 문서 by BELIVVR Developers</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;만약에 어떤 문제가 발생하여 백업을 해야하는 경우 또는 기존 허브의 동일한 데이터를 사용하여 두 번째 허브를 만들고자 하는 경우&lt;/p&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="백업(Backup) 과 복구(Restore) · 모질라 허브 한국어 문서 by BELIVVR Developers"/><meta property="og:type" content="website"/><meta property="og:url" content="https://hubs.mozilla.com/docs/index.html"/><meta property="og:description" content="&lt;p&gt;만약에 어떤 문제가 발생하여 백업을 해야하는 경우 또는 기존 허브의 동일한 데이터를 사용하여 두 번째 허브를 만들고자 하는 경우&lt;/p&gt;
+"/><meta property="og:image" content="https://hubs.mozilla.com/docs/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://hubs.mozilla.com/docs/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/docs/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/docs/js/scrollSpy.js"></script><link rel="stylesheet" href="/docs/css/main.css"/><script src="/docs/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docs/"><img class="logo" src="/docs/img/favicon.ico" alt="모질라 허브 한국어 문서 by BELIVVR Developers"/><h2 class="headerTitleWithLogo">모질라 허브 한국어 문서 by BELIVVR Developers</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/welcome.html" target="_self">Docs</a></li><li class=""><a href="https://github.com/belivvr/hubs-docs" target="_self">Github</a></li><li class=""><a href="/docs/help.html" target="_self">Help</a></li><li class=""><a href="https://hubs.mozilla.com/" target="_self">Hubs by mozilla</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Hubs Cloud AWS</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Introduction<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/welcome.html">허브에 오신 것을 환영합니다</a></li><li class="navListItem"><a class="navItem" href="/docs/intro-hubs.html">허브로 시작하기</a></li><li class="navListItem"><a class="navItem" href="/docs/intro-spoke.html">스포크(Spoke)로 장면(Scene) 빌드하기</a></li><li class="navListItem"><a class="navItem" href="/docs/intro-avatars.html">커스텀 아바타 생성하기</a></li><li class="navListItem"><a class="navItem" href="/docs/intro-events.html">Hubs에 이벤트 호스팅하기</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Hubs Documentation<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/hubs-create-join-rooms.html">방 생성하고 참여하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-features.html">Hubs 특징들 살펴보기</a></li><li class="navListItem"><a class="navItem" href="/docs/sharing-avatar-links-privately.html">개인 링크(Privately Links)로 아바타 공유하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-user-settings.html">유저(User) Settings</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-room-settings.html">룸(Room) Settings</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-controls.html">Controls</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-discord-bot.html">디스코드 봇(Discord Bot)</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-troubleshooting.html">Troubleshooting</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-faq.html">FAQ</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Spoke Documentation<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/spoke-creating-projects.html">프로젝트 생성하기</a></li><li class="navListItem"><a class="navItem" href="/docs/spoke-user-interface.html">유저 인터페이스(User Interface)</a></li><li class="navListItem"><a class="navItem" href="/docs/spoke-controls.html">스포크(Spoke) Controls</a></li><li class="navListItem"><a class="navItem" href="/docs/spoke-adding-scene-content.html">콘텐트 추가하기</a></li><li class="navListItem"><a class="navItem" href="/docs/spoke-architecture-kit.html">아키텍처 킷(Architecture Kit)</a></li><li class="navListItem"><a class="navItem" href="/docs/spoke-grid.html">그리드(Grid)</a></li><li class="navListItem"><a class="navItem" href="/docs/spoke-skyboxes.html">스카이박스(Skyboxes)</a></li><li class="navListItem"><a class="navItem" href="/docs/lighting-and-shadows.html">빛과 그림자(Lighting and shadow)</a></li><li class="navListItem"><a class="navItem" href="/docs/physics-and-navigation.html">물리학 및 네비게이션(Physics and Navigation)</a></li><li class="navListItem"><a class="navItem" href="/docs/spoke-publish-scenes.html">장면(Scene) 공개(publish)하기</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">For Creators<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/creators-advanced-avatar-customization.html">Advanced 아바타 커스터마이징</a></li><li class="navListItem"><a class="navItem" href="/docs/creators-linking-rooms.html">허브 룸에 연결하기</a></li><li class="navListItem"><a class="navItem" href="/docs/creators-using-the-blender-gltf-exporter.html">the Blender glTF Exporter 사용하기</a></li><li class="navListItem"><a class="navItem" href="/docs/spoke-optimization.html">장면(Scenes) 최적화하기</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">For Developers<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/build-custom-client.html">커스텀 클라이언트 빌드하기</a></li><li class="navListItem"><a class="navItem" href="/docs/contributing.html">기여하기(Contributing)</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-query-string-parameters.html">Hubs 쿼리스트링 파라미터(Query String Parameters)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Hubs Cloud<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-intro.html">허브 클라우드란?</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-getting-started.html">허브 클라우드로 시작하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-faq.html">허브 클라우드 FAQ</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-importing-content.html">콘텐트(Content) 임포트하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-asset-packs.html">권장하는 Asset Packs</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-customizing-look-and-feel.html">룩앤필(Look and feel) 커스터마이징 하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-managing-content.html">콘텐트 관리하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-adding-administrators.html">관리자 권한 추가하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-limiting-user-access.html">허브에 유저 엑세스 권한 제한하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-permissive-rooms.html">레시피: 룸에 접근 허용 권한 설정하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-enable-media-browser.html">레시피: 써드파티(3rd party) 통합</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-enable-scene-editor.html">레시피: 장면 에디터(Scene editor) 활성화</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-custom-smtp.html">Recipe: 레시피: 커스텀 SMTP</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-discord-bot.html">레시피: 디스코드 봇(Discord bot)</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-accessing-servers.html">Advanced: SSH 접근하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-content-cdn.html">Advanced: Content CDN</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-custom-clients.html">커스텀 클라이언트 생성하고 배포하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-branding.html">허브 클라우드 브랜드 가이드라인</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Hubs Cloud AWS<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-quick-start.html">AWS 퀵 스타트(Quick Start)</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-domain-recipes.html">도메인 레시피(Domain Recipes)</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-existing-domain.html">현재 존재하는 도메인(Domain) 사용하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-existing-email-provider.html">존재하는 이메일 제공자(Email Provider) 사용하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-updating-the-stack.html">스택(Stack)에 업데이트하기</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/hubs-cloud-aws-backup-and-restore.html">백업(Backup) 과 복구(Restore)</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-troubleshooting.html">AWS 트러블슈팅(Trouble Shooting)</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-known-issues.html">AWS에 알려진 이슈</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-architecture.html">AWS 시스템 아키텍처</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-costs.html">AWS 비용 정보</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-estimated-cost-charts.html">AWS 추정 비용 및 비용 차트(Alpha)</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-estimated-ccu-limits.html">AWS 추산된 CCU Limits</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Hubs Cloud DigitalOcean<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-do-quick-start.html">디지털 오션(DigitalOcean) 퀵 스타트</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/belivvr/hubs-docs/blob/master/docs/hubs-cloud-aws-backup-and-restore.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">백업(Backup) 과 복구(Restore)</h1></header><article><div><span><p>만약에 어떤 문제가 발생하여 백업을 해야하는 경우 또는 기존 허브의 동일한 데이터를 사용하여 두 번째 허브를 만들고자 하는 경우
+스택 생성 양식을 사용하면 매우 간단하게 복원할 수 있습니다.</p>
+<p>허브의 데이터는 AWS Aurora Serverless 데이터베이스와 AWS Elastic File Store 볼륨(씬, 아바타 등에 사용됨)의 두 가지 요소로 구성됩니다.
+이 두 항목은 모두 야간에 자동으로 백업됩니다. 데이터베이스는 데이터베이스 스냅샷(RDS 콘솔에서 볼 수 있음)을 통해 백업되고
+EFS 볼륨은 AWS 백업(AWS 백업 콘솔에서 찾을 수 있음)의 Vault로 백업됩니다.</p>
+<p><strong>허브 클라우드 스택을 1.0.0에서 1.1.0으로 업데이트를 해야할까요?</strong> 그렇다면 이 안내를 따라주세요.
+<a href="/docs/hubs-cloud-aws-updating-the-stack.html">허브 클라우드 버전 1.0.0에서 1.1.0으로 업데이트하기</a></p>
+<h3><a class="anchor" aria-hidden="true" id="수동으로-백업-만들기"></a><a href="#수동으로-백업-만들기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>수동으로 백업 만들기</h3>
+<p>허브는 매일 밤 자동으로 백업됩니다. 허브의 최신 백업을 만들려면 콘솔을 통해 RDS 스냅샷과 새 AWS 백업 복구 지점을 수동으로 생성할 수 있습니다.</p>
+<ul>
+<li>데이터 누락 위험을 제한하기 전에 <a href="/docs/hubs-cloud-aws-updating-the-stack.html">스택 업데이트</a>를 수행하여 허브를 &quot;오프라인&quot; 모드로 설정하는 것이 좋습니다.</li>
+<li>데이터베이스 스냅샷을 작성하려면:</li>
+<li>RDS에서 데이터베이스 클러스터를 선택하고 &quot;작업&quot;에서 &quot;스냅샷 만들기&quot;를 클릭합니다.</li>
+<li>어떤 클러스터가 허브의 데이터베이스인지 잘 모를 경우 스택 &quot;출력&quot; 섹션의 'AppDb'에서 찾을 수 있습니다.</li>
+<li>새 복구 지점을 만들려면:</li>
+<li><code>storageEFS</code> 에서 파일시스템 id와, <code>DailyBackupVault</code> 의 vault 이름 및 <code>CloudFormation</code> 의 스택에 있는 <code>Resources</code> 섹션의 <code>DailyBackupRole</code> 에 있는 IAM Role 를 얻으세요</li>
+<li>AWS 백업 콘솔에서 <code>Protected Resources</code> 로 이동하여 <code>Storage EFS</code> 에 대해 확인한 파일 시스템 ID를 선택합니다.</li>
+<li><code>Create On-Demand backup</code> 을 클릭합니다.</li>
+<li><code>Vault</code> 섹션의 <code>DailyBackupVault</code> 에서 볼트를 선택하고 IAM 섹션의 <code>IAM 역할 선택</code> 을 선택한 후 <code>DailyBackupRole</code> 에서 IAM 역할을 선택합니다.</li>
+</ul>
+<p>이 백업에서 복원하려는 경우 계속하기 전에 데이터베이스 스냅샷 및 저장소 백업 작업이 모두 완료되었는지 확인하십시오.
+스냅샷 상태는 RDS의 <code>Snapshot</code> 섹션을 통해, 백업 상태는 AWS 백업의 &quot;Jobs&quot; 섹션에서 확인할 수 있습니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="백업에서-복원"></a><a href="#백업에서-복원" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>백업에서 복원</h3>
+<p>백업에서 복원하려면 <a href="https://hubs.mozilla.com/cloud">새 스택 만들기</a> 를 선택한 후 &quot;Restore from Backup&quot; 섹션의 스택 작성 양식에 필요한 정보를 제공해야 합니다.
+AWS Backup은 현재 영역 간 복원을 지원하지 않으므로 원래 스택과 동일한 영역의 스택에만 백업을 복원할 수 있습니다.
+<strong>기존 스택에 대한 스택 업데이트를 수행하여 백업에서 복원을 시도하지마세요</strong>. 이렇게 하면 작동하지 않고 문제가 발생할 수 있습니다. 여러분은 반드시 백업 복원을 위한 새로운 스택을 생성해야 합니다.</p>
+<p>기존 스택을 백업의 데이터로 되돌리려면 먼저 스택을 삭제한 다음 백업에서 복원된 새 스택을 만들어야 합니다. 완료된 데이터베이스 스냅샷과 복원하려는 시점에 생성된 복원 지점이 있으면 스택을 삭제해도 안전합니다. 그러나 이전 스택을 삭제하기 전에 먼저 백업과 다른 도메인에 별도의 새 스택을 만들어 백업에 필요한 데이터가 포함되어 있는지 확인하는 것이 좋습니다.</p>
+<p>제공해야 하는 정보는 RDS 및 AWS 백업 콘솔에서 확인할 수 있습니다.</p>
+<ul>
+<li>복원할 RDS 스냅샷 ID</li>
+<li>복원할 AWS 백업 볼트 이름</li>
+<li>Vault에서 복원할 복구 지점 ARN</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="secrets-복원하기"></a><a href="#secrets-복원하기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Secrets 복원하기</h3>
+<p>백업에서 복원하는 데 필요한 암호화 키와 같은 몇 가지 암호가 있습니다. 필요한 암호는 스택을 삭제할 때 자동으로 삭제되지 않으므로 백업을 복원하는 스택을 삭제하더라도 수동으로 제거하지 않는 한 필요한 암호는 AWS 계정에 남아 있어야 합니다. ** 수동으로 암호를 삭제한 경우* 안타깝게도 암호와 관련된 암호이기 때문에 백업을 복원할 수 없습니다. 동정을 표합니다.</p>
+<ul>
+<li><p>첫 번째 암호는 백업을 복원하는 스택에 대한 데이터베이스 암호입니다. 이 암호를 찾으려면 AWS Secrets Manager에서 &quot;_Stack Name_Database Secret&quot; 부분을 찾으십시오.
+새 스택을 위한 스택 작성 양식에서 ARN에게 이 암호를 제공해야 합니다.</p></li>
+<li><p>또한, AWS Parameter Store에는 몇 가지 비밀이 저장되어 있습니다. 여러분은 이것들을 파헤칠 필요는 없을겁니다. 수동으로 들어가 삭제하지 않는 한 백업 원본 스택의 스택 이름을 제공하여 이러한 암호를 자동으로 룩업(look up) 할 수 있습니다. 이 값들을 작성 양식의 &quot;백업 및 복원&quot; 섹션에서 지정해야 합니다. (심지어 만일 여러분이 백업본들을 복원하는 스택을 지운다고 하더라도 말이죠.)</p></li>
+</ul>
+<p>이 값을 채우고 스택을 생성하면 백업(Backup)에서 복원해야 합니다. 백업되지 않은 &quot;서버 설정&quot; 을 관리자(Admin) 콘솔에서 구성해야 한다는 점을 제외하고 원본 스택과 동일하게 작동해야 합니다.
+<strong>참고</strong>: 백업에서 복원된 스택에서 스택 업데이트를 수행하는 경우, &quot;Restore from Backup&quot; 섹션 아래에 있는 매개변수를 변경하지 <strong>말아주세요</strong>. 그것들은 건드릴 필요가 없습니다.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/hubs-cloud-aws-updating-the-stack.html"><span class="arrow-prev">← </span><span>스택(Stack)에 업데이트하기</span></a><a class="docs-next button" href="/docs/hubs-cloud-aws-troubleshooting.html"><span>AWS 트러블슈팅(Trouble Shooting)</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docs/" class="nav-home"><img src="/docs/img/favicon.ico" alt="모질라 허브 한국어 문서 by BELIVVR Developers" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/welcome.html">Introduction</a><a href="/docs/hubs-create-join-rooms.html">Hubs Documentation</a><a href="/docs/spoke-creating-projects.html">Spoke Documentation</a><a href="/docs/creators-advanced-avatar-customization.html">For Creators</a><a href="/docs/system-overview.html">For Developers</a><a href="/docs/hubs-cloud-intro.html">Hubs Cloud</a></div><div><h5>Community</h5><a href="http://discord.gg/wHmY4nd">Discord Chat</a><a href="https://twitter.com/mozillahubs" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="https://hubs.mozilla.com/">Hubs</a><a href="https://hubs.mozilla.com/spoke/">Spoke</a><a href="https://github.com/mozilla/hubs/">GitHub</a></div></section><section class="copyright">Copyright © 2021 Mozilla</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '227afb429135813e4d9d2339ea8a18c7',
+                indexName: 'mozilla_hub',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>

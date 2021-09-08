@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>dev-system-overview · 모질라 허브 한국어 문서 by BELIVVR Developers</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;11---&lt;/p&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="dev-system-overview · 모질라 허브 한국어 문서 by BELIVVR Developers"/><meta property="og:type" content="website"/><meta property="og:url" content="https://hubs.mozilla.com/docs/index.html"/><meta property="og:description" content="&lt;p&gt;11---&lt;/p&gt;
+"/><meta property="og:image" content="https://hubs.mozilla.com/docs/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://hubs.mozilla.com/docs/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/docs/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/docs/js/scrollSpy.js"></script><link rel="stylesheet" href="/docs/css/main.css"/><script src="/docs/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docs/"><img class="logo" src="/docs/img/favicon.ico" alt="모질라 허브 한국어 문서 by BELIVVR Developers"/><h2 class="headerTitleWithLogo">모질라 허브 한국어 문서 by BELIVVR Developers</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/welcome.html" target="_self">Docs</a></li><li class=""><a href="https://github.com/belivvr/hubs-docs" target="_self">Github</a></li><li class=""><a href="/docs/help.html" target="_self">Help</a></li><li class=""><a href="https://hubs.mozilla.com/" target="_self">Hubs by mozilla</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/belivvr/hubs-docs/blob/master/docs/dev-system-overview.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">dev-system-overview</h1></header><article><div><span><p>11---
+id: system-overview
+title: 전반적인 시스템의 개요(Overview)</p>
+<hr>
+<h1><a class="anchor" aria-hidden="true" id="the-client-https-githubcom-mozilla-hubs"></a><a href="#the-client-https-githubcom-mozilla-hubs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://github.com/mozilla/hubs">The Client</a></h1>
+<p>사용자가 보는 거의 모든 내용을 렌더링합니다. HTML 페이지는 retculum에서 제공되지만 클라이언트에서 가져옵니다.</p>
+<p>프론트엔드는 2D용 React와 3D 장면용 Three.js 및 A-Frame으로 제작됩니다.
+네트워크 프레임을 사용하여 클라이언트 간에 3D 컨텐츠가 동기화됩니다. 물리학은 Ammo.js/Wasm을 사용하여 클라이언트에서 실행됩니다.</p>
+<p>클라이언트의 각 페이지는 백엔드 Reticulum에서 제공됩니다. /admin 폴더에는 허브와 별도의 Admin Panel 코드가 포함되어 있습니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="networked-aframe-https-githubcom-networked-aframe-networked-aframe"></a><a href="#networked-aframe-https-githubcom-networked-aframe-networked-aframe" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://github.com/networked-aframe/networked-aframe">networked aframe</a></h3>
+<p>게임 네트워킹은 네트워크 프레임 라이브러리를 사용하여 구현됩니다.
+현재는 가입 및 발차기와 같은 작은 메시지 서브셋에 대해 권한 부여 및 인증이 시행되고 있지만, 메시지 수준 인증을 수행할 수 있는 기능이 있습니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="ammojs-wasm"></a><a href="#ammojs-wasm" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Ammo.js/Wasm</h3>
+<p>모든 물리 시뮬레이션은 클라이언트에서 수행됩니다. 어떤 종류의 서버측 물리 시뮬레이션도 없습니다.
+서버는 기본적으로 클라이언트 메시지를 가져와서 약간 수정하고 권한을 추가한 다음 연결된 모든 피어에 메시지와 업데이트를 브로드캐스트하는 메시지 버스입니다.
+객체에 대한 소유권이나 동종 업체 간의 게임 내 경험을 조정하기 위한 기타 부수적인 우려와 같은 것들은 모두 클라이언트 프로토콜 구현에 기초합니다.</p>
+<h1><a class="anchor" aria-hidden="true" id="reticulum-https-githubcom-mozilla-reticulum"></a><a href="#reticulum-https-githubcom-mozilla-reticulum" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://github.com/mozilla/reticulum">Reticulum</a></h1>
+<p>erlang/elixir/phoenix 노드의 메시 네트워크로, 다음을 포함한 사용자 간의 모든 비음성/비디오 트래픽을 담당합니다.</p>
+<ul>
+<li>아바타 변신(Avatar transforms)</li>
+<li>인증/매직 사인 인 링크(Auth/magic sign in links)</li>
+<li>암호 해독(Decrypt)</li>
+<li>장면 업데이트(Scene updates)</li>
+<li>사용자 권한 유효성 검사(User Permission validation)</li>
+</ul>
+<p>룸에 연결하는 경우 웹 소켓을 통해 이 메쉬의 로드 밸런싱 노드에 연결하는 것입니다.
+메시지는 피닉스 채널이라는 pub/sub 시스템을 통해 메시(mesh) 를 통해 해당 룸의 모든 사용자 간에 전달됩니다.</p>
+<h1><a class="anchor" aria-hidden="true" id="habitat-https-wwwchefio-products-chef-habitat"></a><a href="#habitat-https-wwwchefio-products-chef-habitat" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://www.chef.io/products/chef-habitat">Habitat</a></h1>
+<p>Habitat은 패키징과 조정을 제공합니다. 배포는 Habitat에 의해 조정됩니다.</p>
+<p>모든 AWS EC2 인스턴스는 Habitat를 실행하고 Habitat는 Hubs, Reticulum, Dialog 등의 패키지를 실행합니다.</p>
+<h1><a class="anchor" aria-hidden="true" id="dialog-https-githubcom-mozilla-dialog"></a><a href="#dialog-https-githubcom-mozilla-dialog" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><a href="https://github.com/mozilla/dialog">Dialog</a></h1>
+<p>음성, 비디오 및 오디오 트래픽은 오픈 소스 &quot;미디어 수프(mediasoup)&quot; 프로젝트를 기반으로 WebRTC Server를 통해 처리됩니다.
+(우리는 formerly 하게 &quot;Janus&quot; 프로젝트를 WebRTC 서버로 사용했습니다.)
+각 참가자가 중앙 라우팅 머신으로 데이터를 보낸 다음 모든 참가자 데이터를 각 참가자에게 다시 보내는 SFU(Selective Forwarding Unit) 토폴로지를 사용합니다.</p>
+<h1><a class="anchor" aria-hidden="true" id="postgres-db"></a><a href="#postgres-db" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Postgres DB</h1>
+<p>데이터 영속성 상태를 위해서, 우리는 화려한(fancy) 일을 하지 않습니다.
+Reticulum 뒤에 postgresql 데이터베이스가 있고 내구성이 뛰어난 두 가지 저장 방법을 위한 파일 저장소가 있습니다.
+Reticulum은 둘 다 관리합니다. 고정된 객체(Pin object) 등등, 영구적인 룸 상태(Permanent Room State) 를 업데이트하는 경우
+두 백업 저장소의 bit 들을 업데이트하기 위해 reticulum 안에서 APIs 로 인터페이싱을 해야 합니다.</p>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docs/" class="nav-home"><img src="/docs/img/favicon.ico" alt="모질라 허브 한국어 문서 by BELIVVR Developers" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/welcome.html">Introduction</a><a href="/docs/hubs-create-join-rooms.html">Hubs Documentation</a><a href="/docs/spoke-creating-projects.html">Spoke Documentation</a><a href="/docs/creators-advanced-avatar-customization.html">For Creators</a><a href="/docs/system-overview.html">For Developers</a><a href="/docs/hubs-cloud-intro.html">Hubs Cloud</a></div><div><h5>Community</h5><a href="http://discord.gg/wHmY4nd">Discord Chat</a><a href="https://twitter.com/mozillahubs" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="https://hubs.mozilla.com/">Hubs</a><a href="https://hubs.mozilla.com/spoke/">Spoke</a><a href="https://github.com/mozilla/hubs/">GitHub</a></div></section><section class="copyright">Copyright © 2021 Mozilla</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '227afb429135813e4d9d2339ea8a18c7',
+                indexName: 'mozilla_hub',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>

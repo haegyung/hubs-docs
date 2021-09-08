@@ -1,0 +1,221 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>AWS 트러블슈팅(Trouble Shooting) · 모질라 허브 한국어 문서 by BELIVVR Developers</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;h2&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;배포&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#배포&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;배포&lt;/h2&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="AWS 트러블슈팅(Trouble Shooting) · 모질라 허브 한국어 문서 by BELIVVR Developers"/><meta property="og:type" content="website"/><meta property="og:url" content="https://hubs.mozilla.com/docs/index.html"/><meta property="og:description" content="&lt;h2&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;배포&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#배포&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;배포&lt;/h2&gt;
+"/><meta property="og:image" content="https://hubs.mozilla.com/docs/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://hubs.mozilla.com/docs/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/docs/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/docs/js/scrollSpy.js"></script><link rel="stylesheet" href="/docs/css/main.css"/><script src="/docs/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docs/"><img class="logo" src="/docs/img/favicon.ico" alt="모질라 허브 한국어 문서 by BELIVVR Developers"/><h2 class="headerTitleWithLogo">모질라 허브 한국어 문서 by BELIVVR Developers</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/welcome.html" target="_self">Docs</a></li><li class=""><a href="https://github.com/belivvr/hubs-docs" target="_self">Github</a></li><li class=""><a href="/docs/help.html" target="_self">Help</a></li><li class=""><a href="https://hubs.mozilla.com/" target="_self">Hubs by mozilla</a></li><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Hubs Cloud AWS</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Introduction<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/welcome.html">허브에 오신 것을 환영합니다</a></li><li class="navListItem"><a class="navItem" href="/docs/intro-hubs.html">허브로 시작하기</a></li><li class="navListItem"><a class="navItem" href="/docs/intro-spoke.html">스포크(Spoke)로 장면(Scene) 빌드하기</a></li><li class="navListItem"><a class="navItem" href="/docs/intro-avatars.html">커스텀 아바타 생성하기</a></li><li class="navListItem"><a class="navItem" href="/docs/intro-events.html">Hubs에 이벤트 호스팅하기</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Hubs Documentation<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/hubs-create-join-rooms.html">방 생성하고 참여하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-features.html">Hubs 특징들 살펴보기</a></li><li class="navListItem"><a class="navItem" href="/docs/sharing-avatar-links-privately.html">개인 링크(Privately Links)로 아바타 공유하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-user-settings.html">유저(User) Settings</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-room-settings.html">룸(Room) Settings</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-controls.html">Controls</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-discord-bot.html">디스코드 봇(Discord Bot)</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-troubleshooting.html">Troubleshooting</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-faq.html">FAQ</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Spoke Documentation<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/spoke-creating-projects.html">프로젝트 생성하기</a></li><li class="navListItem"><a class="navItem" href="/docs/spoke-user-interface.html">유저 인터페이스(User Interface)</a></li><li class="navListItem"><a class="navItem" href="/docs/spoke-controls.html">스포크(Spoke) Controls</a></li><li class="navListItem"><a class="navItem" href="/docs/spoke-adding-scene-content.html">콘텐트 추가하기</a></li><li class="navListItem"><a class="navItem" href="/docs/spoke-architecture-kit.html">아키텍처 킷(Architecture Kit)</a></li><li class="navListItem"><a class="navItem" href="/docs/spoke-grid.html">그리드(Grid)</a></li><li class="navListItem"><a class="navItem" href="/docs/spoke-skyboxes.html">스카이박스(Skyboxes)</a></li><li class="navListItem"><a class="navItem" href="/docs/lighting-and-shadows.html">빛과 그림자(Lighting and shadow)</a></li><li class="navListItem"><a class="navItem" href="/docs/physics-and-navigation.html">물리학 및 네비게이션(Physics and Navigation)</a></li><li class="navListItem"><a class="navItem" href="/docs/spoke-publish-scenes.html">장면(Scene) 공개(publish)하기</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">For Creators<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/creators-advanced-avatar-customization.html">Advanced 아바타 커스터마이징</a></li><li class="navListItem"><a class="navItem" href="/docs/creators-linking-rooms.html">허브 룸에 연결하기</a></li><li class="navListItem"><a class="navItem" href="/docs/creators-using-the-blender-gltf-exporter.html">the Blender glTF Exporter 사용하기</a></li><li class="navListItem"><a class="navItem" href="/docs/spoke-optimization.html">장면(Scenes) 최적화하기</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">For Developers<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/build-custom-client.html">커스텀 클라이언트 빌드하기</a></li><li class="navListItem"><a class="navItem" href="/docs/contributing.html">기여하기(Contributing)</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-query-string-parameters.html">Hubs 쿼리스트링 파라미터(Query String Parameters)</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Hubs Cloud<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-intro.html">허브 클라우드란?</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-getting-started.html">허브 클라우드로 시작하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-faq.html">허브 클라우드 FAQ</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-importing-content.html">콘텐트(Content) 임포트하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-asset-packs.html">권장하는 Asset Packs</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-customizing-look-and-feel.html">룩앤필(Look and feel) 커스터마이징 하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-managing-content.html">콘텐트 관리하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-adding-administrators.html">관리자 권한 추가하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-limiting-user-access.html">허브에 유저 엑세스 권한 제한하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-permissive-rooms.html">레시피: 룸에 접근 허용 권한 설정하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-enable-media-browser.html">레시피: 써드파티(3rd party) 통합</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-enable-scene-editor.html">레시피: 장면 에디터(Scene editor) 활성화</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-custom-smtp.html">Recipe: 레시피: 커스텀 SMTP</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-discord-bot.html">레시피: 디스코드 봇(Discord bot)</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-accessing-servers.html">Advanced: SSH 접근하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-content-cdn.html">Advanced: Content CDN</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-custom-clients.html">커스텀 클라이언트 생성하고 배포하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-branding.html">허브 클라우드 브랜드 가이드라인</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Hubs Cloud AWS<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-quick-start.html">AWS 퀵 스타트(Quick Start)</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-domain-recipes.html">도메인 레시피(Domain Recipes)</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-existing-domain.html">현재 존재하는 도메인(Domain) 사용하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-existing-email-provider.html">존재하는 이메일 제공자(Email Provider) 사용하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-updating-the-stack.html">스택(Stack)에 업데이트하기</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-backup-and-restore.html">백업(Backup) 과 복구(Restore)</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/hubs-cloud-aws-troubleshooting.html">AWS 트러블슈팅(Trouble Shooting)</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-known-issues.html">AWS에 알려진 이슈</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-architecture.html">AWS 시스템 아키텍처</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-costs.html">AWS 비용 정보</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-estimated-cost-charts.html">AWS 추정 비용 및 비용 차트(Alpha)</a></li><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-aws-estimated-ccu-limits.html">AWS 추산된 CCU Limits</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">Hubs Cloud DigitalOcean<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docs/hubs-cloud-do-quick-start.html">디지털 오션(DigitalOcean) 퀵 스타트</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/belivvr/hubs-docs/blob/master/docs/hubs-cloud-aws-troubleshooting.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">AWS 트러블슈팅(Trouble Shooting)</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="배포"></a><a href="#배포" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>배포</h2>
+<h3><a class="anchor" aria-hidden="true" id="구축-후-내-aws-스택에서-rollback-complete-라고-하는데-무엇이-잘못되었습니까"></a><a href="#구축-후-내-aws-스택에서-rollback-complete-라고-하는데-무엇이-잘못되었습니까" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>구축 후 내 AWS 스택에서 &quot;ROLLBACK COMPLETE&quot;라고 하는데, 무엇이 잘못되었습니까?</h3>
+<p>허브 클라우드 스택 배포 중에 문제가 발생했습니다. 기본적으로 AWS는 변경 내용을 롤백하고 스택을 삭제합니다.</p>
+<h4><a class="anchor" aria-hidden="true" id="첫-번째-오류-이벤트-보기"></a><a href="#첫-번째-오류-이벤트-보기" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>첫 번째 오류 이벤트 보기</h4>
+<ol>
+<li>AWS Cloudformation 탐색 &gt; 스택에서 스택 이름 선택 &gt; 오른쪽 사이드바의 &quot;이벤트&quot; 탭 선택</li>
+<li>이벤트 목록을 스크롤하여 &quot;상태&quot; 열에 <strong>FIRST</strong>* 빨간색 오류가 나타나는 곳까지 이동합니다. 이것은 무엇이 잘못되었는지에 대한 구체적인 오류여야 합니다.</li>
+<li>문제 해결을 위해 오류를 기록, 메모 또는 스크린샷합니다.</li>
+<li>동일한 파라미터를 사용하여 스택을 다시 배포합니다(때로는 2회 정도 소요됨). 그런 다음 동일한 오류가 발생하면...</li>
+<li>이 페이지의 특정 오류 검색(AWS 문제 해결)_</li>
+<li><a href="https://github.com/mozilla/hubs/discussions">Hubs Github 토론</a> 에서 특정 오류를 검색합니다.</li>
+<li>검색에서 해결 방법을 찾지 못한 경우 <a href="https://github.com/mozilla/hubs/discussions">Hubs Github 토론</a> 에서 스레드를 만듭니다.</li>
+</ol>
+<h3><a class="anchor" aria-hidden="true" id="롤백을-완전히-해제하려면"></a><a href="#롤백을-완전히-해제하려면" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>롤백을 완전히 해제하려면</h3>
+<ol>
+<li>[AWS 허브 배포 프로세스]를 시작합니다(<a href="https://hubs.mozilla.com/cloud">https://hubs.mozilla.com/cloud</a>) &gt; 1단계 및 2단계 완료 &gt; &quot;스택 옵션 구성&quot; &gt; &quot;고급 옵션&quot; &gt; &quot;스택 만들기 옵션&quot; 확장 &gt; &quot;롤백 실패&quot;에 대해 &quot;사용 안 함&quot; 선택</li>
+<li>스택 생성을 계속하고 스택이 실패한 오류를 확인합니다.</li>
+<li>AWS CloudFormation에서 스택을 수동으로 삭제하여 배포 프로세스를 다시 시작합니다.</li>
+</ol>
+<h3><a class="anchor" aria-hidden="true" id="externalzonesslcertlocalifeast-오류-또는-internalzonesslcert-오류-또는-시간-초과"></a><a href="#externalzonesslcertlocalifeast-오류-또는-internalzonesslcert-오류-또는-시간-초과" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ExternalZoneSSLCertLocalIfEast 오류 또는 InternalZoneSSLCert 오류 또는 시간 초과</h3>
+<p>SSL 인증서 검증에 문제가 있습니다.</p>
+<h4><a class="anchor" aria-hidden="true" id="잠재적인-솔루션"></a><a href="#잠재적인-솔루션" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>잠재적인 솔루션:</h4>
+<ol>
+<li><strong>도메인 확인</strong>
+<ul>
+<li>도메인 이름을 올바르게 입력했습니까?</li>
+<li>AWS Route 53에 도메인을 등록했는지 확인합니다.</li>
+</ul></li>
+<li><strong>전송 잠금이 도메인에 있습니까?</strong>
+<ul>
+<li>aws Management Console &gt; Route 53 &gt; &quot;등록된 도메인&quot; &gt; <em>ALL</em> &quot;Transfer Locks&quot; &quot;X&quot;(일명 사용 안 함)를 확인하십시오.</li>
+<li>비활성화하려면: 도메인 클릭 &gt; 전송 잠금 옵션에 대해 &quot;사용 안 함&quot; 선택</li>
+<li>배포 다시 시도</li>
+</ul></li>
+<li><strong>인증서 제한에 도달했습니다. AWS에 증가를 요청해야 합니다.</strong>
+<ul>
+<li>이 스택을 여러 번 구축해 보았습니까? 이 경우 AWS는 기본적으로 매달 25개의 인증서만 생성할 수 있습니다. AWS 헬프 데스크 티켓을 생성하여 인증서 증가를 요청합니다. 며칠 내로 허브 클라우드를 다시 구축할 수 있습니다.</li>
+</ul></li>
+<li><strong>DNS CNAME 문제.</strong>
+<ul>
+<li>Hubs Cloud 스택을 다시 구축하기 전에 AWS Route 53으로 이동합니다.</li>
+<li>허브 클라우드에 사용할 도메인을 선택합니다.</li>
+<li>마지막 허브 스택 배치에서 왼쪽에서 CNAME 삭제 - 도메인이 다른 서비스에 사용하는 CNAME을 삭제하지 않도록 주의하십시오.</li>
+<li>허브 클라우드 스택을 다시 배포합니다.</li>
+</ul></li>
+<li><strong>이름 서버가 기본 AWS 서버입니까?</strong>
+<ul>
+<li>다른 서비스를 가리키도록 이름 서버를 변경했을 수 있습니다. 현재 버전을 삭제하여 기본값으로 되돌립니다.</li>
+</ul></li>
+</ol>
+<h3><a class="anchor" aria-hidden="true" id="couk-또는-comfr과-같은-2차-도메인-사용-"></a><a href="#couk-또는-comfr과-같은-2차-도메인-사용-" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>.co.uk 또는 .com.fr과 같은 2차 도메인 사용</h3>
+<p>배포에 Recipe 3을 사용합니다. 알려진 버그입니다.</p>
+<h2><a class="anchor" aria-hidden="true" id="배포-성공-후"></a><a href="#배포-성공-후" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>배포 성공 후</h2>
+<h3><a class="anchor" aria-hidden="true" id="aws-샌드박스-에-가입되어-있지만-마법-링크-이메일이-수신되지-않습니다"></a><a href="#aws-샌드박스-에-가입되어-있지만-마법-링크-이메일이-수신되지-않습니다" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>&quot;AWS 샌드박스&quot;에 가입되어 있지만 &quot;마법 링크&quot; 이메일이 수신되지 않습니다.</h3>
+<p>배포를 완료했으며 허브 관리 콘솔에 액세스할 수 있습니다. Hubs Admin 콘솔에서도 &quot;AWS 샌드박스&quot;에 있다고 표시됩니다. 스택 AWS 전자 메일 서비스가 제한되어 있습니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="솔루션-옵션"></a><a href="#솔루션-옵션" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>솔루션 옵션:</h3>
+<ol>
+<li><strong>관리자의 개별 이메일 주소 확인</strong></li>
+</ol>
+<ul>
+<li>사이트를 사용하여 관리할 사람이 적은 경우 SES를 통해 이메일 주소를 확인하도록 할 수 있습니다.</li>
+<li>AWS 콘솔에서 Simple Email Service로 이동한 다음 &quot;Email Addresss&quot;에서 사이트를 사용할 전자 메일 주소를 추가합니다.</li>
+<li>각 작업자는 클릭해야 하는 확인 이메일을 받게 됩니다.</li>
+<li>이메일 주소를 확인하면 &quot;매직 링크&quot; 이메일을 받을 수 있습니다.</li>
+</ul>
+<ol start="2">
+<li><strong>AWS에 제한 증가 요청</strong></li>
+</ol>
+<ul>
+<li>24시간 동안 AWS 기술 지원에서 전자 메일 서비스 한도를 높일 때까지 기다려야 하는 경우 이 프로세스를 사용합니다.</li>
+<li><a href="https://console.aws.amazon.com/support/home?#/사례/만들기?이슈유형=기술">AWS create case</a></li>
+<li>&quot;서비스 제한 증가&quot; 라디오 버튼을 선택합니다.</li>
+<li><strong>한계 유형:</strong> &quot;SES 전송 제한&quot;</li>
+<li><strong>메일 유형:</strong> &quot;시스템 알림&quot;</li>
+<li><strong>웹 사이트 URL - 선택 사항</strong></li>
+<li><strong>설명... 메일을 요청한 사용자:</strong> &quot;전자 메일 링크만 사용하여 사용자를 인증합니다. 호스트된 Mozilla Hubs Room에 가입하여 연결하려는 사용자는 이메일 주소를 입력하여 인증을 위한 이 '매직 허브' 링크를 받게 됩니다. 누구나 이메일을 입력하지 않고 가입하지 않도록 선택할 수 있습니다.&quot;</li>
+<li><strong>설명... 및 불만사항 알림:</strong> &quot;관리 이메일 주소로 전달하기 위해 반송 및 불만사항을 설정했습니다. 그리고 우리는 허브 룸에 가입하기 위해 이 '매직' 인증 이메일 링크를 제외한 다른 이메일은 보내지 않습니다. 우리는 서버에 이메일을 저장하지 않습니다.&quot;</li>
+<li><strong>AWS 서비스 약관을 준수하시겠습니까?:</strong> &quot;예&quot;</li>
+<li>요청 1</li>
+<li>지역: ''US East (Northern Virginia)' 선택`</li>
+<li>제한: 원하는 일별 발송 할당량</li>
+<li>새 제한 값: 50,000</li>
+<li>사례 설명: 메시지 필드에서 아래 질문에 답하십시오.</li>
+<li>허브 클라우드 인스턴스의 역할은 무엇입니까? 요청에 사용 사례와 관련된 내용을 추가합니다.</li>
+<li>메시지에 다음을 추가합니다. &quot;제품은 암호를 지원하지 않으며 로그인하기 위한 이메일 링크만 지원합니다. 따라서 SES를 사용하여 이러한 이메일을 보내고자 합니다. 사용자가 로그인을 요청할 때 전송되는 자동 로그인 전자 메일 외에 제품에서 보내는 전자 메일이 없습니다. 당사는 원치 않는 전자 메일이나 기타 컨텐츠 지향 전자 메일은 보내지 않으며 링크 전자 메일에만 로그인합니다. 방문자의 이메일 주소는 저장하지 않습니다. 이메일은 로그인 시 당사로 안전하게 전송되어 이메일 링크를 보냅니다.&quot;</li>
+<li>양식 제출</li>
+<li>서비스 제한 증가 요청을 승인하는 이메일이 도착할 것입니다.</li>
+</ul>
+<ol start="3">
+<li><strong>SendGrid를 통한 SMTP 설정</strong></li>
+</ol>
+<ul>
+<li>즉각적인 해결이 필요한 경우 이 프로세스를 사용합니다.</li>
+<li><a href="https://sendgrid.com/">SendGrid</a>에 등록합니다.</li>
+<li>새 API 키 만들기</li>
+<li>API 키 이메일 전송 기능 부여</li>
+<li>허브 클라우드 관리 콘솔에서 설정 업데이트</li>
+</ul>
+<ol>
+<li>서버 설정 &gt; SMTP</li>
+<li>&quot;apikey&quot;를 &quot;Username&quot;으로 입력합니다.</li>
+<li>API 키 자체를 &quot;암호&quot;로 입력합니다.</li>
+<li>&quot;smtp.sendgrid.net&quot;을 &quot;호스트&quot;로 입력합니다.</li>
+<li>&quot;2525&quot;를 &quot;포트&quot;로 입력합니다.</li>
+</ol>
+<h3><a class="anchor" aria-hidden="true" id="지정한-키가-없습니다-서비스-amazon-s3-상태-코드-404-오류-코드-해당-키-없음"></a><a href="#지정한-키가-없습니다-서비스-amazon-s3-상태-코드-404-오류-코드-해당-키-없음" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>지정한 키가 없습니다. 서비스: Amazon S3; 상태 코드: 404; 오류 코드: 해당 키 없음</h3>
+<p>아마존이 해결하고 있는 AWS 클라우드 포메이션의 버그다. 안타깝게도 스택을 삭제하고 다시 생성해야 합니다.</p>
+<p>##허브 클라우드를 성공적으로 배포한 후 내 서버가 오프라인이거나 내 허브 클라우드 도메인에 &quot;No SuchKey&quot; 오류가 발생했습니다.</p>
+<p>스택을 작성할 때 &quot;오프라인 모드&quot;를 선택했습니까? 그렇다면 올바르게 배치했지만 서버가 실행되고 있지 않은 것입니다!</p>
+<p>실행 후 &quot;온라인&quot;으로 이동하려면 <a href="/docs/hubs-cloud-aws-updating-the-stack.html">Update the Stack Guide</a>을 참조하십시오. 다시 &quot;오프라인&quot;으로 전환하려면 동일한 프로세스를 따르고 &quot;오프라인&quot;을 선택합니다.</p>
+<p>또한 서버가 오프라인 상태일 때 트래픽을 리디렉션할 URL을 지정하여 이 오류 페이지를 방지할 수 있습니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="이-룸에-연결할-수-없습니다-나중에-다시-시도하십시오"></a><a href="#이-룸에-연결할-수-없습니다-나중에-다시-시도하십시오" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>&quot;이 룸에 연결할 수 없습니다. 나중에 다시 시도하십시오.&quot;</h3>
+<p>이 오류는 TURN 서버가 추가된 Hubs Cloud 버전 1.1.0에서 수정했습니다. 1.0.0에서 1.1.0으로 업그레이드해야 합니다. [.hubs-cloud-aws-updating-the-stack.html#업그레이드-to-a-stack-release]에 설명된 프로세스를 따르십시오.</p>
+<p>그리고 [/hubs-cloud-aws-updating-the-stack.html#check-if-on-version-110]의 단계를 따라 1.1.0을 실행하고 있는지 확인합니다.</p>
+<h3><a class="anchor" aria-hidden="true" id="허브-관리-패널에-네트워크-오류-또는-찾을-수-없음-페이지가-표시되거나-관리-메뉴에-데이터가-입력되지-않습니다"></a><a href="#허브-관리-패널에-네트워크-오류-또는-찾을-수-없음-페이지가-표시되거나-관리-메뉴에-데이터가-입력되지-않습니다" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>허브 관리 패널에 네트워크 오류 또는 찾을 수 없음 페이지가 표시되거나 관리 메뉴에 데이터가 입력되지 않습니다.</h3>
+<p>귀하의 계정은 *** 관리자가 아닐 가능성이 높습니다! 계정을 전환하거나 아래 전자 메일 주소에 대한 허브 스택 매개 변수를 확인하십시오.</p>
+<h4><a class="anchor" aria-hidden="true" id="then-what-is-my-hub-stack-s-admin-email-address"></a><a href="#then-what-is-my-hub-stack-s-admin-email-address" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Then, what is my hub stack's admin email address?</h4>
+<h4><a class="anchor" aria-hidden="true" id="그렇다면-내-허브-스택의-관리-이메일-주소는-무엇입니까"></a><a href="#그렇다면-내-허브-스택의-관리-이메일-주소는-무엇입니까" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>그렇다면 내 허브 스택의 관리 이메일 주소는 무엇입니까?</h4>
+<p><strong>클라우드포메이션 스택을 통해 이메일 확인</strong></p>
+<ol>
+<li>aws Management Console(<strong>지역</strong> 확인!)로 이동합니다.</li>
+<li>클라우드 포메이션 검색 및 이동</li>
+<li>스택 선택</li>
+<li>허브 스택을 선택합니다. <em>스택이 없습니까? 삭제하신 건가요, 아니면 다른 지역에 계신 건가요?</em></li>
+<li>&quot;매개변수&quot; 탭</li>
+<li>&quot;AdminEmailAddress&quot; 매개 변수를 선택합니다. 대문자가 없는지 확인합니다!</li>
+</ol>
+<p><strong>AWS의 전자 메일 확인 단순 전자 메일 서비스 메뉴(SES)</strong></p>
+<ol>
+<li>AWS Management Console(<strong>지역</strong> 확인!)로 이동합니다.</li>
+<li>지역 <strong>N을 선택합니다. 오른쪽 상단 모서리에 <em>ALL</em> 지역의 버지니아(us-east-1)</strong> 배치!</li>
+<li>검색 후 Simple Email Service로 이동합니다.</li>
+<li>&quot;이메일 주소&quot;를 선택합니다.</li>
+<li>여기에 나열된 것 중 하나가 스택의 관리자 전자 메일 주소입니다.</li>
+</ol>
+<ul>
+<li>대문자가 없는지 확인합니다!</li>
+<li>이메일이 아직 &quot;확인&quot;되지 않은 경우, 클라우드 형성 중에 아마존이 보내는 확인 링크를 클릭해야 합니다.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="버전-110인지-어떻게-알-수-있습니까"></a><a href="#버전-110인지-어떻게-알-수-있습니까" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>버전 1.1.0인지 어떻게 알 수 있습니까?</h3>
+<p><a href="hubs-cloud-aws-updating-the-stack.html#check-if-your-on-version-110">버전 1.1.0인지 확인</a> 의 단계를 따르십시오.</p>
+<h2><a class="anchor" aria-hidden="true" id="이슈에-대한-해결책을-찾지-못했나요"></a><a href="#이슈에-대한-해결책을-찾지-못했나요" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>이슈에 대한 해결책을 찾지 못했나요?</h2>
+<p>나머지 문서에서 필요한 내용을 찾을 수 없는 경우 <a href=".help.html">도움말 페이지</a> 에서 연락 방법을 참조하십시오.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/hubs-cloud-aws-backup-and-restore.html"><span class="arrow-prev">← </span><span>백업(Backup) 과 복구(Restore)</span></a><a class="docs-next button" href="/docs/hubs-cloud-aws-known-issues.html"><span>AWS에 알려진 이슈</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#배포">배포</a><ul class="toc-headings"><li><a href="#구축-후-내-aws-스택에서-rollback-complete-라고-하는데-무엇이-잘못되었습니까">구축 후 내 AWS 스택에서 &quot;ROLLBACK COMPLETE&quot;라고 하는데, 무엇이 잘못되었습니까?</a></li><li><a href="#롤백을-완전히-해제하려면">롤백을 완전히 해제하려면</a></li><li><a href="#externalzonesslcertlocalifeast-오류-또는-internalzonesslcert-오류-또는-시간-초과">ExternalZoneSSLCertLocalIfEast 오류 또는 InternalZoneSSLCert 오류 또는 시간 초과</a></li><li><a href="#couk-또는-comfr과-같은-2차-도메인-사용-">.co.uk 또는 .com.fr과 같은 2차 도메인 사용</a></li></ul></li><li><a href="#배포-성공-후">배포 성공 후</a><ul class="toc-headings"><li><a href="#aws-샌드박스-에-가입되어-있지만-마법-링크-이메일이-수신되지-않습니다">&quot;AWS 샌드박스&quot;에 가입되어 있지만 &quot;마법 링크&quot; 이메일이 수신되지 않습니다.</a></li><li><a href="#솔루션-옵션">솔루션 옵션:</a></li><li><a href="#지정한-키가-없습니다-서비스-amazon-s3-상태-코드-404-오류-코드-해당-키-없음">지정한 키가 없습니다. 서비스: Amazon S3; 상태 코드: 404; 오류 코드: 해당 키 없음</a></li><li><a href="#이-룸에-연결할-수-없습니다-나중에-다시-시도하십시오">&quot;이 룸에 연결할 수 없습니다. 나중에 다시 시도하십시오.&quot;</a></li><li><a href="#허브-관리-패널에-네트워크-오류-또는-찾을-수-없음-페이지가-표시되거나-관리-메뉴에-데이터가-입력되지-않습니다">허브 관리 패널에 네트워크 오류 또는 찾을 수 없음 페이지가 표시되거나 관리 메뉴에 데이터가 입력되지 않습니다.</a></li><li><a href="#버전-110인지-어떻게-알-수-있습니까">버전 1.1.0인지 어떻게 알 수 있습니까?</a></li></ul></li><li><a href="#이슈에-대한-해결책을-찾지-못했나요">이슈에 대한 해결책을 찾지 못했나요?</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docs/" class="nav-home"><img src="/docs/img/favicon.ico" alt="모질라 허브 한국어 문서 by BELIVVR Developers" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/welcome.html">Introduction</a><a href="/docs/hubs-create-join-rooms.html">Hubs Documentation</a><a href="/docs/spoke-creating-projects.html">Spoke Documentation</a><a href="/docs/creators-advanced-avatar-customization.html">For Creators</a><a href="/docs/system-overview.html">For Developers</a><a href="/docs/hubs-cloud-intro.html">Hubs Cloud</a></div><div><h5>Community</h5><a href="http://discord.gg/wHmY4nd">Discord Chat</a><a href="https://twitter.com/mozillahubs" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="https://hubs.mozilla.com/">Hubs</a><a href="https://hubs.mozilla.com/spoke/">Spoke</a><a href="https://github.com/mozilla/hubs/">GitHub</a></div></section><section class="copyright">Copyright © 2021 Mozilla</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '227afb429135813e4d9d2339ea8a18c7',
+                indexName: 'mozilla_hub',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>
