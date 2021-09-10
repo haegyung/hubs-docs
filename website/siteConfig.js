@@ -21,7 +21,7 @@ const users = [
 ];
 
 const siteConfig = {
-  title: '모질라 허브 한국어 문서 by BELIVVR Developers', // Title for your website.
+  // title: '모질라 허브 한국어 문서 by BELIVVR Developers', // Title for your website.
   tagline: 'Hold tight as we get our docs in a row 🦆🦆🦆',
   url: 'https://hubs.mozilla.com', // Your website URL
   baseUrl: '/docs/', // Base URL for your project */
@@ -49,7 +49,7 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/favicon.ico',
+  headerIcon: 'img/Hubs_LOGO_TMP.webp',
   footerIcon: 'img/favicon.ico',
   favicon: 'img/favicon.ico',
 
