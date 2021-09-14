@@ -12,12 +12,12 @@ sidebar_label: 허브에 오신 것을 환영합니다
 
 컨퍼런스를 주최하거나, 수업을 하거나, 예술을 전시하거나, 친구들과 어울립니다. 허브를 사용하면 이미지, 비디오, 3D 모델 등을 쉽게 연결하고 공유할 수 있습니다. Hubs의 공간화된 오디오를 통해 직접 할 수 있는 것처럼 모든 사람과 대화를 나누거나 소규모 그룹으로 나눌 수 있습니다.
 
-허브는 플랫폼 전체에서 작동합니다. VR 헤드셋 있어요? 대단해! 그렇지 않은 경우 데스크톱 컴퓨터, 랩톱, 태블릿 또는 모바일 장치를 사용하여 2D로 탐색할 수 있습니다([지원되는 브라우저 참조](hubs-create-join-rooms.html#for-2d-experience).
+허브는 플랫폼 전체에서 작동합니다. VR 헤드셋을 가지고 있나요? 엄청난데요! 만약 가지고 있지 않다면 데스크톱 컴퓨터, 랩톱, 태블릿 또는 모바일 장치를 사용하여 2D로 탐색할 수 있습니다 ([지원되는 브라우저 참조](hubs-create-join-rooms.html#for-2d-experience)).
 ![Screencapture from an event in Hubs](../website/static/img/hubs-scenes3.jpeg)
 
 
 ## Customizing Hubs
-허브는 오픈 소스로 사용자 지정이 가능합니다. [Intro-avatars.html]을(를) 업로드하거나 [Spoke](Intro-spoke.html) 를 사용하여 고유한 환경을 만듭니다.
+허브는 오픈 소스로 사용자 지정이 가능합니다. [아바타](intro-avatars.md) 을(를) 업로드하거나 [Spoke](Intro-spoke.html) 를 사용하여 고유한 환경을 만듭니다.
 
 허브 인터페이스에 대한 더 많은 제어권을 원하십니까? [Hubs Cloud](hubs-cloud-intro.html) 를 사용하여 자체 버전의 플랫폼을 호스팅할 수 있습니다. 사용자 정의 브랜딩을 추가하고, 사용자 고유의 도메인 이름을 사용하며, 승인된 사용자에 대한 액세스를 제한하고, 사용자 고유의 기능과 기능을 구축합니다.
 
