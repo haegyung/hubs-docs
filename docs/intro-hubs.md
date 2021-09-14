@@ -10,8 +10,8 @@ sidebar_label: 허브로 시작하기
 시작하려면 [hubs.mozilla.com](https://hubs.mozilla.com/) 로 이동하십시오. "룸 작성"을 눌러 자신만의 룸을 만드십시오.
 
 <video autoplay loop muted controls >
-  <source src="../website/static/img/create-a-room.mp4" type="video/mp4">
-  <img src="../../website/static/img/intro-hubs-enter-room-min.jpeg" alt="Screenshot of how to enter a Hubs room">
+  <source src="img/create-a-room.mp4" type="video/mp4">
+  <img src="img/intro-hubs-enter-room-min.jpeg" alt="Screenshot of how to enter a Hubs room">
   Your browser does not support HTML5 video.
 </video>
 
@@ -40,7 +40,7 @@ VR 및 모바일 컨트롤은 [허브 컨트로](hubs-controls.html) 목록을 �
 
 잠시 시간을 내어 사용자 인터페이스를 살펴보십시오. 마이크를 음소거하고, 사진을 찍고, 화면을 공유하고, 개체를 만드는 등의 작업을 수행할 수 있습니다. 이 가이드에서 이러한 컨트롤 중 일부의 기본 사항을 소개합니다. 자세한 내용은 문서의 [허브 기능](hubs-features.html) 섹션을 확인하십시오.
 
-![Hubs Image](../website/static/img/hubs-user-interface.png)
+![Hubs Image](img/hubs-user-interface.png)
 
 ### Import Media
 
@@ -51,7 +51,7 @@ Media Browser(미디어 브라우저)(화면 상단에 있는 매직 막대 버�
 파일을 룸으로 끌어서 놓거나 URL을 복사(ctrl+c 또는 명령+c)한 다음 룸에 붙여넣기(ctrl+v 또는 명령+v)하여 미디어를 추가할 수도 있습니다.
 
 <video autoplay loop muted controls >
-  <source src="../website/static/img/object-creation.mp4" type="video/mp4">
+  <source src="img/object-creation.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 
@@ -63,13 +63,13 @@ Media Browser(미디어 브라우저)(화면 상단에 있는 매직 막대 버�
 
 VR 및 모바일 컨트롤은 [HubsControls](hubs-controls.html) 의 전체 목록을 참조하십시오.
 
-![Screenshot of the Object Menu](../website/static/img/intro-hubs-object-menu-min.jpeg)
+![Screenshot of the Object Menu](img/intro-hubs-object-menu-min.jpeg)
 
 ### 아바타 메뉴
 객체에서와 마찬가지로 사용자에서도 메뉴를 열 수 있습니다. 이렇게 하면 볼륨을 제어하거나 보기에서 숨길 수 있습니다.
 룸 소유자 또는 진행자인 경우, 사용자의 마이크를 음소거하거나 룸에서 일시적으로 발길질을 할 수 있는 것과 같은 추가 권한을 갖게 됩니다.
 
-![Screenshot of the Avatar Menu](../website/static/img/intro-hubs-avatar-menu-min.jpeg)
+![Screenshot of the Avatar Menu](img/intro-hubs-avatar-menu-min.jpeg)
 
 ### Change the Scene
 
@@ -78,8 +78,8 @@ VR 및 모바일 컨트롤은 [HubsControls](hubs-controls.html) 의 전체 목�
 룸 진행자만 장면을 변경할 수 있습니다. 또한 이메일 주소를 사용하여 로그인해야 합니다. 허브를 사용하기 위해 로그인할 필요는 없지만 이렇게 하면 즐겨찾는 룸을 저장하고 사용자 지정 아바타를 업로드할 수 있는 등의 이점이 있습니다. 계정을 인증하기 위한 이메일 주소만 있으면 됩니다. 추가 정보는 필요하지 않습니다.
 
 <video autoplay loop muted controls >
-  <source src="../website/static/img/change-the-scene.mp4" type="video/mp4">
-  <img src="../website/static/img/intro-hubs-scene-browser-min.jpeg" alt="Screenshot of the Scene Browser">
+  <source src="img/change-the-scene.mp4" type="video/mp4">
+  <img src="img/intro-hubs-scene-browser-min.jpeg" alt="Screenshot of the Scene Browser">
   Your browser does not support HTML5 video.
 </video>
 
@@ -89,7 +89,7 @@ VR 및 모바일 컨트롤은 [HubsControls](hubs-controls.html) 의 전체 목�
 
 다른 사용자를 초대할 준비가 되면 화면 맨 위에 있는 "공유" 단추를 클릭하십시오. 룸 URL 또는 단축 링크 코드를 복사하여 친구에게 보냅니다.
 
-![Screenshot of the Share pop-up](../website/static/img/hubs-invite-dialogue.PNG)
+![Screenshot of the Share pop-up](img/hubs-invite-dialogue.PNG)
 
 ## 다음 단계
 지금까지 허브의 몇 가지 기본 기능에 대해 간략히 살펴보았습니다. 허브에서 수행할 수 있는 작업에 대한 자세한 내용은 설명서의 [허브 기능](hubs-features.html) 을 참조하십시오.

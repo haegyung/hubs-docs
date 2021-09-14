@@ -3,11 +3,11 @@ id: spoke-user-interface
 title: 유저 인터페이스(User Interface)
 ---
 
-![Hubs Image](../website/static/img/spoke-user-interface.jpeg)
+![Hubs Image](img/spoke-user-interface.jpeg)
 
 ## Toolbar
 
-![Toolbar](../website/static/img/spoke-toolbar.jpeg)
+![Toolbar](img/spoke-toolbar.jpeg)
 
 ### 1. Dropdown Menu
 
@@ -42,7 +42,7 @@ __Toggle Grid Visibility:__ 3D 그리드에서 그리드를 표시하거나 숨�
 장면 정보를 허브에 게시하기 전에 편집할 수 있는 게시 대화 상자를 열려면 이 단추를 클릭합니다.
 
 ## Viewport Panel
-![Viewport Panel](../website/static/img/spoke-viewport-panel.jpeg)
+![Viewport Panel](img/spoke-viewport-panel.jpeg)
 
 뷰포트는 객체를 선택하고 이동할 수 있는 장면의 미리보기를 표시합니다.
 
@@ -58,19 +58,19 @@ __Toggle Grid Visibility:__ 3D 그리드에서 그리드를 표시하거나 숨�
 하나 이상의 객체를 선택하면 변환 기모가 나타납니다.
 
 ## Hierarchy Panel
-![Hierarchy Panel](../website/static/img/spoke-hierarchy-panel.jpeg)
+![Hierarchy Panel](img/spoke-hierarchy-panel.jpeg)
 
 씬(scene)에 추가하는 개체가 계층 패널에 표시됩니다. 뷰포트에서 객체의 포커스를 두 번 클릭합니다. 계층 패널 내부에서 개체를 끌어 다시 정렬하거나 상위 항목을 변경할 수 있습니다. 또한 드롭 항목을 자산 패널에서 계층 패널로 끌어 씬(scene)에 추가할 수 있습니다.
 
 ## Properties Panel
-![Properties Panel](../website/static/img/spoke-properties-panel.jpeg)
+![Properties Panel](img/spoke-properties-panel.jpeg)
 
 추가 객체 특성은 특성 패널에서 설정할 수 있습니다. 여기에는 그림자, 밝은 색 등의 것들이 포함됩니다.
 
 개체는 스포크에 추가되며 속성을 변경하여 사용자 지정할 수 있습니다. 물체 유형에 따라 사용할 수 있는 특성이 다릅니다(예: 조명에는 "명암" 특성이 있지만 3D 모델에는 해당되지 않습니다). 대부분의 개체는 공간 내의 물리적 위치를 나타내는 변환 특성을 가집니다.
 
 ## Assets Panel
-![Assets Panel](../website/static/img/spoke-assets-panel.jpeg)
+![Assets Panel](img/spoke-assets-panel.jpeg)
 
 asset 패널에서 씬(scene)에 추가할 컨텐츠를 찾을 수 있습니다. 자산을 클릭하여 씬(scene)에 추가할 수 있습니다. 자산 패널에서 자산을 끌어 뷰포트, 계층 패널 또는 속성 패널로 놓을 수도 있습니다.
 
@@ -111,4 +111,4 @@ Twitch에서 실시간 게임 및 기타 정보를 찾을 수 있습니다.
 ## Experimental Features
 우리는 스포크의 새로운 기능을 지속적으로 개발하고 있습니다. 실험 기능을 활성화하면 실험 기능을 사용할 수 있습니다. 이러한 기능은 아직 테스트 단계에 있으므로 계속 지원되지 않을 수 있습니다.
 
-![Experimental Features](../website/static/img/spoke-experimental-features.jpeg)
+![Experimental Features](img/spoke-experimental-features.jpeg)

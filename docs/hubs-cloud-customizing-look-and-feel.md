@@ -25,15 +25,15 @@ Hubs 클라이언트의 이전 버전에서 새 UI로 쉽게 전환할 수 있�
 
 먼저 [관리 콘솔(Admin Console)](hubs-cloud-getting-started.md)을 열고 **앱 설정**:
 
-![허브 클라우드 앱 설정](../website/static/img/hubs-cloud-app-settings.jpeg)
+![허브 클라우드 앱 설정](img/hubs-cloud-app-settings.jpeg)
 
 여기서 **Images**:를 선택하여 허브의 모든 다양한 이미지를 교체할 수 있습니다.
 
-![허브 클라우드 이미지 설정](../website/static/img/hubs-cloud-image-settings.jpeg)
+![허브 클라우드 이미지 설정](img/hubs-cloud-image-settings.jpeg)
 
 결과는? 랜딩 페이지 및 로딩 페이지의 브랜딩:
 
-![Hubs Cloud Custom Branding](../website/static/img/hubs-cloud-custom-branding.png)
+![Hubs Cloud Custom Branding](img/hubs-cloud-custom-branding.png)
 
 또한 완전히 사용자 정의된 색상표를 추가할 수 있습니다. **테마**로 이동하여 아래 예제와 같이 원하는 테마를 설명하는 JSON 배열을 붙여넣으십시오.
 

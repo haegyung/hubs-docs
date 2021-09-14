@@ -6,7 +6,7 @@ title: the Blender glTF Exporter 사용하기
 
 최신 버전의 블렌더를 사용하려면 시작 시 블렌더 시작 화면의 오른쪽 상단을 보고 블렌더 기본 다운로드 페이지 https://www.blender.org/download/와 일치하는지 확인하십시오.
 
-![Blender Splash Screen Image](../website/static/img/BlenderSplash.jpg)
+![Blender Splash Screen Image](img/BlenderSplash.jpg)
 
 
 ### glTF로 내보낼 내용은 무엇입니까?
@@ -99,8 +99,8 @@ Unlight Material 은 모든 장치에서 렌더링하고 동일하게 보이는 
 나중에 이것들을 Quick Favorites 메뉴에 추가하여 쉽게 찾을 수 있도록 할 수 있습니다.
 
 <video autoplay loop muted controls >
-  <source src="../website/static/img/BlenderShaderBackground.mp4" type="video/mp4">
-  <img src="../website/static/img/intro-custom-avatar.jpeg" alt="Blender - Finding Background Node">
+  <source src="img/BlenderShaderBackground.mp4" type="video/mp4">
+  <img src="img/intro-custom-avatar.jpeg" alt="Blender - Finding Background Node">
   Your browser does not support HTML5 video.
 </video>
 
@@ -108,15 +108,15 @@ Unlight Material 은 모든 장치에서 렌더링하고 동일하게 보이는 
 glb로 내보내고 개체를 Spoke 또는 Hubs 로 가져오면 'unlit'(또는 생각하는 방식에 따라 완전히 켜짐)이 됩니다.
 
 <video autoplay loop muted controls >
-  <source src="../website/static/img/BlenderShaderBackground2.mp4" type="video/mp4">
-  <img src="../website/static/img/intro-custom-avatar.jpeg" alt="Blender - Using Background Node">
+  <source src="img/BlenderShaderBackground2.mp4" type="video/mp4">
+  <img src="img/intro-custom-avatar.jpeg" alt="Blender - Using Background Node">
   Your browser does not support HTML5 video.
 </video>
 
 Unlit Material 은 어떠한 장면 조명에도 영향을 받지 않기 때문에 'Sky dome' 에 사용하기에 가장 좋은 Material 입니다.
 일반적으로, 개체(Object) 가 조명에 따라 외관을 바꾸는 반사광이나 표면이 필요하지 않으면, unlit material 을 사용하면 됩니다.
 
-![A Hubs scene with baked lighting](../website/static/img/HelloWebXRscene.jpg)
+![A Hubs scene with baked lighting](img/HelloWebXRscene.jpg)
 
 위의 장면(Scene)에서는 모든 조명(lighting)을 블렌더에 bake 한 다음, unlit meterial 와 함께 export 했습니다.
 이 장면(Scene)에서 조명(light) 을 설치하는 것은 방 자체에는 영향을 미치지 않지만 모든 장치에서 훌륭해 보입니다(그리고 같습니다).

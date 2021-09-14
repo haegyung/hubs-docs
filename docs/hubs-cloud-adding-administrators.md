@@ -26,12 +26,12 @@ sidebar_label: 관리자 권한 추가하기
 
 액세스 권한을 부여하려는 Account ID가 있으면 Admin 콘솔의 **Account** 섹션으로 이동해주세요.
 
-![허브 클라우드 계정](../website/static/img/hubs-cloud-accounts.jpeg)
+![허브 클라우드 계정](img/hubs-cloud-accounts.jpeg)
 
 여기서 **Search ID**에 관리자로 변경할 계정 ID를 입력한 다음 편집(Edit)을 클릭합니다.
 
-![허브 클라우드 찾기 계정](../website/static/img/hubs-cloud-find-account.jpeg)
+![허브 클라우드 찾기 계정](img/hubs-cloud-find-account.jpeg)
 
 그런 다음 계정을 **Is admin**로 설정하고 **Save**하시면 됩니다:
 
-![Hubs Cloud Select Admin](../website/static/img/hubs-cloud-select-admin.jpeg)
+![Hubs Cloud Select Admin](img/hubs-cloud-select-admin.jpeg)

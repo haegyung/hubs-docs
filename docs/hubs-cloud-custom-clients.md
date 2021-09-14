@@ -62,7 +62,7 @@ upstream https://github.com/mozilla/hubs.git (push)
 
 ## Run your custom client
 
-이제 머신에 Hubs 리포지토리가 분기되고 복제되었으므로 일부 종속성을 설치해야 합니다. 먼저 [Node JS](https://nodejs.org/en/)가 설치되어 있어야 합니다. 그런 다음 허브 종속성을 설치합니다. 항상 `package-lock.json` 파일에 있는 모듈 버전을 사용하려면 `npm install` 대신 `npm ci`를 사용하는 것이 좋습니다.
+이제 머신에 Hubs 리포지토리가 분기되고 복제되었으므로 일부 종속성을 설치해야 합니다. 먼저 [Node JS](https://nodejs.org/en/) 가 설치되어 있어야 합니다. 그런 다음 허브 종속성을 설치합니다. 항상 `package-lock.json` 파일에 있는 모듈 버전을 사용하려면 `npm install` 대신 `npm ci`를 사용하는 것이 좋습니다.
 
 ```bash
 npm ci

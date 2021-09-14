@@ -5,7 +5,7 @@ sidebar_label: 허브에 오신 것을 환영합니다
 ---
 
 허브는 브라우저에서 실행되는 가상 협업 플랫폼입니다. 허브를 사용하면 클릭 한 번으로 자신만의 3D 공간을 만들 수 있습니다. URL을 사용하여 다른 사용자를 참여하도록 초대합니다. 설치 또는 앱 스토어가 필요하지 않습니다.
-![Screencapture from an event in Hubs](../website/static/img/hubs-business.jpeg)
+![Screencapture from an event in Hubs](img/hubs-business.jpeg)
 
 ## Who is Hubs for?
 허브는 원격 연결을 원하는 모든 사용자를 위한 것입니다! 이는 공동 가상 공간에서 커뮤니티를 결합하는 데 매우 좋은 방법입니다.
@@ -13,7 +13,7 @@ sidebar_label: 허브에 오신 것을 환영합니다
 컨퍼런스를 주최하거나, 수업을 하거나, 예술을 전시하거나, 친구들과 어울립니다. 허브를 사용하면 이미지, 비디오, 3D 모델 등을 쉽게 연결하고 공유할 수 있습니다. Hubs의 공간화된 오디오를 통해 직접 할 수 있는 것처럼 모든 사람과 대화를 나누거나 소규모 그룹으로 나눌 수 있습니다.
 
 허브는 플랫폼 전체에서 작동합니다. VR 헤드셋을 가지고 있나요? 엄청난데요! 만약 가지고 있지 않다면 데스크톱 컴퓨터, 랩톱, 태블릿 또는 모바일 장치를 사용하여 2D로 탐색할 수 있습니다 ([지원되는 브라우저 참조](hubs-create-join-rooms.html#for-2d-experience)).
-![Screencapture from an event in Hubs](../website/static/img/hubs-scenes3.jpeg)
+![Screencapture from an event in Hubs](img/hubs-scenes3.jpeg)
 
 
 ## Customizing Hubs

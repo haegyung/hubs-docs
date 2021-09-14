@@ -12,15 +12,15 @@ sidebar_label: 콘텐트 관리하기
 
 방문자가 사용자 정의 아바타 또는 장면을 만들 때 *remixable* 및/또는 *promotionable*로 표시하는 옵션이 제공됩니다. *Remixable* 콘텐츠는 크리에이티브 커먼즈 3 라이센스를 제공하여 다른 사용자가 자유롭게 사용하거나 수정할 수 있도록 하며, *promotionable* 콘텐츠는 검토 대기열에 추가되어 허브의 콘텐츠 라이브러리에 추가됩니다. 승인되면 사용자는 미디어 브라우저와 같은 도구를 통해 라이브러리의 컨텐츠를 검색할 수 있습니다.
 
-*Promotable*로 표시된 모든 콘텐츠는 생성되거나 업데이트될 때 **보류 중인 장면/아바타 큐*에 추가됩니다. [관리 콘솔(Admin Console)](hubs-cloud-getting-started.md)에서 다음 대기열을 찾을 수 있습니다.
+*Promotable*로 표시된 모든 콘텐츠는 생성되거나 업데이트될 때 **보류 중인 장면/아바타 큐*에 추가됩니다. [관리 콘솔(Admin Console)](hubs-cloud-getting-started.md) 에서 다음 대기열을 찾을 수 있습니다.
 
-![허브 클라우드 대기열 메뉴](../website/static/img/hubs-cloud-pending-queue-menu.jpeg)
+![허브 클라우드 대기열 메뉴](img/hubs-cloud-pending-queue-menu.jpeg)
 
 ### 콘텐츠 승인
 
 큐를 볼 때 검토되지 않은 모든 씬(scene) 또는 생성 또는 업데이트된 아바타의 목록이 표시됩니다. 여기서 오른쪽 끝에 있는 버튼 중 하나를 클릭하여 **승인** 또는 **거부** 항목을 선택할지 결정해야 합니다.
 
-![Hubs Cloud Pending Scene](../website/static/img/hubs-cloud-pending-scene.jpeg)
+![Hubs Cloud Pending Scene](img/hubs-cloud-pending-scene.jpeg)
 
 - **승인** 항목이 대기열에서 제거되어 컨텐츠 라이브러리에 추가됩니다. 업데이트인 경우 변경 내용이 컨텐츠 라이브러리에 적용됩니다. 방문자는 미디어 브라우저를 통해 항목을 검색할 수 있습니다.
 
@@ -32,15 +32,15 @@ sidebar_label: 콘텐트 관리하기
 
 컨텐츠 승인 외에도 **feature** 컨텐츠도 사용할 수 있습니다. 피쳐링 콘텐츠는 미디어 브라우저의 **Featured** 탭에 배치되어 방문자의 가시성을 높여줍니다.
 
-![Hubs Cloud Feature Content](../../website/static/img/hubs-cloud-feature.jpeg)
+![Hubs Cloud Feature Content](img/hubs-cloud-feature.jpeg)
 
 To feature content, first you'll need to navigate to the content in the **Approved Scenes** or **Approved Avatars**. Once you've found content you'd like to feature, just click the **Feature** button. You can un-feature content that has been featured by using the **Unfeature** button.
 
-![Hubs Cloud Pending Scene](../website/static/img/hubs-cloud-approved-scene.jpeg)
+![Hubs Cloud Pending Scene](img/hubs-cloud-approved-scene.jpeg)
 
 콘텐츠를 피쳐링하려면 먼저 **승인 장면* 또는 **승인 아바타**의 콘텐츠로 이동해야 합니다. 원하는 콘텐츠를 찾았으면 **Feature** 버튼을 클릭하십시오. **기능 해제** 버튼을 사용하여 피쳐링된 콘텐츠를 해제할 수 있습니다.
 
-![Hubs Cloud Pending Scene](../website/static/img/hubs-cloud-approved-scene.jpeg)
+![Hubs Cloud Pending Scene](img/hubs-cloud-approved-scene.jpeg)
 
 ### 내용 편집
 

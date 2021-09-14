@@ -17,7 +17,7 @@ sidebar_label: 개인 링크(Privately Links)로 아바타 공유하기
 2. 공유할 특수 아바타를 업로드한 다음 "my avatars" 목록에서 찾습니다.
 3. 마우스 오른쪽 단추를 클릭하고 "연결 위치 복사"를 선택합니다.
 
-![예: 아바타 링크 스크린샷 가져오기](../website/static/img/hubs-exclusive-avatars.png)
+![예: 아바타 링크 스크린샷 가져오기](img/hubs-exclusive-avatars.png)
 
 4. 탈의실로 돌아가서 CTRL+V(Mac의 경우 CMD+V)를 누릅니다. 아바타의 2D 표현이 객체로 방에 추가됩니다.
 5. 방을 나갈 때 물체가 사라지지 않도록 고정합니다. (커서로 스페이스바를 누르고 "핀"을 선택합니다.)
@@ -25,4 +25,4 @@ sidebar_label: 개인 링크(Privately Links)로 아바타 공유하기
 
 다음은 "탈의실"의 스크린샷입니다.
 
-![맞춤형 아바타가 있는 탈의실 예시](../../website/static/img/hubs-dressingroom.png)
+![맞춤형 아바타가 있는 탈의실 예시](img/hubs-dressingroom.png)

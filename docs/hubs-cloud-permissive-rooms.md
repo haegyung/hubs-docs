@@ -12,10 +12,10 @@ sidebar_label: 레시피: 룸에 접근 허용 권한 설정하기
 
 새 룸의 기본 권한을 보다 허용 가능하도록 변경합니다. 먼저 [관리 콘솔](hubs-cloud-getting-started.md) 을 열고 **앱 설정**:
 
-![허브 클라우드 앱 설정](../website/static/img/hubs-cloud-app-settings.jpeg)
+![허브 클라우드 앱 설정](img/hubs-cloud-app-settings.jpeg)
 
 그런 다음 **룸** 아래에서 **실 허용** 옵션을 활성화하고 **저장*:
 
-![Hubs Cloud Permissive Rooms](../website/static/img/hubs-cloud-permissive-rooms.jpeg)
+![Hubs Cloud Permissive Rooms](img/hubs-cloud-permissive-rooms.jpeg)
 
 새 룸을 선택하면 룸 작성자 및 승격 구성원뿐만 아니라 모든 방문자에 대해 기본적으로 모든 권한이 설정됩니다.

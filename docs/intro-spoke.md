@@ -9,7 +9,7 @@ sidebar_label: 스포크(Spoke)로 장면(Scene) 빌드하기
 스포크는 Mozilla Mixed Reality 팀이 개발한 온라인 3D 장면 편집기입니다. 스포크를 사용하면 3D 모델, 아키텍처 키트 조각, 조명, 이미지, 비디오 등을 사용하여 환경을 구축할 수 있습니다. 장면이 준비되면 허브에 업로드하거나 glTF 3D 모델로 내보낼 수 있습니다.
 
 <video autoplay loop muted controls >
-  <source src="../website/static/img/architecture-kit.mp4" type="video/mp4">
+  <source src="img/architecture-kit.mp4" type="video/mp4">
 </video>
 
 ### ✏ Create

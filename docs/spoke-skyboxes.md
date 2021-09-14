@@ -5,7 +5,7 @@ title: 스카이박스(Skyboxes)
 
 스카이박스는 장면 분위기에 큰 영향을 미칠 수 있습니다. 기본 요소를 제거한 템플릿에서 시작하지 않은 경우 시작할 때 씬(scene)에 스카이박스가 있어야 합니다.
 
-![Screenshot of Spoke](../website/static/img/spoke-skybox.png)
+![Screenshot of Spoke](img/spoke-skybox.png)
 
 스카이박스 속성 패널을 통해 기존 스카이박스를 미세 조정할 수 있습니다. 다음과 같은 품질을 변경할 수 있습니다.
 
@@ -18,7 +18,7 @@ title: 스카이박스(Skyboxes)
 * Horizon End
 
 
-![Screenshot of the skybox property panel](../website/static/img/spoke-skybox-properties.png)
+![Screenshot of the skybox property panel](img/spoke-skybox-properties.png)
 
 ## 커스텀 스카이 박스(Sky Box) 추가하기 
 
@@ -26,4 +26,4 @@ title: 스카이박스(Skyboxes)
 
 예를 들어 [롤링힐즈](https://hubs.mozilla.com/scenes/iu2htZZ/rolling-hills) 장면을 확인하십시오. Speak에서 조립 방법을 보려면 "Remix in Speak" 버튼을 클릭하십시오.
 
-![Screenshot of the skybox property panel](../website/static/img/spoke-skybox-360.png)
+![Screenshot of the skybox property panel](img/spoke-skybox-360.png)

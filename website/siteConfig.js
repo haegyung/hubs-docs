@@ -24,7 +24,7 @@ const siteConfig = {
   // title: '모질라 허브 한국어 문서 by BELIVVR Developers', // Title for your website.
   tagline: 'Hold tight as we get our docs in a row 🦆🦆🦆',
   url: 'https://hubs.mozilla.com', // Your website URL
-  baseUrl: '/docs/', // Base URL for your project */
+  baseUrl: '/docs/mozilla-hubs/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',

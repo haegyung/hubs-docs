@@ -40,9 +40,9 @@ VR 헤드셋에서 브라우저를 열고 [hubs.link](https://hubs.link)로 이�
 
 컴퓨터에서 "룸에 입장"을 클릭하고 프롬프트에 따라 사용자 이름/아바타를 선택하고 마이크를 설정합니다. 입력 전 마지막 프롬프트에서 "연결된 VR 헤드셋"을 선택하는 옵션이 표시됩니다.
 
-문제 해결에 대한 자세한 내용은 허브 [문제 해결](.hubs-문제 해결.html) 페이지를 참조하십시오.
+문제 해결에 대한 자세한 내용은 허브 [문제 해결](hubs-troubleshooting.html) 페이지를 참조하십시오.
 
-<!-- ![Enter room on Wired in device](../../website/static/img/hubs-enter-connected-vr.jpeg)
+<!-- ![Enter room on Wired in device](img/hubs-enter-connected-vr.jpeg)
 
 ### On Cardboard
 

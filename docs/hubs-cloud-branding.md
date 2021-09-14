@@ -24,12 +24,12 @@ Mozilla Hubs 및 Hubs Cloud의 공식 로고입니다.
 
 모질라 허브
 
-![Mozilla 허브](../website/static/img/mozilla-hubs.png)
+![Mozilla 허브](img/mozilla-hubs.png)
 
 허브 클라우드 - 불투명 배경
 
-![허브 클라우드 불투명 배경](../website/static/img/hubs-cloud-opaque.png)
+![허브 클라우드 불투명 배경](img/hubs-cloud-opaque.png)
 
 허브 클라우드 - 투명 배경
 
-![허브 클라우드 투명 배경](../website/static/img/hubs-cloud-transparent.png)
+![허브 클라우드 투명 배경](img/hubs-cloud-transparent.png)
