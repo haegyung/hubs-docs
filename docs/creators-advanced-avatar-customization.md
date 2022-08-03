@@ -5,7 +5,7 @@ title: Advanced 아바타 커스터마이징
 
 ## Advanced Re-skinning 
 
-[custom avatars](intro-avatars.html) 페이지에서 설명한 것처럼 허브용 아바타를 커스터마이징하는 가장 직관적인 방법은 `custom avatar set` 을 업로드하는 것입니다.
+[Custom avatars](intro-avatars.html) 페이지에서 설명한 것처럼 허브용 아바타를 커스터마이징하는 가장 직관적인 방법은 `custom avatar set` 을 업로드하는 것입니다.
 로봇 아바타의 스킨을 다시 설정하는 가장 간단한 방법은 단순히 '베이스 컬러(Base Color)' 맵을 그리는 거에요.
 
 조금 더 개선된 커스터마이징을 위해 다음과 같은 리소스를 사용할 수 있어요:
